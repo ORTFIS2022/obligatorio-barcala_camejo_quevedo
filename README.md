@@ -9,6 +9,7 @@ M4A (Adorjan- Falco)
 M3B/M4B (Adorjan - Kidd)
 N3A / N4A (Ferreiro-Falco-Kidd)
 Estudiantes: 
+Ignacio Quevedo (271557)
 
 Lectura: 21-mar-2022
 Entrega 1: 2-may-2022
