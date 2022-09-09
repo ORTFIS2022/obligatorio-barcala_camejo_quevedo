@@ -10,6 +10,10 @@ M3B/M4B (Adorjan - Kidd)
 N3A / N4A (Ferreiro-Falco-Kidd)
 Estudiantes: 
 Ignacio Quevedo (271557)
+<<<<<<< HEAD
+=======
+Fernando Barcala (269159)
+>>>>>>> af8803c557ab0d6648e35857975656e11f1c786d
 
 Lectura: 21-mar-2022
 Entrega 1: 2-may-2022
