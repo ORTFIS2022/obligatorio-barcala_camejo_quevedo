@@ -11,6 +11,7 @@ N3A / N4A (Ferreiro-Falco-Kidd)
 Estudiantes: 
 Ignacio Quevedo (271557)
 Fernando Barcala (269159)
+Gonzalo Camejo (256665)
 
 Lectura: 21-mar-2022
 Entrega 1: 2-may-2022
