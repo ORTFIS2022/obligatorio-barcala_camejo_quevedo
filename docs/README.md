@@ -9,9 +9,21 @@ Comandos Git ejecutados desde terminal y desde el IDE
 
 ## Versionado
 
-Buenas prácticas de versionado
+Para ayudarnos con el versionado vamos a utilizar el flujo de git llamado **git-flow**. La idea detrás de este flujo es la de simplificar lo más posible las instancias de salida a producción y cuenta con 5 tipos de ramas distintos:
 
-Uso de ramas separadas de 'main'
+| Rama | Descripción |
+| ------------- |:-------------:|
+| **Main** | Contiene lo que se va a llevar a producción. Es una rama estable |
+| **Develop** | Se crea a partir de `main`. Rama donde los desarrolladores se paran para comenzar a trabajar. Es una rama inestable |
+| **Feature** | Se crean a partir de `develop`. Cada tarea a realizarse debe tener una rama `feature` nueva |
+| **Release** | Se crea desde `develop` cuando hay un avance estable que se quiere sacar a producción. | 
+| **Hotfix** | Se utiliza ocacionalmente cuando se quiere introducir un cambio rápido directo a `main` |
+
+En la siguiente imagen se ve ilustrado el git-flow:
+
+![git-flow](git-flow.jpg)
+
+De esta manera, los desarrolladores siempre se deben situar en la rama `develop` y desde allí comenzar a crear sus ramas `feature/<nombre_de_la_feature>` en la que van a trabajar. Una vez que se llega a un avance que es considerado adecuado para salir a producción se crea la rama `release/<nro_version>` que luego será mergeada con `main` una vez que se efectue el release.
 
 Resumen de commits y evolución del proyecto
 
