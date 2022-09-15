@@ -21,7 +21,7 @@ Para ayudarnos con el versionado vamos a utilizar el flujo de git llamado **git-
 
 En la siguiente imagen se ve ilustrado el git-flow:
 
-![git-flow](git-flow.jpg)
+![git-flow](/media/git-flow.jpg)
 
 De esta manera, los desarrolladores siempre se deben situar en la rama `develop` y desde allí comenzar a crear sus ramas `feature/<nombre_de_la_feature>` en la que van a trabajar. Una vez que se llega a un avance que es considerado adecuado para salir a producción se crea la rama `release/<nro_version>` que luego será mergeada con `main` una vez que se efectue el release.
 
