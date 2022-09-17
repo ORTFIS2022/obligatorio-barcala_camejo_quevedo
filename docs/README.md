@@ -24,11 +24,13 @@ Una vez alli el repositorio remoto habrá sido creado, pero ahora lo mas importa
 **Creacion del repositorio local:**
 
 Para crearlo hay dos formas posibles.
+
 **`Primera forma`** 
- - Clonando un repositorio remoto de GitHub.
-    *Pasos para clonarlo:*
+
+ - *Clonando un repositorio remoto de GitHub.*
     1. Hacemos **git init** en la carpeta que queremos inicializar.
     2. **git clone <url del repo>**
+  
 Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remoto por lo que te ahorras molestias y procedimientos mas exhaustivos.
 
 **`Segunda forma`**
@@ -47,7 +49,7 @@ Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remot
     
 
 
-**Comandos Git ejecutados desde terminal y desde el IDE**
+## Comandos Git ejecutados desde terminal y desde el IDE
 
 | Comando | Descripción |
 | ------------- |:-------------:|
@@ -62,6 +64,8 @@ Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remot
 | **git push -u origin main** | `Transmite por primera vez tus commits` de la rama actual a la remota, (luego de haberlo realizado una vez podemos utilizar tan solo git push) |
 | **git remote add origin [url]** | `Añade` la ubicación del repositorio remoto |
 
+## Flujo de trabajo de GIT
+![FotoFlujoGit](/media/FotoFlujoGit.png)
 
 ## Versionado
 
