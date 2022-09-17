@@ -43,9 +43,11 @@ Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remot
     (Al realizar el commit mandamos los archivos al repositorio local).
 
 **Vincular repositorio local con repositorio remoto**
-    Una vez que hayamos realizados los pasos de arriba, el repositorio local habrá sido creado con éxito. Ahora hay que conectarlo de forma remota, para ello:
-    1. **git remote add origin <url del repositorio remoto(brindado por GitHub) >** *Añadimos de forma remota una rama nombrada origin*
-    2. **git push -u origin main**  *Envia los archivos locales a la nube*
+
+Una vez que hayamos realizados los pasos de arriba, el repositorio local habrá sido creado con éxito. Ahora hay que conectarlo de forma remota, para ello:
+
+1. **git remote add origin <url del repositorio remoto(brindado por GitHub) >** *Añadimos de forma remota una rama nombrada origin*
+2. **git push -u origin main**  *Envia los archivos locales a la nube*
     
 
 
@@ -65,7 +67,7 @@ Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remot
 | **git remote add origin [url]** | `Añade` la ubicación del repositorio remoto |
 
 ## Flujo de trabajo de GIT
-![FotoFlujoGit](/media/FotoFlujoGit.png)
+![FotoFlujoGit](/media/FotoFlujoGit.jpg)
 
 ## Versionado
 
