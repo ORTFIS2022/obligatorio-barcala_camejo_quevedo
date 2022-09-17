@@ -15,48 +15,52 @@ Los repositorios son estructuras de directorios en disco, donde se almacenan y r
 *¿Porque tomarse la molestia de crear repositorios locales y uno remoto para el desarrollo del proyecto, y no usar Google Drive?*
 Esta pregunta nos la fuimos realizando durante el inicio del proyecto, con el paso del tiempo logramos entender que github, a diferencia de un servicio de alojamiento de archivos, ejemplo : (Google Drive), nos permite volver a versiones anteriores en caso de un fallo crítico y dejar registrado todo cambio importante.
 
-*Creación repositorio:*
+**Creación repositorio:**
 1. Acceder a GitHub 
 2. Crear nuevo repositorio (Boton en verde) y nombrarlo 
 
 Una vez alli el repositorio remoto habrá sido creado, pero ahora lo mas importante es poder conectar tu repositorio local con el remoto, para ello habrá que efectuar lo siguiente.
 
-*Creacion del repositorio local:*
+**Creacion del repositorio local:**
 
 Para crearlo hay dos formas posibles.
-1. - Clonando un repositorio remoto de GitHub.
-    *Pasos para clonarlo*
+**`Primera forma`** 
+ - Clonando un repositorio remoto de GitHub.
+    *Pasos para clonarlo:*
     1. Hacemos **git init** en la carpeta que queremos inicializar.
     2. **git clone <url del repo>**
 Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remoto por lo que te ahorras molestias y procedimientos mas exhaustivos.
 
-2. - *Crear uno desde cero.* 
+**`Segunda forma`**
+ - *Crear uno desde cero.* 
+
     1. Inicializamos el repositorio vacio en la carpeta destinada, mediante **git init**.
     2. Añadimos el/los elementos a la carpeta que querramos efectuar con git.
     3. Usamos **git add .** para pasar todos los archivos modificados/untracked que querramos añadir a la staging area.
     4. Oficializamos el cambio, mediante un **git commit -m "Msg"** , dejando registrado una version hasta ese momento y a la par notificamos mediante el mensaje lo que realizamos.
     (Al realizar el commit mandamos los archivos al repositorio local).
 
-*Vinculacion entre repositorio local con repositorio remoto*
-    Una vez que hayamos realizados los pasos de arriba, el repositorio local habrá sido creado con éxito. Ahora queda conectarlo de forma remota, para ello:
+**Vincular repositorio local con repositorio remoto**
+    Una vez que hayamos realizados los pasos de arriba, el repositorio local habrá sido creado con éxito. Ahora hay que conectarlo de forma remota, para ello:
     1. **git remote add origin <url del repositorio remoto(brindado por GitHub) >** *Añadimos de forma remota una rama nombrada origin*
     2. **git push -u origin main**  *Envia los archivos locales a la nube*
     
 
 
-
-
 **Comandos Git ejecutados desde terminal y desde el IDE**
-- git init  \_Inicializa un directorio existente como un repositorio GIT\_
-- git add .  \_Añade un archivo como esta en ese momento para tu siguiente commit\_
-- git commit -m "msg"  \_Commitea tu "staged content" como una nueva snapshot\_
-- git status  \_Muestra los archivos modificados de tu repositorio, staged para tu siguiente commit\_
-- git branch  \_Te enlista tus ramas y te aparece con un *tu rama actual\_
-- git log \_ Te muestra todos el historial de commits de la rama actual\_
-- git clone [url]  \_Trae un repositorio entero desde una locacion remota mediante url\_
-- git push \_Transmite todos tus commits locales hacia tu rama remota del repositorio\_
-- git push -u origin main  \_Transmite por primera vez tus commits de la rama actual a la remota, (luego de haberlo realizado una vez podemos utilizar tan solo git push)\_
-- git remote add origin [url]  \_Añade la ubicación del repositorio remoto\_
+
+| Comando | Descripción |
+| ------------- |:-------------:|
+| **git init** | `Inicializa` un directorio existente como un repositorio GIT |
+| **git add .** |  `Añade` un archivo como esta en ese momento para tu siguiente commit |
+| **git commit -m "msg"** |  `Commitea` tu "staged content" como una nueva snapshot |
+| **git status** | `Muestra` los archivos modificados de tu repositorio, staged para tu siguiente commit |
+| **git branch** | Te `enlista tus ramas` y te aparece con un *tu rama actual |
+| **git log** | Te muestra `todos el historial de commits` de la rama actual |
+| **git clone [url]** | `Trae un repositorio entero` desde una ubicación remota mediante url |
+| **git push** | `Transmite todos tus commits` hacia tu rama remota del repositorio |
+| **git push -u origin main** | `Transmite por primera vez tus commits` de la rama actual a la remota, (luego de haberlo realizado una vez podemos utilizar tan solo git push) |
+| **git remote add origin [url]** | `Añade` la ubicación del repositorio remoto |
 
 
 ## Versionado
