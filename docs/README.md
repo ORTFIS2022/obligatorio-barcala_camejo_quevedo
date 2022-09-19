@@ -130,10 +130,13 @@ estos dan una descripción de la reacción y comportamientos del sistema en dist
 Las funciones del sistema están vinculadas directamente con el objetivo del negocio o cliente y los roles que cumplirán los usuarios dentro de la aplicación.
 
 **Nuestro sistema cuenta con los siguientes requermientos funcionales**
-- Los usuarios deben poder predecir el resultado de cada partido
-- Los usuarios deben poder crear grupos con distintos torneos pudiendo eliminar y añadir miembros al grupo
-- Los usuarios deben tener acceso al ranking general y de cada grupo
-- 
+- Los usuarios deben poder predecir el resultado de cada partido.
+- Los usuarios deben poder crear grupos con distintos torneos pudiendo eliminar y añadir miembros al grupo.
+- Los usuarios deben tener acceso al ranking general y de cada grupo.
+- Los usuarios deber saber en que puesto del ranking estan.
+- Los usuarios deben poseer una guia de como funciona el sistema de puntajes de la penca.
+- Si el usuaria adivina el resultado son 10 puntos,
+- Si el usuario llega a 3000 puntos 
 
 **Requerimientos no Funcionales**
 Los requerminentos no funcionales son las restricciones a los distintos servicios que el sistema brinda, considerando aspectos técnicos y la relación con sistemas externos. Tambien se consideran los atribuitos de calidad como parte de este tipo de requerimientos.
@@ -142,10 +145,14 @@ La calidad se divide en dos partes fundamentales:
 - Interna: relacionada con el mantenimiento a largo plazo del sistema requiriendo un cierto standar dentro de la empresa para que todos los desarrolladores tanto los actuales como los que vendrán en un futuro puedan comprender el código y evitar problemas internos. Asegurando la portabilidad y escalabilidad del sistema.
 
 *Nuestro sistema cuenta con los siguientes requermientos no funcionales*
--
--
--
--
+- La aplicación debe ser multiplataforma.
+- Debe contener un anuncio y que este varie cada 2 horas.
+- La pantalla de inicio no debe demorar más de 5 segundos en abrir.
+- El sistema debe contener múltiples lenguajes y desarrollarse principalmente en español, inglés, portugués.
+- La aplicación debe notificar al usuario (considerando que no haya seleccionado un determinado puntaje) el dia antes una horas antes del mismo.
+- No debe dejar al usuario registrar su puntaje mientras que el partido esté en curso.
+- Se le debe notificar la victoria al ganador.
+- 
 
 
 ## User Stories 
