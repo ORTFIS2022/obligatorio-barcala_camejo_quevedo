@@ -49,7 +49,17 @@ Una vez que hayamos realizados los pasos de arriba, el repositorio local habrá 
 1. **git remote add origin <url del repositorio remoto(brindado por GitHub) >** *Añadimos de forma remota una rama nombrada origin*
 2. **git push -u origin main**  *Envia los archivos locales a la nube*
     
+**Tecnica que utilizamos para la creación del proyecto**
 
+**Lo que nuestro grupo realizó fue**: 
+
+Al repositorio local (creado mediante un git init) le clonamos el repositorio remoto almacenado en GitHub del profesor, para conseguir la letra del ejercicio, las carpetas especificas de donde almacenar los distintos archivos,fotos, etc. A continuación aplicamos un cierto procedimiento para redirigir el repositorio clonado a una nueva url única nuestra, para ello:
+-Usamos RD /S <carpeta> para borrar toda la carpeta .git, generando que cualquier nexo existente con el repositorio remoto actual sea destruido.
+-git init para reinicializar el repositorio local.
+-git add . para añadir todos los archivos modificados a la staging area.
+-git remote add origin <url del nuevo repositorio remoto> Actualizamos el nuevo repositorio remoto a nuestro servidor único.
+
+`En otras palabras lo que hicimos fue copiar los archivos necesarios del profesor, borrar la conexion local-remota que existía. Volvemos a inicializar git, añadimos los archivos devuelta a la staging area y finalmente creamos devuelta la conexion local - remota pero con nuestro servidor especifico en la nube de GitHub.`
 
 ## Comandos Git ejecutados desde terminal y desde el IDE
 
