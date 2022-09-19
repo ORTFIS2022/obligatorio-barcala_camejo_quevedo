@@ -113,18 +113,18 @@ Modelo conceptual del problema
 
 ## Definición de requerimientos funcionales y no funcionales
 
-**Requermientos Funcionales**
+*Requermientos Funcionales*
 Los requerimientos funcionales son aquellos que dan una especificacion sobre servicios y/o funciones que el software debe implementar. 
 estos dan una descripción de la reacción y comportamientos del sistema en distintas condiciones determinadas. 
 Las funciones del sistema están vinculadas directamente con el objetivo del negocio o cliente y los roles que cumplirán los usuarios dentro de la aplicación.
 
-*Nuestro sistema cuenta con los siguientes requermientos funcionales*
+**Nuestro sistema cuenta con los siguientes requermientos funcionales**
 -
 -
 -
 -
 
-**Requermientos no Funcionales**
+*Requermientos no Funcionales*
 Los requerminentos no funcionales son las restricciones a los distintos servicios que el sistema brinda, considerando aspectos técnicos y la relación con sistemas externos. Tambien se consideran los atribuitos de calidad como parte de este tipo de requerimientos.
 La calidad se divide en dos partes fundamentales:
 - Externa: relacionada con la ejecución del sistema y los factores visibles durante la misma.
