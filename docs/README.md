@@ -119,10 +119,10 @@ estos dan una descripción de la reacción y comportamientos del sistema en dist
 Las funciones del sistema están vinculadas directamente con el objetivo del negocio o cliente y los roles que cumplirán los usuarios dentro de la aplicación.
 
 **Nuestro sistema cuenta con los siguientes requermientos funcionales**
--
--
--
--
+- Los usuarios deben poder predecir el resultado de cada partido
+- Los usuarios deben poder crear grupos con distintos torneos pudiendo eliminar y añadir miembros al grupo
+- Los usuarios deben tener acceso al ranking general y de cada grupo
+- 
 
 *Requermientos no Funcionales*
 Los requerminentos no funcionales son las restricciones a los distintos servicios que el sistema brinda, considerando aspectos técnicos y la relación con sistemas externos. Tambien se consideran los atribuitos de calidad como parte de este tipo de requerimientos.
