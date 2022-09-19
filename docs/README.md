@@ -1,5 +1,5 @@
 # Informe académico entrega 1
-Fecha de entrega: 18-oct-2021
+Fecha de entrega: 03-oct-2022
 
 ## Repositorio Git
 
@@ -31,7 +31,7 @@ Para crearlo hay dos formas posibles.
     1. Hacemos **git init** en la carpeta que queremos inicializar.
     2. **git clone <url del repo>**
   
-Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remoto por lo que te ahorras molestias y procedimientos mas exhaustivos.
+Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remoto por lo que te ahorras molestias y procedimientos más exhaustivos.
 
 **`Segunda forma`**
  - *Crear uno desde cero.* 
@@ -44,7 +44,7 @@ Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remot
 
 **Vincular repositorio local con repositorio remoto**
 
-Una vez que hayamos realizados los pasos de arriba, el repositorio local habrá sido creado con éxito. Ahora hay que conectarlo de forma remota, para ello:
+Una vez que hayamos realizado los pasos de arriba, el repositorio local habrá sido creado con éxito. Ahora hay que conectarlo de forma remota, para ello:
 
 1. **git remote add origin <url del repositorio remoto(brindado por GitHub) >** *Añadimos de forma remota una rama nombrada origin*
 2. **git push -u origin main**  *Envia los archivos locales a la nube*
@@ -52,7 +52,7 @@ Una vez que hayamos realizados los pasos de arriba, el repositorio local habrá 
 **Técnica que utilizamos para la creación del proyecto**
 
 *Lo que nuestro grupo realizó fue:* 
-Al repositorio local (creado mediante un git init) le clonamos el repositorio remoto almacenado en GitHub del profesor, para conseguir la letra del ejercicio, las carpetas especificas de donde almacenar los distintos archivos,fotos, etc. A continuación aplicamos un cierto procedimiento para redirigir el repositorio clonado a una nueva url única nuestra, para ello:
+Al repositorio local (creado mediante un git init) le clonamos el repositorio remoto almacenado en GitHub del profesor, para conseguir la letra del ejercicio, las carpetas especificas de donde almacenar los distintos archivos, fotos, etc. A continuación aplicamos un cierto procedimiento para redirigir el repositorio clonado a una nueva url única nuestra, para ello:
 -Usamos RD /S <carpeta> para borrar toda la carpeta .git, generando que cualquier nexo existente con el repositorio remoto actual sea destruido.
 -git init para reinicializar el repositorio local.
 -git add . para añadir todos los archivos modificados a la staging area.
@@ -65,15 +65,16 @@ Al repositorio local (creado mediante un git init) le clonamos el repositorio re
 | Comando | Descripción |
 | ------------- |:-------------:|
 | **git init** | `Inicializa` un directorio existente como un repositorio GIT |
-| **git add .** |  `Añade` un archivo como esta en ese momento para tu siguiente commit |
-| **git commit -m "msg"** |  `Commitea` tu "staged content" como una nueva snapshot |
+| **git add .** |  `Añade` un archivo a la staging area como esta en ese momento para su siguiente commit |
+| **git commit -m "msg"** |  `Commitea` tu "staged content" como una nueva snapshot, lo añade al repositorio |
 | **git status** | `Muestra` los archivos modificados de tu repositorio, staged para tu siguiente commit |
-| **git branch** | Te `enlista tus ramas` y te aparece con un *tu rama actual |
-| **git log** | Te muestra `todos el historial de commits` de la rama actual |
-| **git clone [url]** | `Trae un repositorio entero` desde una ubicación remota mediante url |
+| **git branch** | `enlista tus ramas` y te aparece con un * tu rama actual |
+| **git log** | `Muestra todos el historial de commits` de la rama actual |
+| **git clone [url]** | `Clona un repositorio entero` desde una ubicación remota mediante url |
 | **git push** | `Transmite todos tus commits` hacia tu rama remota del repositorio |
 | **git push -u origin main** | `Transmite por primera vez tus commits` de la rama actual a la remota, (luego de haberlo realizado una vez podemos utilizar tan solo git push) |
 | **git remote add origin [url]** | `Añade` la ubicación del repositorio remoto |
+| **git pull** | `Actualiza` el repositorio y sus archivos con los cambios más recientes |
 
 ## Flujo de trabajo de GIT
 ![FotoFlujoGit](/media/FotoFlujoGit.jpg)
@@ -110,9 +111,36 @@ Modelo conceptual del problema
 
 ## Especificación
 
-Definición de requerimientos funcionales y no funcionales             
+Definición de requerimientos funcionales y no funcionales
 
-User Stories / Use Cases detallados
+*Requermientos Funcionales*
+Los requerimientos funcionales son aquellos que dan una especificacion sobre servicios y/o funciones que el software debe implementar. 
+estos dan una descripción de la reacción y comportamientos del sistema en distintas condiciones determinadas. 
+Las funciones del sistema están vinculadas directamente con el objetivo del negocio o cliente y los roles que cumplirán los usuarios dentro de la aplicación.
+
+*Nuestro sistema cuenta con los siguientes requermientos funcionales*
+-
+-
+-
+-
+
+*Requermientos no Funcionales*
+Los requerminentos no funcionales son las restricciones a los distintos servicios que el sistema brinda, considerando aspectos técnicos y la relación con sistemas externos. Tambien se consideran los atribuitos de calidad como parte de este tipo de requerimientos.
+La calidad se divide en dos partes fundamentales:
+- Externa: relacionada con la ejecución del sistema y los factores visibles durante la misma.
+- Interna: relacionada con el mantenimiento a largo plazo del sistema requiriendo un cierto standar dentro de la empresa para que todos los desarrolladores tanto los actuales como los que vendrán en un futuro puedan comprender el código y evitar problemas internos. Asegurando la portabilidad y escalabilidad del sistema.
+
+*Nuestro sistema cuenta con los siguientes requermientos no funcionales*
+-
+-
+-
+-
+
+
+## User Stories 
+
+
+## Use Cases detallados
 
 Bocetos de IU
 
