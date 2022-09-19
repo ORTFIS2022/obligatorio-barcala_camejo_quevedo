@@ -111,9 +111,20 @@ Modelo conceptual del problema
 
 ## Especificación
 
-## Definición de requerimientos funcionales y no funcionales
+## Definición de requerimientos funcionales y no funcionales   
 
-**Requermientos Funcionales**
+Antes de fundamentar los distintos tipos de requerimientos hay q desarrollar el concepto del propio requerimiento en si y donde se aplica.
+
+**Requerimientos**
+- Todo aquello que el cliente requiere y solicita para la posible solución del problema.
+- De alta importancia para la creación y evolución del software
+
+**Ingenieria de Requerimientos**
+- La ingenieria de requerimientos es el proceso por el cual se traduce las necesidades de los distintos clientes y usuarios en requerimientos técnicos a implementar.
+- Su objetivo principal es definir el problema a resolver.
+- Es el primer paso en la creacion del Software.
+
+**Requerimentos Funcionales**
 Los requerimientos funcionales son aquellos que dan una especificacion sobre servicios y/o funciones que el software debe implementar. 
 estos dan una descripción de la reacción y comportamientos del sistema en distintas condiciones determinadas. 
 Las funciones del sistema están vinculadas directamente con el objetivo del negocio o cliente y los roles que cumplirán los usuarios dentro de la aplicación.
@@ -124,7 +135,7 @@ Las funciones del sistema están vinculadas directamente con el objetivo del neg
 -
 -
 
-**Requermientos no Funcionales**
+**Requerimientos no Funcionales**
 Los requerminentos no funcionales son las restricciones a los distintos servicios que el sistema brinda, considerando aspectos técnicos y la relación con sistemas externos. Tambien se consideran los atribuitos de calidad como parte de este tipo de requerimientos.
 La calidad se divide en dos partes fundamentales:
 - Externa: relacionada con la ejecución del sistema y los factores visibles durante la misma.
