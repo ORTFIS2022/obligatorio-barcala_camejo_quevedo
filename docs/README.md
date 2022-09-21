@@ -93,7 +93,7 @@ Para ayudarnos con el versionado vamos a utilizar el flujo de git llamado **git-
 
 En la siguiente imagen se ve ilustrado el git-flow:
 
-![git-flow](git-flow.jpg)
+![git-flow](/media/git-flow.jpg)
 
 De esta manera, los desarrolladores siempre se deben situar en la rama `develop` y desde allí comenzar a crear sus ramas `feature/<nombre_de_la_feature>` en la que van a trabajar. Una vez que se llega a un avance que es considerado adecuado para salir a producción se crea la rama `release/<nro_version>` que luego será mergeada con `main` una vez que se efectue el release.
 
@@ -101,9 +101,31 @@ Resumen de commits y evolución del proyecto
 
 ## Elicitación
 
-Evidencia de actividades de investigación
+## Evidencia de actividades de investigación
 
-Referencias a fuentes de información
+# Ingeniería Inversa
+
+En esta técnica se trata de obtener información sobre documentación o productos similares al nuestro que ya existen en el mercado. En este caso, nos basamos en dos aplicaciones:
+
+1. [Penca Ovación Movistar](https://play.google.com/store/apps/details?id=com.futbolx.pencaapp.ovacion&hl=es_UY&gl=US)
+
+Esta aplicación cuenta con una simple interfaz donde el usuario dispone de los próximos partidos a disputarse y allí mismo puede predecir los resultados. Brinda la posibilidad de crear ligas privadas entre amigos, pero también cuenta con una liga general donde todos los usuarios participan. Acertar un resultado exacto brinda 8 puntos, acertar el ganador y la diferencia de goles brinda 5, sólo el ganador 3 mientras que no acertar al ganador brinda 0 puntos. Si bien se pueden ver el fixture de los campeonatos, no cuenta con una sección de información sobre los mismos, entonces no podemos ver como va la tabla a la hora de predecir nuestros resultados. A grandes rasgos, cuenta con las siguientes funcionalidades:
+
+- Inicio de sesión y creación de usuario
+- Predicción de resultados
+- Varios torneos en los que participar (Campeonato Uruguayo, Eliminatorias Sudamericanas, Mundial)
+- Creación de ligas privadas
+
+2. [Flashscore ES](https://www.flashscore.com/)
+
+Esta aplicación cuenta tanto con versión web como con versión mobile, lo que se acerca más a lo que buscamos para nuestro proyecto. Si bien no cuenta con la habilidad de predecir el resultado de los partidos, cuenta con una interfaz básica con toda la información del partido que se va a jugar, del campeonato que se elige y de los jugadores que participan de los mismos. Ofrece información sobre casi todos los campeonatos del mundo y brinda notificaciones en tiempo real sobre lo sucedido en aquellos partidos que el usuario desee obtenerlas. No requiere inicio de sesión ni creación de usuario para su uso
+
+# Entrevista
+
+En esta técnica se trata de entrevistar a varios perfiles que podrían estar interesados en nuestro producto con la finalidad de obtener información sobre qué aspectos del mismo resultan relevantes para cada perfil. En este caso entrevistamos a dos personas con dos perfiles distintos:
+
+- Carlos (20 años). Estudiante y amante del fútbol.
+- Martín (34 años). CEO de Hattrick-IT interesado en poder crear una penca para su empresa
 
 Caracterización de usuarios: User Personas
 
