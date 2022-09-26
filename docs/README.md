@@ -16,6 +16,7 @@ Los repositorios son estructuras de directorios en disco, donde se almacenan y r
 Esta pregunta nos la fuimos realizando durante el inicio del proyecto, con el paso del tiempo logramos entender que github, a diferencia de un servicio de alojamiento de archivos, ejemplo : (Google Drive), nos permite volver a versiones anteriores en caso de un fallo crítico y dejar registrado todo cambio importante.
 
 **Creación repositorio:**
+
 1. Acceder a GitHub 
 2. Crear nuevo repositorio (Boton en verde) y nombrarlo 
 
@@ -139,15 +140,18 @@ Modelo conceptual del problema
 Antes de fundamentar los distintos tipos de requerimientos hay q desarrollar el concepto del propio requerimiento en si y donde se aplica.
 
 **Requerimientos**
+
 - Todo aquello que el cliente requiere y solicita para la posible solución del problema.
 - De alta importancia para la creación y evolución del software
 
 **Ingenieria de Requerimientos**
+
 - La ingenieria de requerimientos es el proceso por el cual se traduce las necesidades de los distintos clientes y usuarios en requerimientos técnicos a implementar.
 - Su objetivo principal es definir el problema a resolver.
 - Es el primer paso en la creacion del Software.
 
 **Requerimentos Funcionales**
+
 Los requerimientos funcionales son aquellos que dan una especificacion sobre servicios y/o funciones que el software debe implementar. Estos dan una descripción de la reacción y comportamientos del sistema en distintas condiciones determinadas. 
 Las funciones del sistema están vinculadas directamente con el objetivo del negocio o cliente y los roles que cumplirán los usuarios dentro de la aplicación.
 
@@ -214,6 +218,7 @@ Las funciones del sistema están vinculadas directamente con el objetivo del neg
 - **Prioridad:** Baja
 
 **Requerimientos no Funcionales**
+
 Los requerminentos no funcionales son las restricciones a los distintos servicios que el sistema brinda, considerando aspectos técnicos y la relación con sistemas externos. Tambien se consideran los atribuitos de calidad como parte de este tipo de requerimientos.
 La calidad se divide en dos partes fundamentales:
 - Externa: relacionada con la ejecución del sistema y los factores visibles durante la misma.
@@ -243,8 +248,38 @@ La calidad se divide en dos partes fundamentales:
 
 ## User Stories 
 
+### User Story 1
 
-## Use Cases detallados
+**Título:** Predicción resultados
+
+- **Como** usuario
+- **Quiero** poder predecir los partidos del Mundial
+- **Para** poder participar en la penca
+
+**Criterio de aceptación:** 
+- No se deben poder ingresar valores negativos en los resultados
+
+### User Story 2
+
+**Título:** Ver información del Mundial
+
+- **Como** usuario
+- **Quiero** poder ver información en tiempo real sobre el Mundial
+- **Para** poder tener mas información a la hora de predecir los resultados
+
+**Criterio de aceptación:** 
+- Debe estar conectado a internet
+
+### User Story 3
+
+**Título:** Registro de usuario
+
+- **Como** usuario
+- **Quiero** poder registrarme
+- **Para** poder predecir los partidos del Mundial
+
+**Criterio de aceptación:** 
+- Brindar un nickname que no esté previamente en uso
 
 Bocetos de IU
 
