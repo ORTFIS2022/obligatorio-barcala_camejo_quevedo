@@ -155,63 +155,63 @@ Las funciones del sistema están vinculadas directamente con el objetivo del neg
 
 ### RF1: 
 ---
-**Actor:** Usuario
-**Descripción:** El usuario debe registrarse en el sistema mediante un nickname.
-**Prioridad:** Alta
+- **Actor:** Usuario
+- **Descripción:** El usuario debe registrarse en el sistema mediante un nickname.
+- **Prioridad:** Alta
 
 ### RF2: Sección Penca
 ---
-**Actor:** Sistema
-**Descripción:** El sistema debe soportar una sección donde el usuario pueda predecir los partidos a jugarse del Mundial.
-**Prioridad:** Alta
+- **Actor:** Sistema
+- **Descripción:** El sistema debe soportar una sección donde el usuario pueda predecir los partidos a jugarse del Mundial.
+- **Prioridad:** Alta
 
 ### RF3: Sección Información
 ---
-**Actor:** Sistema
-**Descripción:** El sistema debe soportar una sección donde el usuario pueda ver la clasificación de los grupos del Mundial en tiempo real.
-**Prioridad:** Baja
+- **Actor:** Sistema
+- **Descripción:** El sistema debe soportar una sección donde el usuario pueda ver la clasificación de los grupos del Mundial en tiempo real.
+- **Prioridad:** Baja
 
 ### RF4: Registrar predicción
 ---
-**Actor:** Usuario
-**Descripción:** El usuario debe poder predecir todos los partidos del Mundial en la Sección Penca hasta la hora de comienzo de los mismos.
-**Prioridad:** Alta
+- **Actor:** Usuario
+- **Descripción:** El usuario debe poder predecir todos los partidos del Mundial en la Sección Penca hasta la hora de comienzo de los mismos.
+- **Prioridad:** Alta
 
 ### RF5: Crear grupos privados
 ---
-**Actor:** Usuario
-**Descripción:** El usuario debe poder crear grupos privados donde pueda armar una penca con sus invitados, ver la tabla de dicho grupo y las predicciones de cada usuario.
-**Prioridad:** Alta
+- **Actor:** Usuario
+- **Descripción:** El usuario debe poder crear grupos privados donde pueda armar una penca con sus invitados, ver la tabla de dicho grupo y las predicciones de cada usuario.
+- **Prioridad:** Alta
 
 ### RF6: Ranking General
 ---
-**Actor:** Usuario
-**Descripción:** El usuario debe poder acceder a un ranking general donde participan todos los usuarios registrados en la penca.
-**Prioridad:** Media
+- **Actor:** Usuario
+- **Descripción:** El usuario debe poder acceder a un ranking general donde participan todos los usuarios registrados en la penca.
+- **Prioridad:** Media
 
 ### RF7: Notificaciones
 ---
-**Actor:** Sistema
-**Descripción:** El sistema debe enviar una notificación 15 minutos antes del comienzo de un partido a los usuarios que no hayan realizado una predicción para ese partido
-**Prioridad:** Media
+- **Actor:** Sistema
+- **Descripción:** El sistema debe enviar una notificación 15 minutos antes del comienzo de un partido a los usuarios que no hayan realizado una predicción para ese partido
+- **Prioridad:** Media
 
 ### RF8: Predicción ganador Mundial y goleador
 ---
-**Actor:** Usuario
-**Descripción:** El usuario debe predecir una selección ganadora y un jugador goleador para el Mundial antes del comienzo del mismo. 
-**Prioridad:** Baja
+- **Actor:** Usuario
+- **Descripción:** El usuario debe predecir una selección ganadora y un jugador goleador para el Mundial antes del comienzo del mismo. 
+- **Prioridad:** Baja
 
 ### RF9: Sistema de puntaje
 ---
-**Actor:** Sistema
-**Descripción:** El sistema debe otorgar 10 puntos a los usuarios que acierten el resultado exacto de un partido y 5 puntos si se acierta solamente el ganador/empate. Si se acierta el ganador del mundial se otorgan 50 puntos mientras que si se acierta el goleador se otorgan 100
-**Prioridad:** Alta
+- **Actor:** Sistema
+- **Descripción:** El sistema debe otorgar 10 puntos a los usuarios que acierten el resultado exacto de un partido y 5 puntos si se acierta solamente el ganador/empate. Si se acierta el ganador del mundial se otorgan 50 puntos mientras que si se acierta el goleador se otorgan 100
+- **Prioridad:** Alta
 
 ### RF10: Sección premios
 ---
-**Actor:** Usuario
-**Descripción:** El usuario puede agregar una sección Premios a su grupo privado donde indica la cantidad de ganadores y sus respectivos premios
-**Prioridad:** Baja
+- **Actor:** Usuario
+- **Descripción:** El usuario puede agregar una sección Premios a su grupo privado donde indica la cantidad de ganadores y sus respectivos premios
+- **Prioridad:** Baja
 
 **Requerimientos no Funcionales**
 Los requerminentos no funcionales son las restricciones a los distintos servicios que el sistema brinda, considerando aspectos técnicos y la relación con sistemas externos. Tambien se consideran los atribuitos de calidad como parte de este tipo de requerimientos.
@@ -223,23 +223,23 @@ La calidad se divide en dos partes fundamentales:
 
 ### RNF1: Aplicación responsiva
 ---
-**Descripción:** La aplicación debe poder ser accedida tanto de la web como desde dispositivos móviles.
-**Prioridad:** Alta
+- **Descripción:** La aplicación debe poder ser accedida tanto de la web como desde dispositivos móviles.
+- **Prioridad:** Alta
 
 ### RNF2: Tipografía
 ---
-**Descripción:** El sistema debe utilizar la tipografía *Roboto*.
-**Prioridad:** Alta
+- **Descripción:** El sistema debe utilizar la tipografía *Roboto*.
+- **Prioridad:** Alta
 
 ### RNF3: Formato de iconos
 ---
-**Descripción:** El sistema debe utilizar iconos en el formato *filled*.
-**Prioridad:** Alta
+- **Descripción:** El sistema debe utilizar iconos en el formato *filled*.
+- **Prioridad:** Alta
 
 ### RNF4: Paleta de colores
 ---
-**Descripción:** El sistema debe utilizar *Green 900* como color principal y *Light Blue 800* como secundario.
-**Prioridad:** Alta
+- **Descripción:** El sistema debe utilizar *Green 900* como color principal y *Light Blue 800* como secundario.
+- **Prioridad:** Alta
 
 ## User Stories 
 
