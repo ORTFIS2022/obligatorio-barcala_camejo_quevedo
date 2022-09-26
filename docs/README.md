@@ -99,11 +99,12 @@ De esta manera, los desarrolladores siempre se deben situar en la rama `develop`
 
 Resumen de commits y evolución del proyecto
 
-## Elicitación
+# Elicitación
+---
 
 ## Evidencia de actividades de investigación
 
-# Ingeniería Inversa
+### Ingeniería Inversa
 
 En esta técnica se trata de obtener información sobre documentación o productos similares al nuestro que ya existen en el mercado. En este caso, nos basamos en dos aplicaciones:
 
@@ -120,12 +121,12 @@ Esta aplicación cuenta con una simple interfaz donde el usuario dispone de los 
 
 Esta aplicación cuenta tanto con versión web como con versión mobile, lo que se acerca más a lo que buscamos para nuestro proyecto. Si bien no cuenta con la habilidad de predecir el resultado de los partidos, cuenta con una interfaz básica con toda la información del partido que se va a jugar, del campeonato que se elige y de los jugadores que participan de los mismos. Ofrece información sobre casi todos los campeonatos del mundo y brinda notificaciones en tiempo real sobre lo sucedido en aquellos partidos que el usuario desee obtenerlas. No requiere inicio de sesión ni creación de usuario para su uso
 
-# Entrevista
+### Entrevista
 
 En esta técnica se trata de entrevistar a varios perfiles que podrían estar interesados en nuestro producto con la finalidad de obtener información sobre qué aspectos del mismo resultan relevantes para cada perfil. En este caso entrevistamos a dos personas con dos perfiles distintos:
 
-- Carlos (20 años). Estudiante y amante del fútbol.
-- Martín (34 años). CEO de Hattrick-IT interesado en poder crear una penca para su empresa
+- [Carlos (20 años)](/media/entrevista_carlos.m4a). Estudiante y amante del fútbol.
+- [Martín (34 años)](/media/entrevista_martin.m4a). CEO de Hattrick-IT interesado en poder crear una penca para su empresa
 
 Caracterización de usuarios: User Personas
 
@@ -133,7 +134,7 @@ Modelo conceptual del problema
 
 ## Especificación
 
-## Definición de requerimientos funcionales y no funcionales   
+### Definición de requerimientos funcionales y no funcionales   
 
 Antes de fundamentar los distintos tipos de requerimientos hay q desarrollar el concepto del propio requerimiento en si y donde se aplica.
 
@@ -147,18 +148,70 @@ Antes de fundamentar los distintos tipos de requerimientos hay q desarrollar el 
 - Es el primer paso en la creacion del Software.
 
 **Requerimentos Funcionales**
-Los requerimientos funcionales son aquellos que dan una especificacion sobre servicios y/o funciones que el software debe implementar. 
-estos dan una descripción de la reacción y comportamientos del sistema en distintas condiciones determinadas. 
+Los requerimientos funcionales son aquellos que dan una especificacion sobre servicios y/o funciones que el software debe implementar. Estos dan una descripción de la reacción y comportamientos del sistema en distintas condiciones determinadas. 
 Las funciones del sistema están vinculadas directamente con el objetivo del negocio o cliente y los roles que cumplirán los usuarios dentro de la aplicación.
 
 **Nuestro sistema cuenta con los siguientes requermientos funcionales**
-- Los usuarios deben poder predecir el resultado de cada partido.
-- Los usuarios deben poder crear grupos con distintos torneos pudiendo eliminar y añadir miembros al grupo.
-- Los usuarios deben tener acceso al ranking general y de cada grupo.
-- Los usuarios deber saber en que puesto del ranking estan.
-- Los usuarios deben poseer una guia de como funciona el sistema de puntajes de la penca.
-- Si el usuaria adivina el resultado son 10 puntos,
-- Si el usuario llega a 3000 puntos 
+
+### RF1: 
+---
+**Actor:** Usuario
+**Descripción:** El usuario debe registrarse en el sistema mediante un nickname.
+**Prioridad:** Alta
+
+### RF2: Sección Penca
+---
+**Actor:** Sistema
+**Descripción:** El sistema debe soportar una sección donde el usuario pueda predecir los partidos a jugarse del Mundial.
+**Prioridad:** Alta
+
+### RF3: Sección Información
+---
+**Actor:** Sistema
+**Descripción:** El sistema debe soportar una sección donde el usuario pueda ver la clasificación de los grupos del Mundial en tiempo real.
+**Prioridad:** Baja
+
+### RF4: Registrar predicción
+---
+**Actor:** Usuario
+**Descripción:** El usuario debe poder predecir todos los partidos del Mundial en la Sección Penca hasta la hora de comienzo de los mismos.
+**Prioridad:** Alta
+
+### RF5: Crear grupos privados
+---
+**Actor:** Usuario
+**Descripción:** El usuario debe poder crear grupos privados donde pueda armar una penca con sus invitados, ver la tabla de dicho grupo y las predicciones de cada usuario.
+**Prioridad:** Alta
+
+### RF6: Ranking General
+---
+**Actor:** Usuario
+**Descripción:** El usuario debe poder acceder a un ranking general donde participan todos los usuarios registrados en la penca.
+**Prioridad:** Media
+
+### RF7: Notificaciones
+---
+**Actor:** Sistema
+**Descripción:** El sistema debe enviar una notificación 15 minutos antes del comienzo de un partido a los usuarios que no hayan realizado una predicción para ese partido
+**Prioridad:** Media
+
+### RF8: Predicción ganador Mundial y goleador
+---
+**Actor:** Usuario
+**Descripción:** El usuario debe predecir una selección ganadora y un jugador goleador para el Mundial antes del comienzo del mismo. 
+**Prioridad:** Baja
+
+### RF9: Sistema de puntaje
+---
+**Actor:** Sistema
+**Descripción:** El sistema debe otorgar 10 puntos a los usuarios que acierten el resultado exacto de un partido y 5 puntos si se acierta solamente el ganador/empate. Si se acierta el ganador del mundial se otorgan 50 puntos mientras que si se acierta el goleador se otorgan 100
+**Prioridad:** Alta
+
+### RF10: Sección premios
+---
+**Actor:** Usuario
+**Descripción:** El usuario puede agregar una sección Premios a su grupo privado donde indica la cantidad de ganadores y sus respectivos premios
+**Prioridad:** Baja
 
 **Requerimientos no Funcionales**
 Los requerminentos no funcionales son las restricciones a los distintos servicios que el sistema brinda, considerando aspectos técnicos y la relación con sistemas externos. Tambien se consideran los atribuitos de calidad como parte de este tipo de requerimientos.
@@ -166,16 +219,27 @@ La calidad se divide en dos partes fundamentales:
 - Externa: relacionada con la ejecución del sistema y los factores visibles durante la misma.
 - Interna: relacionada con el mantenimiento a largo plazo del sistema requiriendo un cierto standar dentro de la empresa para que todos los desarrolladores tanto los actuales como los que vendrán en un futuro puedan comprender el código y evitar problemas internos. Asegurando la portabilidad y escalabilidad del sistema.
 
-*Nuestro sistema cuenta con los siguientes requermientos no funcionales*
-- La aplicación debe ser multiplataforma.
-- Debe contener un anuncio y que este varie cada 2 horas.
-- La pantalla de inicio no debe demorar más de 5 segundos en abrir.
-- El sistema debe contener múltiples lenguajes y desarrollarse principalmente en español, inglés, portugués.
-- La aplicación debe notificar al usuario (considerando que no haya seleccionado un determinado puntaje) el dia antes una horas antes del mismo.
-- No debe dejar al usuario registrar su puntaje mientras que el partido esté en curso.
-- Se le debe notificar la victoria al ganador.
-- 
+**Nuestro sistema cuenta con los siguientes requermientos no funcionales**
 
+### RNF1: Aplicación responsiva
+---
+**Descripción:** La aplicación debe poder ser accedida tanto de la web como desde dispositivos móviles.
+**Prioridad:** Alta
+
+### RNF2: Tipografía
+---
+**Descripción:** El sistema debe utilizar la tipografía *Roboto*.
+**Prioridad:** Alta
+
+### RNF3: Formato de iconos
+---
+**Descripción:** El sistema debe utilizar iconos en el formato *filled*.
+**Prioridad:** Alta
+
+### RNF4: Paleta de colores
+---
+**Descripción:** El sistema debe utilizar *Green 900* como color principal y *Light Blue 800* como secundario.
+**Prioridad:** Alta
 
 ## User Stories 
 
