@@ -101,7 +101,6 @@ De esta manera, los desarrolladores siempre se deben situar en la rama `develop`
 Resumen de commits y evolución del proyecto
 
 # Elicitación
----
 
 ## Evidencia de actividades de investigación
 
@@ -157,10 +156,10 @@ Las funciones del sistema están vinculadas directamente con el objetivo del neg
 
 **Nuestro sistema cuenta con los siguientes requermientos funcionales**
 
-### RF1: 
+### RF1 Registro de usuario: 
 ---
 - **Actor:** Usuario
-- **Descripción:** El usuario debe registrarse en el sistema mediante un nickname.
+- **Descripción:** El usuario debe registrarse en el sistema mediante un nickname y un email.
 - **Prioridad:** Alta
 
 ### RF2: Sección Penca
@@ -280,6 +279,64 @@ La calidad se divide en dos partes fundamentales:
 
 **Criterio de aceptación:** 
 - Brindar un nickname que no esté previamente en uso
+- Brindar un email que no esté previamente registrado
+
+### User Story 4
+
+**Título:** Creación de grupo privado
+
+- **Como** usuario
+- **Quiero** poder crear un grupo privado
+- **Para** poder competir contra mis amigos
+
+**Criterio de aceptación:** 
+- Brindar un nombre de grupo que no esté previamente en uso
+- Tener al menos 2 usuarios en el grupo
+
+## Use Cases
+
+### UC1: Registro de usuario
+
+**Actor:** Usuario
+
+**Curso normal:**
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El usuario abre la app por primera vez | 2. El sistema le pide que se indentifique con un nickname personal y un correo electrónico |
+| 3. El usuario selecciona su nickname y email | 4. El sistema registra al usuario, muestra un mensaje de confirmación y lo lleva a la pagina principal |
+
+**Curso alternativo:** 
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 3.1 El usuario selecciona un nickname o email que ya está en uso | El sistema muestra un mensaje de error y le vuelve a pedir que ingrese un nickname y email |
+
+### UC2: Creación de grupo privado
+
+**Actor:** Usuario
+
+**Curso normal:**
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El selecciona la sección de predicción de partidos | 2. El sistema muestra la sección de predicción de partidos |
+| 3. El usuario selecciona para crear un nuevo grupo privado | 4. El sistema le pide un nombre para el grupo |
+| 5. El usuario ingresa el nombre del grupo | 6. El sistema crea el grupo y devuelve una lista de amigos para invitar |
+| 7. El usuario selecciona los amigos a invitar | 7. El sistema los agrega y muestra la tabla de posiciones del grupo creado |
+
+**Cursos alternativos:** 
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 5.1 El usuario selecciona un nombre de grupo que ya está en uso | El sistema muestra un mensaje de error y le vuelve a pedir que ingrese un nombre |
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 7.1 El usuario no selecciona ningun amigo para invitar | El sistema muestra un mensaje de error y le vuelve a pedir que seleccione al menos un amigo para invitar |
+
+
+
 
 Bocetos de IU
 
