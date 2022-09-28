@@ -249,49 +249,178 @@ La calidad se divide en dos partes fundamentales:
 
 ### User Story 1
 
-**Título:** Predicción resultados
+**Título:** Predicción resultados.
 
 - **Como** usuario
 - **Quiero** poder predecir los partidos del Mundial
 - **Para** poder participar en la penca
 
 **Criterio de aceptación:** 
-- No se deben poder ingresar valores negativos en los resultados
+- Se puede predecir los resultados exactos de un partido.
+- Se dispone de un marcador para seleccionar el puntaje de ambos equipos.
+- Se puede predecir los resultados de distintos partidos.
+- Los puntajes varian entre 1 a n, siendo n un valor lógico.
+
 
 ### User Story 2
 
-**Título:** Ver información del Mundial
+**Título:** Ver información del Mundial.
 
 - **Como** usuario
 - **Quiero** poder ver información en tiempo real sobre el Mundial
 - **Para** poder tener mas información a la hora de predecir los resultados
 
 **Criterio de aceptación:** 
-- Debe estar conectado a internet
+- La informacion otorgada es acorde a la del momento actual.
+- La información se va actualizando con el paso del tiempo.
+- Se dispone de un botón para acceder a esta zona detallada.
+
 
 ### User Story 3
 
-**Título:** Registro de usuario
-
-- **Como** usuario
-- **Quiero** poder registrarme
-- **Para** poder predecir los partidos del Mundial
-
-**Criterio de aceptación:** 
-- Brindar un nickname que no esté previamente en uso
-- Brindar un email que no esté previamente registrado
-
-### User Story 4
-
-**Título:** Creación de grupo privado
+**Título:** Creación de grupo privado.
 
 - **Como** usuario
 - **Quiero** poder crear un grupo privado
 - **Para** poder competir contra mis amigos
 
 **Criterio de aceptación:** 
-- Brindar un nombre de grupo que no esté previamente en uso
-- Tener al menos 2 usuarios en el grupo
+- Se dispone de un boton que permita al usuario incializar el proceso de creación del grupo.
+- El grupo contiene un nombre no existente.
+- El grupo contiene dos usuarios o más.
+- El grupo es visible para todos los integrantes.
+
+### User Story 5
+
+**Título:** Modificación del grupo privado.
+
+- **Como** usuario
+- **Quiero** poder personalizar distintos aspectos de mi penca
+- **Para** que la rivalidad sana entre los integrantes sea mayor
+
+**Criterio de aceptación:** 
+- Se tiene un apartado donde se puede configurar los valores pre establecidos de la penca a critero personal.
+- Solo los administradores del grupo pueden modificarlos.
+- Se puede modificar foto del grupo.
+- Se puede configurar valores pre establecidos antes del inicio de la penca.
+
+### User Story 6
+
+**Título:** Notificaciones de partidos.
+
+- **Como** cliente
+- **Quiero** que se notifique media hora antes de cada partido a los usuarios que no hayan establecido un puntaje
+- **Para** que los usuarios no pierdan participacion en la penca y mantener el afán del juego.
+
+**Criterio de aceptación:** 
+- Cuando el usuario habilite las notificaciones de la penca en su celular y reciba la misma media hora antes de cada partido.
+Por ende el usuario está conectado a una red WiFi.
+
+### User Story 7
+
+**Título:** Cantidad de usuarios por mes.
+
+- **Como** cliente
+- **Quiero** controlar el número de usuarios registrado en mi penca
+- **Para** poder tener mejor control de los datos
+
+**Criterio de aceptación:** 
+- El cliente recibe un informe de la cantidad de usuarios registrados.
+- El cliente recibe el informe una vez al mes.
+- El informe contiene email y fecha de cada registro.
+
+### User Story 8
+
+**Título:** Alternalización de premios.
+
+- **Como** cliente
+- **Quiero** que los administradores de grupos puedan definir los premios
+- **Para** que haya una mayor versatilidad y no se vuelta tan repetitivas
+
+**Criterio de aceptación:** 
+- Los administradores de los grupos disponen de una sección para definir un premio.
+- Los premios se actualizan.
+
+### User Story 9
+
+**Título:** Habilitación de mensajes en linea.
+
+- **Como** cliente
+- **Quiero** que se pueda enviar y recibir mensajes en los grupos
+- **Para** que haya una mejor relación entre los usuarios y se creen vínculos
+
+**Criterio de aceptación:** 
+- El usuario recibe un mensaje enviado por otro.
+
+### User Story 10
+
+**Título:** Notificacion de cambios recientes.
+
+- **Como** cliente
+- **Quiero** que sea de notificar cada cambio existente dentro de los valores customizables del juego
+- **Para** facilitar la comunicacion entre los administradores y usuario de cada grupo
+
+**Criterio de aceptación:** 
+- Aparece un mensaje en el chat del cambio realizado.
+
+### User Story 11
+
+**Título:** ¿Chat visible?
+
+- **Como** usuario
+- **Quiero** que me den a elección si formar parte de un chat
+- **Para** no tener que leer comentarios y opiniones de forma obligatoria
+
+**Criterio de aceptación:** 
+- Se despliega una alerta preguntando si quiere formar parte del chat.
+- Solo se despliega la primera vez que se intenta entrar al mismo.
+
+### User Story 12
+
+**Título:** Abandono de grupo.
+
+- **Como** usuario
+- **Quiero** que pueda abandonar un grupo
+- **Para** elegir si formar parte del mismo
+
+**Criterio de aceptación:** 
+- Se dispone de un botón que permite salir del grupo, a continuación se despliega una alerta preguntando si confirma los cambios.
+- Se elimina al usuario del grupo.
+
+### User Story 13 
+
+**Título:** Remover integrante del grupo.
+
+- **Como** usuario
+- **Quiero** que los administradores puedan borrar parcipantes del grupo
+- **Para** que haya una mejor organización
+
+**Criterio de aceptación:** 
+- Se despliega una alerta preguntando si quiere eliminar al usuario.
+- Se dispone de un botón por el cual se accede a la zona de borrado.
+
+### User Story 14
+
+**Título:** Censurado de comentarios ofensivos.
+
+- **Como** usuario
+- **Quiero** que los comentarios ofensivos sean censurados
+- **Para** no tener que leer agresiones y generar un clima mas ameno y apto para todo público.
+
+**Criterio de aceptación:** 
+- Se sustituye el comentario ofensivo por un conjunto de caracteres (****).
+
+### User Story 15
+
+**Título:** Reglas del juego.
+
+- **Como** cliente
+- **Quiero** que haya un apartado en la aplicacion que te rediriga a una ventana explicandote las reglas del juego
+- **Para** que cada usuario este al tanto de todo
+
+**Criterio de aceptación:** 
+- Se dispone de un botón que te redirige a las reglas.
+- Las reglas se pueden visualizar.
 
 ## Use Cases
 
