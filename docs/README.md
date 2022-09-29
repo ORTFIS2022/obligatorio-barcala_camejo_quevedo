@@ -121,6 +121,18 @@ Esta aplicación cuenta con una simple interfaz donde el usuario dispone de los 
 
 Esta aplicación cuenta tanto con versión web como con versión mobile, lo que se acerca más a lo que buscamos para nuestro proyecto. Si bien no cuenta con la habilidad de predecir el resultado de los partidos, cuenta con una interfaz básica con toda la información del partido que se va a jugar, del campeonato que se elige y de los jugadores que participan de los mismos. Ofrece información sobre casi todos los campeonatos del mundo y brinda notificaciones en tiempo real sobre lo sucedido en aquellos partidos que el usuario desee obtenerlas. No requiere inicio de sesión ni creación de usuario para su uso
 
+### BrainStorming
+
+Esta técnica la utilizamos para aquellos momentos de emergencia en los cuales nos quedabamos congelados sin saber que mas poner o que pensar. Esta técnica es buena para salir de nuestro esquema mental y expandir las ideas generando que sean de caracter global. Estas mismas fueron puestas en común y notamos que aunque cada una de ellas eran muy diferentes entre si a su vez eran muy similares.
+Esta técnica especialmente la realizamos para definir los Use Cases y los User Stories, realizamos una lluvia de ideas (BrainStorming) sobre los aspectos mas generales que si o si concordabamos que deberian de estar y fuimos profundizandonos en cada una de ellas hasta llegar a su limite mas estrecho.
+Notamos que gracias a esta técnica de elicitacion suponer y generar casos promedios era mucho mas sencillo que a diferencia de estar pensando una por una.
+
+### FocusGroup
+
+Esta técnica de elicitación la utilizamos una vez que ya  habiamos realizado las entrevistas. Les pedimos cordialmente a ambos entrevistados si podiamos hacerle un par de preguntas más para anotar sus deseos e inquietudes y amablemente accedieron. Esto lo realizamos ya que buscabamos personas que no se conocieran entre sí pero que tuvieran comportamientos de consumo similares.
+Nosotros cumplimos el rol de moderadores, fuimos liderando la conversación y de vez en cuando realizabamos una pregunta a modo de "disparador" para que los participantes expresen sus opiniónes 
+e inquietudes del producto o servicio. Registramos todo aporte hecho. Estos mismos fueron de extrema utilidad a la hora de realizar algunos requerimientos funcionales como también no funcionales.
+
 ### Entrevista
 
 En esta técnica se trata de entrevistar a varios perfiles que podrían estar interesados en nuestro producto con la finalidad de obtener información sobre qué aspectos del mismo resultan relevantes para cada perfil. En este caso entrevistamos a dos personas con dos perfiles distintos:
