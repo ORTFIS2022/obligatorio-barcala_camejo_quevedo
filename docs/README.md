@@ -423,7 +423,6 @@ Por ende el usuario está conectado a una red WiFi.
 - Las reglas se pueden visualizar.
 
 ## Use Cases
-
 ### UC1: Registro de usuario
 
 **Actor:** Usuario
@@ -449,7 +448,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El selecciona la sección de predicción de partidos | 2. El sistema muestra la sección de predicción de partidos |
+| 1. El usuario selecciona la sección de predicción de partidos | 2. El sistema muestra la sección de predicción de partidos |
 | 3. El usuario selecciona para crear un nuevo grupo privado | 4. El sistema le pide un nombre para el grupo |
 | 5. El usuario ingresa el nombre del grupo | 6. El sistema crea el grupo y devuelve una lista de amigos para invitar |
 | 7. El usuario selecciona los amigos a invitar | 7. El sistema los agrega y muestra la tabla de posiciones del grupo creado |
@@ -464,8 +463,62 @@ Por ende el usuario está conectado a una red WiFi.
 | ----------- | ----------- |
 | 7.1 El usuario no selecciona ningun amigo para invitar | El sistema muestra un mensaje de error y le vuelve a pedir que seleccione al menos un amigo para invitar |
 
+### UC3: Eliminación de integrante de grupo
 
+**Actor:** Usuario (Administrador de grupo)
 
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El usuario ingresa a un grupo | 2. El sistema muestra los participantes del grupo |
+| 3. El administrador selecciona un usuario | 4. El sistema despliega una ventana de confirmación |
+| 5. El administrador del grupo confirma | 6. El sistema elimina al integrante seleccionado del grupo |
+
+**Cursos alternativos:** 
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 5.1 El administrador del grupo NO confirma | Queda sin efecto y no se hace nada |
+
+### UC4: Acceso a reglas 
+
+**Actor:** Usuario
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El usuario ingresa a la sección de información | 2. El sistema muestra una opción llamada "REGLAS DEL JUEGO" |
+| 3. El usuario selecciona la opción | 4. El sistema despliega las reglas del juego |
+
+**Cursos alternativos:** 
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1  El usuario no selecciona dicha opción | el sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
+
+### UC5: Envío de mensajes
+
+**Actor:** Usuario
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El usuario ingresa a un grupo | 2. El sistema muestra el grupo y sus secciones |
+| 3. el usuario ingresa a la sección de mensajes | 4. El sistema muestra una sección con los últimos mensajes recibidos y el historial de mensajes |
+| 5. El usuario selecciona un cuadro de texto | 6. El sistema muestra el teclado |
+| 6. El usuario envia el mensaje seleccionando la opción enviar | 6. El sistema envía el mensaje |
+
+### UC6: Acceso a reglas 
+
+**Actor:** Usuario
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El usuario ingresa a la sección de información | 2. El sistema muestra una opción llamada "REGLAS DEL JUEGO" |
+| 3. El usuario selecciona la opción | 4. El sistema despliega las reglas del juego |
+
+**Cursos alternativos:** 
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1  El usuario no selecciona dicha opción | el sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
 
 Bocetos de IU
 
