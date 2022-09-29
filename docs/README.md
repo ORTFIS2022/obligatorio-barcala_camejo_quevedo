@@ -1,4 +1,4 @@
-# Informe académico entrega 1
++# Informe académico entrega 1
 Fecha de entrega: 03-oct-2022
 
 ## Repositorio Git
@@ -273,7 +273,7 @@ La calidad se divide en dos partes fundamentales:
 **Criterio de aceptación:** 
 - La informacion otorgada es acorde a la del momento actual.
 - La información se va actualizando con el paso del tiempo.
-- Se dispone de un botón para acceder a esta zona detallada.
+- Se dispone de un botón para acceder a esta sección detallada.
 
 
 ### User Story 3
@@ -387,7 +387,7 @@ Por ende el usuario está conectado a una red WiFi.
 - Se dispone de un botón que permite salir del grupo, a continuación se despliega una alerta preguntando si confirma los cambios.
 - Se elimina al usuario del grupo.
 
-### User Story 13 
+### User Story 13         
 
 **Título:** Remover integrante del grupo.
 
@@ -405,7 +405,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 - **Como** usuario
 - **Quiero** que los comentarios ofensivos sean censurados
-- **Para** no tener que leer agresiones y generar un clima mas ameno y apto para todo público.
+- **Para** generar un clima mas ameno y apto para todo público pero no se descarta la opción de que se pueda deshabilitar la misma si el usuario quiere.
 
 **Criterio de aceptación:** 
 - Se sustituye el comentario ofensivo por un conjunto de caracteres (****).
@@ -479,7 +479,25 @@ Por ende el usuario está conectado a una red WiFi.
 | ----------- | ----------- |
 | 5.1 El administrador del grupo NO confirma | Queda sin efecto y no se hace nada |
 
-### UC4: Acceso a reglas 
+### UC4: Abandono del grupo
+
+**Actor:** 
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El usuario presiona el boton de abandonar el grupo | | 2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
+| 3. El usuario selecciona la opción SI | | 4. Se elimina automaticamente el grupo | 
+| 5. Se les notifica el abandono a los integrantes restantes del grupo mediante un mensaje|
+
+**Cursos alternativos:** 
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El usuario presiona el boton de abandonar el grupo | | 2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
+| 3. El usuario selecciona la opción NO | | 4. El sistema no ejecuta nada | 5. Vuelve a la normalidad |
+
+
+### UC5: Acceso a reglas 
 
 **Actor:** Usuario
 
@@ -492,9 +510,10 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1  El usuario no selecciona dicha opción | el sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
+| 1. El usuario no selecciona dicha opción | 2. El sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
 
-### UC5: Envío de mensajes
+
+### UC6: Envío de mensajes
 
 **Actor:** Usuario
 
@@ -505,20 +524,72 @@ Por ende el usuario está conectado a una red WiFi.
 | 5. El usuario selecciona un cuadro de texto | 6. El sistema muestra el teclado |
 | 6. El usuario envia el mensaje seleccionando la opción enviar | 6. El sistema envía el mensaje |
 
-### UC6: Acceso a reglas 
 
-**Actor:** Usuario
+### UC7: Habilitar Notificaciones
+
+**Actor:**Usuario
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario ingresa a la sección de información | 2. El sistema muestra una opción llamada "REGLAS DEL JUEGO" |
-| 3. El usuario selecciona la opción | 4. El sistema despliega las reglas del juego |
+| 1. El usuario ingresa a la aplicación por primera vez | 2. El sistema muestra una ventana emergente pidiendo permisos para mandarle notificaciónes |
+| 3. el usuario ingresa que si | | 4. Queda notificado el sistema de dejar al pendiente las futuras notificaciones | 
 
 **Cursos alternativos:** 
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1  El usuario no selecciona dicha opción | el sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
+| 1. El usuario selecciona que no | | 2. El sistema queda notificado que no se le deberá enviar notificaciones de los partidos |
+
+### UC8: Habilitar - Deshabilitar el chat
+
+**Actor:** Usuario
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El usuario accede a la configuración | 2. Habilita el chat | 
+| 3. El sistema queda notificado del cambio | | 4. Se carga el chat y se le habilita la funcion de mandar y recibir mensajes |
+
+**Cursos alternativos:**
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. EL usuario deshabilita el chat | | 2. Se borra todo acceso al mismo | 
+| 3. Se eliminan todos los mensajes pre guardados en su celular |
+
+### UC9: Acceso a la información detallada de partidos anteriores
+
+**Actor:** Usuario
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El usuario entra en la sección partidos | | 2. El sistema proyecta todos los partidos y sus respectivos resultados hasta el momento |
+
+### UC10: Deshabilitar la censura en el chat
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El administrador desactiva la opción | | 2. El sistema deja de correr el checkeo de las palabras | 
+| 3. Se permite cualquier palabra |
+
+**Cursos alternativos:**
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El administrador del grupo activa esta opción | | 2. Se le notifica al sistema |
+| 3. El sistema corre en segundo plano un checkeo de cada palabra enviada al chat y se evalua si cumple los requisitos para ser publicada para todo público |
+| 4. Si cumple los requisitos se deja como esta y sino se sustituye por un conjunto de (***) |
+
+**Actor:** Usuario
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+
+
+**Cursos alternativos:**
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+
 
 Bocetos de IU
 
