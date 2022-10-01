@@ -507,7 +507,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 3.1 El usuario selecciona un nickname o email que ya está en uso | El sistema muestra un mensaje de error y le vuelve a pedir que ingrese un nickname y email |
+| 3.1 El usuario selecciona un nickname o email que ya está en uso | 3.2 El sistema muestra un mensaje de error y le vuelve a pedir que ingrese un nickname y email |
 
 ### UC2: Registro de predicción
 
@@ -571,7 +571,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 5.1 El usuario selecciona un nombre de grupo que ya está en uso | El sistema muestra un mensaje de error y le vuelve a pedir que ingrese un nombre |
+| 5.1 El usuario selecciona un nombre de grupo que ya está en uso | 5.2 El sistema muestra un mensaje de error y le vuelve a pedir que ingrese un nombre |
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
@@ -609,27 +609,14 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario selecciona la sección *Mis Grupos* | | 2. El sistema muestra la sección seleccionada |
-| 3. El usuario selecciona el grupo que quiere acceder | | 4. El sistema muestra la seccion del grupo seleccionado | 
-| 5. El usuario selecciona la configuración del grupo | 6. El sistema muestra la sección de configuración |
-| 7. El usuario selecciona abandonar el grupo | 8. El sistema le pide confirmación de la acción |
-| 9. El usuario confirma | 10. El sistema elimina al usuario del grupo, notifica al resto de los usuarios y lleva al usuario a la sección *Mis Grupos* |
-
-| 1 | 2 |
-| ----------- | ----------- |
-| ![mis-grupos-menu](/docs/bocetosiu/menu-mis-grupos.png) | ![mis-grupos](/docs/bocetosiu/mis-grupos.png) |
-| 3 | 4 |
-| ![grupo-1](/docs/bocetosiu/grupo-particular.png) | ![grupo-editar](/docs/bocetosiu/grupo-configuracion.png) |
-| 5 | 6 |
-| ![confirmar-eliminacion](/docs/bocetosiu/confirmar-abandono.png) | ![eliminacion-hecha](/docs/bocetosiu/mis-grupos-abandono.png) |
+| 1. El usuario presiona el boton de abandonar el grupo | 2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
+| 3. El usuario selecciona la opción SI | 4. Se elimina automaticamente el grupo | 4. Se les notifica el abandono a los integrantes restantes del grupo mediante un mensaje|
 
 **Cursos alternativos:** 
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 7.1. El usuario presiona el boton de abandonar el grupo | | 7.2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
-| 7.3. El usuario selecciona la opción *Cancelar* | 7.4. El sistema no hace nada y retorna a la sección del grupo |
-
+| 3.1 El usuario selecciona la opción NO | 3.2 El sistema no ejecuta nada|
 
 ### UC6: Acceso a reglas 
 
@@ -656,7 +643,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 1. El usuario ingresa a un grupo | 2. El sistema muestra el grupo y sus secciones |
 | 3. el usuario ingresa a la sección de mensajes | 4. El sistema muestra una sección con los últimos mensajes recibidos y el historial de mensajes |
 | 5. El usuario selecciona un cuadro de texto | 6. El sistema muestra el teclado |
-| 6. El usuario envia el mensaje seleccionando la opción enviar | 6. El sistema envía el mensaje |
+| 7. El usuario envia el mensaje seleccionando la opción enviar | 8. El sistema envía el mensaje |
 
 **Cursos alternativos:** 
 
@@ -671,13 +658,13 @@ Por ende el usuario está conectado a una red WiFi.
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
 | 1. El usuario ingresa a la aplicación por primera vez | 2. El sistema muestra una ventana emergente pidiendo permisos para mandarle notificaciónes |
-| 3. el usuario ingresa que si | | 4. Queda notificado el sistema de dejar al pendiente las futuras notificaciones | 
+| 3. el usuario ingresa que si | 4. Queda notificado el sistema de dejar al pendiente las futuras notificaciones | 
 
 **Cursos alternativos:** 
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 3.1 El usuario selecciona que no | | 3.2 El sistema queda notificado que no se le deberá enviar notificaciones de los partidos |
+| 3.1 El usuario selecciona que no | 3.2 El sistema queda notificado que no se le deberá enviar notificaciones de los partidos |
 
 ### UC9: Habilitar - Deshabilitar el chat
 
@@ -686,13 +673,13 @@ Por ende el usuario está conectado a una red WiFi.
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
 | 1. El usuario accede a la configuración | 2. El sistema muestra la sección de configuración | 
-| 3. El usuario hablita la opción de chat | | 4. Se carga el chat y se le habilita la funcion de mandar y recibir mensajes |
+| 3. El usuario hablita la opción de chat | 4. Se carga el chat y se le habilita la funcion de mandar y recibir mensajes |
 
 **Cursos alternativos:**
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 3.1 EL usuario deshabilita el chat | | 3.2 Se borra todo acceso al mismo | 
+| 3.1 EL usuario deshabilita el chat | 3.2 Se borra todo acceso al mismo | 
 
 ### UC10: Acceso a la información detallada de partidos anteriores
 
@@ -700,19 +687,19 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario entra en la sección partidos | | 2. El sistema proyecta todos los partidos y sus respectivos resultados hasta el momento |
+| 1. El usuario entra en la sección partidos | 2. El sistema proyecta todos los partidos y sus respectivos resultados hasta el momento |
 
 ### UC11: Deshabilitar la censura en el chat
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El administrador desactiva la opción de "censura de chat" | | 2. El sistema deja de correr el checkeo de las palabras | 
+| 1. El administrador desactiva la opción de "censura de chat" | 2. El sistema deja de correr el checkeo de las palabras | 
 
 **Cursos alternativos:**
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1.2 El administrador del grupo activa esta opción | | 2. El sistema ejecuta el checkeo de las palabras el cual en caso de encontrar una palabra ofensiva la cambia por (****) |
+| 1.1 El administrador del grupo activa esta opción | 1.2 El sistema ejecuta el checkeo de las palabras el cual en caso de encontrar una palabra ofensiva la cambia por (****) |
 
 
 Bocetos de IU
