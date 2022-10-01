@@ -239,7 +239,7 @@ La calidad se divide en dos partes fundamentales:
 
 ### RNF1: Aplicación responsiva
 ---
-- **Descripción:** La aplicación debe poder ser accedida tanto de la web como desde dispositivos móviles.
+- **Descripción:** La aplicación debe poder ser accedida desde cualquier dispositivos móvil que contenga Android o IOS.
 - **Prioridad:** Alta
 
 ### RNF2: Tipografía
@@ -247,14 +247,48 @@ La calidad se divide en dos partes fundamentales:
 - **Descripción:** El sistema debe utilizar la tipografía *Roboto*.
 - **Prioridad:** Alta
 
-### RNF3: Formato de iconos
+### RNF3: Formato de íconos
 ---
 - **Descripción:** El sistema debe utilizar iconos en el formato *filled*.
-- **Prioridad:** Alta
+- **Prioridad:** Baja
 
 ### RNF4: Paleta de colores
 ---
 - **Descripción:** El sistema debe utilizar *Green 900* como color principal y *Light Blue 800* como secundario.
+- **Prioridad:** Media
+
+### RNF5: Versionado Web
+---
+- **Descripción:** El producto será realizado mediante JavaScript, CSS y HTML
+- **Prioridad:** Alta
+
+### RNF6: Estabilidad del producto:
+---
+- **Descripción:** El sistema debe soportar mas de 3000 usuarios definiendo un posible resultado para el mismo partido sin una degradación del tiempo de respuesta mayor a 10 segundos.
+- **Prioridad:** Alta
+
+### RNF7: Múltiples lenguajes:
+---
+- **Descripción:** El sistema debe soportar múltiples lenguajes y desarrollarse inicialmente en español e inglés
+- **Prioridad:** Media
+
+### RNF7: Inicio del producto:
+---
+- **Descripción:** El sistema no debe de demorar mas de 7 segundos en inicializar
+- **Prioridad:** Media/Alta
+
+### RNF8: Persistencia Local
+---
+- **Descripción:** El sistema debe poder resguardar la información de los puntajes del usuario
+- **Prioridad:** Alta
+
+### RNF9: Consumo de recursos
+---
+- **Descripción:** Que no consuma muchos recursos del dispositivo a la hora de procesar.
+- **Prioridad:** Media
+
+### RNF10: Actualización de registros
+- **Descripción:** Que los resultados se vayan actualizando en tiempo vivo y no demoren mas de 10 segundos en figurar en la aplicación
 - **Prioridad:** Alta
 
 ## User Stories 
