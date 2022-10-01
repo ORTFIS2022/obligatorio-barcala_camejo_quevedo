@@ -501,11 +501,12 @@ Por ende el usuario está conectado a una red WiFi.
 
 
 | 1 | 2 |
-| ![menu](/bocetosiu/menu.png) | ![grupos](/bocetosiu/grupos.png) |
+| ----------- | ----------- |
+| ![menu](/docs/bocetosiu/menu.png) | ![grupos](/docs/bocetosiu/grupos.png) |
 | 3 | 4 |
-| ![grupoH](/bocetosiu/grupoH.png) | ![partido](/bocetosiu/partido.png) |
+| ![grupoH](/docs/bocetosiu/grupoH.png) | ![partido](/docs/bocetosiu/partido.png) |
 | 5 | 6 |
-| ![pronostico](/bocetosiu/pronostico-en-partido.png) | ![pronostico-guardado](/bocetosiu/pronostico-hecho.png) |
+| ![pronostico](/docs/bocetosiu/pronostico-en-partido.png) | ![pronostico-guardado](/docs/bocetosiu/pronostico-hecho.png) |
 
 **Cursos alternativos:** 
 
@@ -514,14 +515,16 @@ Por ende el usuario está conectado a una red WiFi.
 | 5.1 El usuario selecciona un partido que ya comenzó | 5.2 El sistema muestra una alerta indicando que no se puede predecir un partido que ya comenzó |
 
 | 1 | 2 |
-| ![partido](/bocetosiu/partido.png) | ![error](/bocetosiu/error-guardar.png) |
+| ----------- | ----------- |
+| ![partido](/docs/bocetosiu/partido.png) | ![error](/docs/bocetosiu/error-guardar.png) |
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
 | 7.1 El usuario presiona guardar sin haber ingresado una predicción | El sistema muestra una mensaje de error y le pide que ingrese una predicción |
 
 | 1 | 2 |
-| ![partido](/bocetosiu/partido-en-curso.png) | ![error](/bocetosiu/error-partido-en-curso.png) |
+| ----------- | ----------- |
+| ![partido](/docs/bocetosiu/partido-en-curso.png) | ![error](/docs/bocetosiu/error-partido-en-curso.png) |
 
 ### UC3: Creación de grupo privado
 
