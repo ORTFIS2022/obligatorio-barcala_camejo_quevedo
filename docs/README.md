@@ -146,6 +146,17 @@ Con la información recabada creamos el siguiente modelo conceptual del problema
 
 ![modelo-conceptual](/media/modeladoConceptual.jpg)
 
+## Modelado de usuarios del sistema
+
+Nuestra aplicación fue desarrollada para un público objetivo de entre 20 y 40 años sin ser este un límite restrictivo ya que personas de diferentes edades pueden utilizar la aplicación sin necesidad de estar en el rango objetivo definido anteriormente.
+
+A continuación se encuentran los usuarios modelados de nuestra aplicación los cuales fueron creados mediante la utilización de la técnica user personas la cual nos permite crear usuarios objetivos para nuestro sistema.
+
+
+![User persona 1](/media/persona1.png)
+
+![User persona 2](/media/persona2.png)
+
 ## Especificación
 
 ### Definición de requerimientos funcionales y no funcionales   
@@ -549,7 +560,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 1. El usuario selecciona la sección de predicción de partidos | 2. El sistema muestra la sección de predicción de partidos |
 | 3. El usuario selecciona para crear un nuevo grupo privado | 4. El sistema le pide un nombre para el grupo |
 | 5. El usuario ingresa el nombre del grupo | 6. El sistema crea el grupo y devuelve una lista de amigos para invitar |
-| 7. El usuario selecciona los amigos a invitar | 7. El sistema los agrega y muestra la tabla de posiciones del grupo creado |
+| 7. El usuario selecciona los amigos a invitar | 8. El sistema los agrega y muestra la tabla de posiciones del grupo creado |
 
 **Cursos alternativos:** 
 
@@ -567,15 +578,25 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario ingresa a un grupo | 2. El sistema muestra los participantes del grupo |
-| 3. El administrador selecciona un usuario | 4. El sistema despliega una ventana de confirmación |
-| 5. El administrador del grupo confirma | 6. El sistema elimina al integrante seleccionado del grupo |
+| 1. El usuario selecciona la sección *Mis grupos* | 2. El sistema muestra la sección seleccionada |
+| 3. El usuario selecciona un grupo | 4. El sistema muestra la sección del grupo seleccionado |
+| 5. El usuario del grupo selecciona el botón de editar | 6. El sistema muestra la misma sección pero en formato edición  |
+| 7. El usuario selecciona el botón rojo en el usuario que desea eliminar | 8. El sistema muestra una alerta de confirmación |
+| 9. El usuario confirma la eliminación del participante | 10. El sistema elimina al participante y vuelve a mostrar la sección del grupo con los cambios reflejados |
+
+| 1 | 2 |
+| ----------- | ----------- |
+| ![mis-grupos-menu](/docs/bocetosiu/menu-mis-grupos.png) | ![mis-grupos](/docs/bocetosiu/mis-grupos.png) |
+| 3 | 4 |
+| ![grupo-1](/docs/bocetosiu/grupo-particular.png) | ![grupo-editar](/docs/bocetosiu/grupo-particular-editar.png) |
+| 5 | 6 |
+| ![confirmar-eliminacion](/docs/bocetosiu/eliminar-participante-confirmacion.png) | ![eliminacion-hecha](/docs/bocetosiu/grupo-particular-luego-eliminar.png) |
 
 **Cursos alternativos:** 
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 5.1 El administrador del grupo NO confirma | Queda sin efecto y no se hace nada |
+| 9.1 El administrador del grupo NO confirma | 9.2 Queda sin efecto y no se hace nada |
 
 ### UC5: Abandono del grupo
 
@@ -591,9 +612,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario presiona el boton de abandonar el grupo | | 2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
-| 3. El usuario selecciona la opción NO | | 4. El sistema no ejecuta nada | 5. Vuelve a la normalidad |
-
+| 3.1 El usuario selecciona la opción NO | | 3.2 El sistema no ejecuta nada|
 
 ### UC6: Acceso a reglas 
 
@@ -608,7 +627,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario no selecciona dicha opción | 2. El sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
+| 3.1. El usuario no selecciona dicha opción | 3.2 El sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
 
 
 ### UC7: Envío de mensajes
@@ -622,6 +641,11 @@ Por ende el usuario está conectado a una red WiFi.
 | 5. El usuario selecciona un cuadro de texto | 6. El sistema muestra el teclado |
 | 6. El usuario envia el mensaje seleccionando la opción enviar | 6. El sistema envía el mensaje |
 
+**Cursos alternativos:** 
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 3.2 El usuario no selecciona la sección de mensajes | 
 
 ### UC8: Habilitar Notificaciones
 
@@ -636,7 +660,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario selecciona que no | | 2. El sistema queda notificado que no se le deberá enviar notificaciones de los partidos |
+| 3.1 El usuario selecciona que no | | 3.2 El sistema queda notificado que no se le deberá enviar notificaciones de los partidos |
 
 ### UC9: Habilitar - Deshabilitar el chat
 
@@ -644,15 +668,14 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario accede a la configuración | 2. Habilita el chat | 
-| 3. El sistema queda notificado del cambio | | 4. Se carga el chat y se le habilita la funcion de mandar y recibir mensajes |
+| 1. El usuario accede a la configuración | 2. El sistema muestra la sección de configuración | 
+| 3. El usuario hablita la opción de chat | | 4. Se carga el chat y se le habilita la funcion de mandar y recibir mensajes |
 
 **Cursos alternativos:**
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. EL usuario deshabilita el chat | | 2. Se borra todo acceso al mismo | 
-| 3. Se eliminan todos los mensajes pre guardados en su celular |
+| 3.1 EL usuario deshabilita el chat | | 3.2 Se borra todo acceso al mismo | 
 
 ### UC10: Acceso a la información detallada de partidos anteriores
 
@@ -666,27 +689,13 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El administrador desactiva la opción | | 2. El sistema deja de correr el checkeo de las palabras | 
-| 3. Se permite cualquier palabra |
+| 1. El administrador desactiva la opción de "censura de chat" | | 2. El sistema deja de correr el checkeo de las palabras | 
 
 **Cursos alternativos:**
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El administrador del grupo activa esta opción | | 2. Se le notifica al sistema |
-| 3. El sistema corre en segundo plano un checkeo de cada palabra enviada al chat y se evalua si cumple los requisitos para ser publicada para todo público |
-| 4. Si cumple los requisitos se deja como esta y sino se sustituye por un conjunto de (***) |
-
-**Actor:** Usuario
-
-| Acción | Respuesta del sistema |
-| ----------- | ----------- |
-
-
-**Cursos alternativos:**
-
-| Acción | Respuesta del sistema |
-| ----------- | ----------- |
+| 1.2 El administrador del grupo activa esta opción | | 2. El sistema ejecuta el checkeo de las palabras el cual en caso de encontrar una palabra ofensiva la cambia por (****) |
 
 
 Bocetos de IU
