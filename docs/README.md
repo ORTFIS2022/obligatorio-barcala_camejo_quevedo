@@ -693,6 +693,40 @@ Bocetos de IU
 
 ## Validación y verificación
 
+Verificar la especificación
+
+Para verificar que nuestra aplicación concordara con lo pedido y asi asegurarnos de que no nos estabamos dejando algo por alto, realizamos un formato tabla con estilo "Check-List", en los cuales definimos un conjunto de preguntas que abarcan todos los conceptos que debian cumplir  nuestros requerimientos.
+Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y el cuestionamiento de su ambiguedad. Dependiendo de nuestras respuestas ibamos marcando con un SI/NO.
+
+*Adjuntamos tablas y respuestas:*
+
+**Tabla de Requerimientos Funcionales**
+| Requerimiento | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 | RF7 | RF8 | RF9 | RF10 |
+| **Correctitud** | | | | | | | | | | |
+| ¿Es viable? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| ¿Su prioridad está bien definida? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| ¿Actor bien definidos? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| ¿Se interpone con otros Requerimientos? | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
+| ¿Incluye aspectos de diseño? | SI | SI | SI | NO | SI | SI | SI | SI | NO | SI | |
+| ¿Esta a nuestro alcance de implementación? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| **Verificación y ambiguedad** | | | | | | | | | | | | 
+| ¿Es preciso? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| ¿Se puede verificar? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| ¿Realmente vale la pena definirlo? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+
+**Tabla de Requerimientos No Funcionales** 
+| Requerimiento | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 | RF7 | RF8 | RF9 | RF10 |
+| **Correctitud** | | | | | | | | | | |
+| ¿Es viable? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| ¿Su prioridad está bien definida? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| ¿Se interpone con otros Requerimientos? | | | | | | | | | | | | 
+| ¿Incluye aspectos de diseño? | SI | SI | SI  | SI | SI | NO | NO | NO | NO | NO |
+| ¿Esta a nuestro alcance de implementación? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| **Verificación y ambiguedad** | | | | | | | | | | | | 
+| ¿Es preciso? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| ¿Se puede verificar? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+| ¿Realmente vale la pena definirlo? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
+
 Validar la solución con personas no involucradas en el proyecto
 
 ## Reflexión
