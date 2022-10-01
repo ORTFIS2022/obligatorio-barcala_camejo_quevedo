@@ -546,10 +546,15 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario selecciona la sección de predicción de partidos | 2. El sistema muestra la sección de predicción de partidos |
-| 3. El usuario selecciona para crear un nuevo grupo privado | 4. El sistema le pide un nombre para el grupo |
-| 5. El usuario ingresa el nombre del grupo | 6. El sistema crea el grupo y devuelve una lista de amigos para invitar |
-| 7. El usuario selecciona los amigos a invitar | 7. El sistema los agrega y muestra la tabla de posiciones del grupo creado |
+| 1. El usuario selecciona la sección *Mis Grupos* | 2. El sistema muestra la sección seleccionada |
+| 3. El usuario selecciona para crear un nuevo grupo privado | 4. El sistema le pide un nombre para el grupo y a quien quiere invitar |
+| 5. El usuario ingresa el nombre del grupo y marca los invitados | 6. El sistema crea el grupo y agrega a los invitados. Devuelve la pantalla principal del grupo |
+
+| 1 | 2 |
+| ----------- | ----------- |
+| ![mis-grupos-menu](/docs/bocetosiu/menu-mis-grupos.png) | ![mis-grupos](/docs/bocetosiu/mis-grupos.png) |
+| 3 | 4 |
+| ![crear-grupo](/docs/bocetosiu/crear-grupo.png) | ![confirmar-grupo](/docs/bocetosiu/nuevo-grupo.png) |
 
 **Cursos alternativos:** 
 
@@ -559,7 +564,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 7.1 El usuario no selecciona ningun amigo para invitar | El sistema muestra un mensaje de error y le vuelve a pedir que seleccione al menos un amigo para invitar |
+| 5.1 El usuario no selecciona ningun amigo para invitar | El sistema muestra un mensaje de error y le vuelve a pedir que seleccione al menos un amigo para invitar |
 
 ### UC4: Eliminación de integrante de grupo
 
@@ -593,16 +598,26 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario presiona el boton de abandonar el grupo | | 2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
-| 3. El usuario selecciona la opción SI | | 4. Se elimina automaticamente el grupo | 
-| 5. Se les notifica el abandono a los integrantes restantes del grupo mediante un mensaje|
+| 1. El usuario selecciona la sección *Mis Grupos* | | 2. El sistema muestra la sección seleccionada |
+| 3. El usuario selecciona el grupo que quiere acceder | | 4. El sistema muestra la seccion del grupo seleccionado | 
+| 5. El usuario selecciona la configuración del grupo | 6. El sistema muestra la sección de configuración |
+| 7. El usuario selecciona abandonar el grupo | 8. El sistema le pide confirmación de la acción |
+| 9. El usuario confirma | 10. El sistema elimina al usuario del grupo, notifica al resto de los usuarios y lleva al usuario a la sección *Mis Grupos* |
+
+| 1 | 2 |
+| ----------- | ----------- |
+| ![mis-grupos-menu](/docs/bocetosiu/menu-mis-grupos.png) | ![mis-grupos](/docs/bocetosiu/mis-grupos.png) |
+| 3 | 4 |
+| ![grupo-1](/docs/bocetosiu/grupo-particular.png) | ![grupo-editar](/docs/bocetosiu/grupo-configuracion.png) |
+| 5 | 6 |
+| ![confirmar-eliminacion](/docs/bocetosiu/confirmar-abandono.png) | ![eliminacion-hecha](/docs/bocetosiu/mis-grupos-abandono.png) |
 
 **Cursos alternativos:** 
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario presiona el boton de abandonar el grupo | | 2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
-| 3. El usuario selecciona la opción NO | | 4. El sistema no ejecuta nada | 5. Vuelve a la normalidad |
+| 7.1. El usuario presiona el boton de abandonar el grupo | | 7.2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
+| 7.3. El usuario selecciona la opción *Cancelar* | 7.4. El sistema no hace nada y retorna a la sección del grupo |
 
 
 ### UC6: Acceso a reglas 
@@ -618,7 +633,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario no selecciona dicha opción | 2. El sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
+| 3.1. El usuario no selecciona dicha opción | 3.2. El sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
 
 
 ### UC7: Envío de mensajes
