@@ -557,15 +557,25 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario ingresa a un grupo | 2. El sistema muestra los participantes del grupo |
-| 3. El administrador selecciona un usuario | 4. El sistema despliega una ventana de confirmación |
-| 5. El administrador del grupo confirma | 6. El sistema elimina al integrante seleccionado del grupo |
+| 1. El usuario selecciona la sección *Mis grupos* | 2. El sistema muestra la sección seleccionada |
+| 3. El usuario selecciona un grupo | 4. El sistema muestra la sección del grupo seleccionado |
+| 5. El usuario del grupo selecciona el botón de editar | 6. El sistema muestra la misma sección pero en formato edición  |
+| 7. El usuario selecciona el botón rojo en el usuario que desea eliminar | 8. El sistema muestra una alerta de confirmación |
+| 9. El usuario confirma la eliminación del participante | 10. El sistema elimina al participante y vuelve a mostrar la sección del grupo con los cambios reflejados |
+
+| 1 | 2 |
+| ----------- | ----------- |
+| ![mis-grupos-menu](/docs/bocetosiu/menu-mis-grupos.png) | ![mis-grupos](/docs/bocetosiu/mis-grupos.png) |
+| 3 | 4 |
+| ![grupo-1](/docs/bocetosiu/grupo-particular.png) | ![grupo-editar](/docs/bocetosiu/grupo-particular-editar.png) |
+| 5 | 6 |
+| ![confirmar-eliminacion](/docs/bocetosiu/eliminar-participante-confirmacion.png) | ![eliminacion-hecha](/docs/bocetosiu/grupo-particular-luego-eliminar.png) |
 
 **Cursos alternativos:** 
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 5.1 El administrador del grupo NO confirma | Queda sin efecto y no se hace nada |
+| 9.1 El administrador del grupo NO confirma | Queda sin efecto y no se hace nada |
 
 ### UC5: Abandono del grupo
 
