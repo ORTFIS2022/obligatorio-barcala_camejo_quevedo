@@ -754,6 +754,7 @@ A continuación daremos una reflexión individual de cada integrante del grupo:
 
 
 
+
 Técnicas aplicadas y aprendizajes
 
 
