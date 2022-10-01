@@ -723,7 +723,7 @@ Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y e
 | **Correctitud** | | | | | | | | | | |
 | ¿Es viable? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
 | ¿Su prioridad está bien definida? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
-| ¿Se interpone con otros Requerimientos? | | | | | | | | | | | | 
+| ¿Se interpone con otros Requerimientos? | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | 
 | ¿Incluye aspectos de diseño? | SI | SI | SI  | SI | SI | NO | NO | NO | NO | NO |
 | ¿Esta a nuestro alcance de implementación? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
 | **Verificación y ambiguedad** | | | | | | | | | | | | 
