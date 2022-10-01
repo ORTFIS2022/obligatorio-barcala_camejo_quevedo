@@ -516,7 +516,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | 1 | 2 |
 | ----------- | ----------- |
-| ![partido](/docs/bocetosiu/partido.png) | ![error](/docs/bocetosiu/error-guardar.png) |
+| ![partido](/docs/bocetosiu/partido-en-curso.png) | ![error](/docs/bocetosiu/error-partido-en-curso.png) |
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
@@ -524,7 +524,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | 1 | 2 |
 | ----------- | ----------- |
-| ![partido](/docs/bocetosiu/partido-en-curso.png) | ![error](/docs/bocetosiu/error-partido-en-curso.png) |
+| ![partido](/docs/bocetosiu/partido.png) | ![error](/docs/bocetosiu/error-guardar.png) |
 
 ### UC3: Creación de grupo privado
 
