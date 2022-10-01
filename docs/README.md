@@ -698,6 +698,17 @@ Por ende el usuario está conectado a una red WiFi.
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
 
+## Modelado de usuarios del sistema
+
+Nuestra aplicación fue desarrollada para un público objetivo de entre 20 y 40 años sin ser este un límite restrictivo ya que personas de diferentes edades pueden utilizar la aplicación sin necesidad de estar en el rango objetivo definido anteriormente.
+
+A continuación se encuentran los usuarios modelados de nuestra aplicación los cuales fueron creados mediante la utilización de la técnica user personas la cual nos permite crear usuarios objetivos para nuestro sistema.
+
+
+![User persona 1](/media/persona1.png)
+
+![User persona 2](/media/persona2.png)
+
 
 Bocetos de IU
 
