@@ -703,7 +703,7 @@ Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y e
 **Tabla de Requerimientos Funcionales**
 
 | Requerimiento | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 | RF7 | RF8 | RF9 | RF10 |
-| ----------- | ----------- |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | **Correctitud** | | | | | | | | | | |
 | ¿Es viable? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
 | ¿Su prioridad está bien definida? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
@@ -719,7 +719,7 @@ Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y e
 **Tabla de Requerimientos No Funcionales** 
 
 | Requerimiento | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 | RF7 | RF8 | RF9 | RF10 |
-| ----------- | ----------- |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | **Correctitud** | | | | | | | | | | |
 | ¿Es viable? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
 | ¿Su prioridad está bien definida? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
