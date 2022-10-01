@@ -301,6 +301,8 @@ La calidad se divide en dos partes fundamentales:
 - **Quiero** poder predecir los partidos del Mundial
 - **Para** poder participar en la penca
 
+- **Referencia a RF:** RF4
+
 **Criterio de aceptación:** 
 - Se puede predecir los resultados exactos de un partido.
 - Se dispone de un marcador para seleccionar el puntaje de ambos equipos.
@@ -316,6 +318,8 @@ La calidad se divide en dos partes fundamentales:
 - **Quiero** poder ver información en tiempo real sobre el Mundial
 - **Para** poder tener mas información a la hora de predecir los resultados
 
+- **Referencia a RF:** RF3
+
 **Criterio de aceptación:** 
 - La informacion otorgada es acorde a la del momento actual.
 - La información se va actualizando con el paso del tiempo.
@@ -329,6 +333,8 @@ La calidad se divide en dos partes fundamentales:
 - **Como** usuario
 - **Quiero** poder crear un grupo privado
 - **Para** poder competir contra mis amigos
+
+- **Referencia a RF:** RF5
 
 **Criterio de aceptación:** 
 - Se dispone de un boton que permita al usuario incializar el proceso de creación del grupo.
@@ -358,6 +364,8 @@ La calidad se divide en dos partes fundamentales:
 - **Quiero** que se notifique media hora antes de cada partido a los usuarios que no hayan establecido un puntaje
 - **Para** que los usuarios no pierdan participacion en la penca y mantener el afán del juego.
 
+- **Referencia a RF:** RF7
+
 **Criterio de aceptación:** 
 - Cuando el usuario habilite las notificaciones de la penca en su celular y reciba la misma media hora antes de cada partido.
 Por ende el usuario está conectado a una red WiFi.
@@ -383,6 +391,8 @@ Por ende el usuario está conectado a una red WiFi.
 - **Quiero** que los administradores de grupos puedan definir los premios
 - **Para** que haya una mayor versatilidad y no se vuelta tan repetitivas
 
+- **Referencia a RF:** RF10
+
 **Criterio de aceptación:** 
 - Los administradores de los grupos disponen de una sección para definir un premio.
 - Los premios se actualizan.
@@ -400,7 +410,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 ### User Story 10
 
-**Título:** Notificacion de cambios recientes.
+**Título:** Notificación de cambios recientes.
 
 - **Como** cliente
 - **Quiero** que sea de notificar cada cambio existente dentro de los valores customizables del juego
@@ -640,8 +650,6 @@ Por ende el usuario está conectado a una red WiFi.
 Bocetos de IU
 
 ## Validación y verificación
-
-Verificar la especificación
 
 Validar la solución con personas no involucradas en el proyecto
 
