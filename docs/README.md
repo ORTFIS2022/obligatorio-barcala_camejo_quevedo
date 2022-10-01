@@ -575,7 +575,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 5.1 El usuario no selecciona ningun amigo para invitar | El sistema muestra un mensaje de error y le vuelve a pedir que seleccione al menos un amigo para invitar |
+| 5.1 El usuario no selecciona ningun amigo para invitar | 5.2 El sistema muestra un mensaje de error y le vuelve a pedir que seleccione al menos un amigo para invitar |
 
 ### UC4: Eliminación de integrante de grupo
 
