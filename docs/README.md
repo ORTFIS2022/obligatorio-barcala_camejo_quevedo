@@ -733,6 +733,9 @@ Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y e
 
 Validar la solución con personas no involucradas en el proyecto
 
+Tuvimos una videollamada con un cliente para mostrarle todos los requerimientos y casos de uso de la aplicación, fundamentandole a que público iba dirigido principalmente y un prototipado  para que se pusiera en mayor sintonía con nosotros.
+El cliente se mostró muy satisfecho y decidido comentandonos que le parecía todo muy completo pero que le gustaría un poco mas de detalle al apartado "Penca Mundial" logrando que la navegación en la app sea mas amigable a todo público. Porque iniciar la app y encontrarse de frente con ese apartado le parece muy directo cuando el usuario abre por primera vez la app.
+
 ## Reflexión
 
 Detalle del trabajo individual
