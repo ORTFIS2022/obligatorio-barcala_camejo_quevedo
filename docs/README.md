@@ -543,7 +543,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 7.1 El usuario presiona guardar sin haber ingresado una predicción | El sistema muestra una mensaje de error y le pide que ingrese una predicción |
+| 7.1 El usuario presiona guardar sin haber ingresado una predicción | 7.2 El sistema muestra una mensaje de error y le pide que ingrese una predicción |
 
 | 1 | 2 |
 | ----------- | ----------- |
