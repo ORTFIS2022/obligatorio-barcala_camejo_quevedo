@@ -693,7 +693,7 @@ Bocetos de IU
 
 ## Validación y verificación
 
-Verificar la especificación
+## *Verificar la especificación* ##
 
 Para verificar que nuestra aplicación concordara con lo pedido y asi asegurarnos de que no nos estabamos dejando algo por alto, realizamos un formato tabla con estilo "Check-List", en los cuales definimos un conjunto de preguntas que abarcan todos los conceptos que debian cumplir  nuestros requerimientos.
 Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y el cuestionamiento de su ambiguedad. Dependiendo de nuestras respuestas ibamos marcando con un SI/NO.
@@ -731,7 +731,7 @@ Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y e
 | ¿Se puede verificar? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
 | ¿Realmente vale la pena definirlo? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
 
-Validar la solución con personas no involucradas en el proyecto
+## *Validar la solución con personas no involucradas en el proyecto* ##
 
 Tuvimos una videollamada con un cliente para mostrarle todos los requerimientos y casos de uso de la aplicación, fundamentandole a que público iba dirigido principalmente y un prototipado  para que se pusiera en mayor sintonía con nosotros.
 El cliente se mostró muy satisfecho y decidido comentandonos que le parecía todo muy completo pero que le gustaría un poco mas de detalle al apartado "Penca Mundial" logrando que la navegación en la app sea mas amigable a todo público. Porque iniciar la app y encontrarse de frente con ese apartado le parece muy directo cuando el usuario abre por primera vez la app.
