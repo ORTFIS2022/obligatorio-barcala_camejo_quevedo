@@ -142,7 +142,9 @@ En esta técnica se trata de entrevistar a varios perfiles que podrían estar in
 
 Caracterización de usuarios: User Personas
 
-Modelo conceptual del problema
+Con la información recabada creamos el siguiente modelo conceptual del problema:
+
+![modelo-conceptual](/media/modeladoConceptual.jpg)
 
 ## Especificación
 
