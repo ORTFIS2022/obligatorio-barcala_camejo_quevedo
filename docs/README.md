@@ -738,7 +738,21 @@ El cliente se mostró muy satisfecho y decidido comentandonos que le parecía to
 
 ## Reflexión
 
+Antes de realizar las reflexiones individuales optamos por contruibuir primero con una reflexión grupal, ya que la mayor parte del obligatorio la realizamos de forma conjunta, ayudandonos con las dudas que fueron surgieron, dividiendonos el trabajo, realizando partes entre todos y escuchando las opiniones y aportes de cada uno.
+Somos conscientes de que este trabajo nos impulsó como programadores ya que fuimos aprendiendo poco a poco todo el proceso de relación entre  Git y GitHub, logrando arreglar los errores de mergeo, introduciendo sobretodo el concepto de los adds,commits, pulls y los pushs, como tambien la necesidad de volver para atras en versiones para poder deshacer cambios erroneos. El trabajo nos pareció muy interesante ya que nos llevó mas a entender como es en realidad el dia a dia del programador promedio y que no fuera tan teórico y esquemático como lo que nos enseñan la mayoria de las otras materias.
+Nos pareció muy entretenido el tener que realizarle entrevistas a personas ajenas a nuestros vínculos, simulando como si fueran nuestros clientes, fueron de mucha utilidad dado que nos aportaron un conjunto amplio de ideas nuevas que podias implementar, las cuales fuimos poco a poco traduciendolas en requerimientos funcionales y no funcionales. Aprendimos nuevas técnicas de elicitación como el focus group y en nuestro caso a como realizar correctamente una BrainStorming (Lluvia de ideas).
+
 Detalle del trabajo individual
+
+A continuación daremos una reflexión individual de cada integrante del grupo:
+
+
+
+
+
+
+
+
 
 Técnicas aplicadas y aprendizajes
 
