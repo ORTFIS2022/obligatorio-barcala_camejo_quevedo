@@ -486,7 +486,44 @@ Por ende el usuario está conectado a una red WiFi.
 | ----------- | ----------- |
 | 3.1 El usuario selecciona un nickname o email que ya está en uso | El sistema muestra un mensaje de error y le vuelve a pedir que ingrese un nickname y email |
 
-### UC2: Creación de grupo privado
+### UC2: Registro de predicción
+
+**Actor:** Usuario
+
+**Curso normal:**
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 1. El usuario selecciona la sección *Penca Mundial* del menú lateral | 2. El sistema muestra la sección *Penca Mundial* |
+| 3. El usuario selecciona el grupo que quiere predecir | 4. El sistema muestra la sección del grupo elegido |
+| 5. El usuario selecciona el partido que quiere predecir | 6. El sistema muestra la sección de predicción del partido elegido |
+| 7. El usuario ingresa el resultado y presiona "Guardar" | 8. El sistema guarda el resultado y vuelve a la sección del grupo elegido |
+
+
+| 1 | 2 |
+| ![menu](/bocetosiu/menu.png) | ![grupos](/bocetosiu/grupos.png) |
+| 3 | 4 |
+| ![grupoH](/bocetosiu/grupoH.png) | ![partido](/bocetosiu/partido.png) |
+| 5 | 6 |
+| ![pronostico](/bocetosiu/pronostico-en-partido.png) | ![pronostico-guardado](/bocetosiu/pronostico-hecho.png) |
+
+**Cursos alternativos:** 
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 5.1 El usuario selecciona un partido que ya comenzó | 5.2 El sistema muestra una alerta indicando que no se puede predecir un partido que ya comenzó |
+
+| 1 | 2 |
+| ![partido](/bocetosiu/partido.png) | ![error](/bocetosiu/error-guardar.png) |
+
+| Acción | Respuesta del sistema |
+| ----------- | ----------- |
+| 7.1 El usuario presiona guardar sin haber ingresado una predicción | El sistema muestra una mensaje de error y le pide que ingrese una predicción |
+
+| 1 | 2 |
+| ![partido](/bocetosiu/partido-en-curso.png) | ![error](/bocetosiu/error-partido-en-curso.png) |
+
+### UC3: Creación de grupo privado
 
 **Actor:** Usuario
 
@@ -509,7 +546,7 @@ Por ende el usuario está conectado a una red WiFi.
 | ----------- | ----------- |
 | 7.1 El usuario no selecciona ningun amigo para invitar | El sistema muestra un mensaje de error y le vuelve a pedir que seleccione al menos un amigo para invitar |
 
-### UC3: Eliminación de integrante de grupo
+### UC4: Eliminación de integrante de grupo
 
 **Actor:** Usuario (Administrador de grupo)
 
@@ -525,7 +562,7 @@ Por ende el usuario está conectado a una red WiFi.
 | ----------- | ----------- |
 | 5.1 El administrador del grupo NO confirma | Queda sin efecto y no se hace nada |
 
-### UC4: Abandono del grupo
+### UC5: Abandono del grupo
 
 **Actor:** 
 
@@ -543,7 +580,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 3. El usuario selecciona la opción NO | | 4. El sistema no ejecuta nada | 5. Vuelve a la normalidad |
 
 
-### UC5: Acceso a reglas 
+### UC6: Acceso a reglas 
 
 **Actor:** Usuario
 
@@ -559,7 +596,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 1. El usuario no selecciona dicha opción | 2. El sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
 
 
-### UC6: Envío de mensajes
+### UC7: Envío de mensajes
 
 **Actor:** Usuario
 
@@ -571,7 +608,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 6. El usuario envia el mensaje seleccionando la opción enviar | 6. El sistema envía el mensaje |
 
 
-### UC7: Habilitar Notificaciones
+### UC8: Habilitar Notificaciones
 
 **Actor:**Usuario
 
@@ -586,7 +623,7 @@ Por ende el usuario está conectado a una red WiFi.
 | ----------- | ----------- |
 | 1. El usuario selecciona que no | | 2. El sistema queda notificado que no se le deberá enviar notificaciones de los partidos |
 
-### UC8: Habilitar - Deshabilitar el chat
+### UC9: Habilitar - Deshabilitar el chat
 
 **Actor:** Usuario
 
@@ -602,7 +639,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 1. EL usuario deshabilita el chat | | 2. Se borra todo acceso al mismo | 
 | 3. Se eliminan todos los mensajes pre guardados en su celular |
 
-### UC9: Acceso a la información detallada de partidos anteriores
+### UC10: Acceso a la información detallada de partidos anteriores
 
 **Actor:** Usuario
 
@@ -610,7 +647,7 @@ Por ende el usuario está conectado a una red WiFi.
 | ----------- | ----------- |
 | 1. El usuario entra en la sección partidos | | 2. El sistema proyecta todos los partidos y sus respectivos resultados hasta el momento |
 
-### UC10: Deshabilitar la censura en el chat
+### UC11: Deshabilitar la censura en el chat
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
