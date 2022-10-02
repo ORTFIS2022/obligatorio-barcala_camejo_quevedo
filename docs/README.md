@@ -20,9 +20,9 @@ Esta pregunta nos la fuimos realizando durante el inicio del proyecto, con el pa
 1. Acceder a GitHub 
 2. Crear nuevo repositorio (Boton en verde) y nombrarlo 
 
-Una vez alli el repositorio remoto habrá sido creado, pero ahora lo mas importante es poder conectar tu repositorio local con el remoto, para ello habrá que efectuar lo siguiente.
+Una vez allí el repositorio remoto habrá sido creado, pero ahora lo mas importante es poder conectar tu repositorio local con el remoto, para ello habrá que efectuar lo siguiente.
 
-## Creacion del repositorio local:
+## Creación del repositorio local:
 
 Para crearlo hay dos formas posibles.
 
@@ -40,7 +40,7 @@ Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remot
     1. Inicializamos el repositorio vacio en la carpeta destinada, mediante **git init**.
     2. Añadimos el/los elementos a la carpeta que querramos efectuar con git.
     3. Usamos **git add .** para pasar todos los archivos modificados/untracked que querramos añadir a la staging area.
-    4. Oficializamos el cambio, mediante un **git commit -m "Msg"** , dejando registrado una version hasta ese momento y a la par notificamos mediante el mensaje lo que realizamos.
+    4. Oficializamos el cambio, mediante un **git commit -m "Msg"** , dejando registrado una versión hasta ese momento y a la par notificamos mediante el mensaje lo que realizamos.
     (Al realizar el commit mandamos los archivos al repositorio local).
 
 ## Vincular repositorio local con repositorio remoto
@@ -53,20 +53,20 @@ Una vez que hayamos realizado los pasos de arriba, el repositorio local habrá s
 ## Técnica que utilizamos para la creación del proyecto
 
 *Lo que nuestro grupo realizó fue:* 
-Al repositorio local (creado mediante un git init) le clonamos el repositorio remoto almacenado en GitHub del profesor, para conseguir la letra del ejercicio, las carpetas especificas de donde almacenar los distintos archivos, fotos, etc. A continuación aplicamos un cierto procedimiento para redirigir el repositorio clonado a una nueva url única nuestra, para ello:
+Al repositorio local (creado mediante un git init) le clonamos el repositorio remoto almacenado en GitHub del profesor, para conseguir la letra del ejercicio, las carpetas específicas de donde almacenar los distintos archivos, fotos, etc. A continuación aplicamos un cierto procedimiento para redirigir el repositorio clonado a una nueva url única nuestra, para ello:
 -Usamos RD /S <carpeta> para borrar toda la carpeta .git, generando que cualquier nexo existente con el repositorio remoto actual sea destruido.
 -git init para reinicializar el repositorio local.
 -git add . para añadir todos los archivos modificados a la staging area.
 -git remote add origin <url del nuevo repositorio remoto> Actualizamos el nuevo repositorio remoto a nuestro servidor único.
 
-`En otras palabras lo que hicimos fue copiar los archivos necesarios del profesor, borrar la conexion local-remota que existía. Volvemos a inicializar git, añadimos los archivos devuelta a la staging area y finalmente creamos devuelta la conexion local - remota pero con nuestro servidor especifico en la nube de GitHub.`
+`En otras palabras lo que hicimos fue copiar los archivos necesarios del profesor, borrar la conexion local-remota que existía. Volvemos a inicializar git, añadimos los archivos devuelta a la staging area y finalmente creamos devuelta la conexión local - remota pero con nuestro servidor específico en la nube de GitHub.`
 
 ## Comandos Git ejecutados desde terminal y desde el IDE
 
 | Comando | Descripción |
 | ------------- |:-------------:|
 | **git init** | `Inicializa` un directorio existente como un repositorio GIT |
-| **git add .** |  `Añade` un archivo a la staging area como esta en ese momento para su siguiente commit |
+| **git add .** |  `Añade` un archivo a la staging area como está en ese momento para su siguiente commit |
 | **git commit -m "msg"** |  `Commitea` tu "staged content" como una nueva snapshot, lo añade al repositorio |
 | **git status** | `Muestra` los archivos modificados de tu repositorio, staged para tu siguiente commit |
 | **git branch** | `enlista tus ramas` y te aparece con un * tu rama actual |
@@ -126,9 +126,9 @@ Esta aplicación cuenta tanto con versión web como con versión mobile, lo que 
 ### BrainStorming
 ---
 
-Esta técnica la utilizamos para aquellos momentos de emergencia en los cuales nos quedabamos congelados sin saber que mas poner o que pensar. Esta técnica es buena para salir de nuestro esquema mental y expandir las ideas generando que sean de caracter global. Estas mismas fueron puestas en común y notamos que aunque cada una de ellas eran muy diferentes entre si a su vez eran muy similares.
-Esta técnica especialmente la realizamos para definir los Use Cases y los User Stories, realizamos una lluvia de ideas (BrainStorming) sobre los aspectos mas generales que si o si concordabamos que deberian de estar y fuimos profundizandonos en cada una de ellas hasta llegar a su limite mas estrecho.
-Notamos que gracias a esta técnica de elicitacion suponer y generar casos promedios era mucho mas sencillo que a diferencia de estar pensando una por una.
+Esta técnica la utilizamos para aquellos momentos de emergencia en los cuales nos quedabamos congelados sin saber que mas poner o que pensar. Esta técnica es buena para salir de nuestro esquema mental y expandir las ideas generando que sean de caracter global. Estas mismas fueron puestas en común y notamos que aunque cada una de ellas eran muy diferentes entre sí, a su vez eran muy similares.
+Esta técnica especialmente la realizamos para definir los Use Cases y los User Stories, realizamos una lluvia de ideas (BrainStorming) sobre los aspectos mas generales que si o si concordabamos que deberian de estar y fuimos profundizandonos en cada una de ellas hasta llegar a su limite más estrecho.
+Notamos que gracias a esta técnica de elicitación suponer y generar casos promedios era mucho más sencillo que a diferencia de estar pensando una por una.
 
 ### Entrevista
 ---
@@ -138,7 +138,7 @@ En esta técnica se trata de entrevistar a varios perfiles que podrían estar in
 - [Carlos (20 años)](/media/entrevista_carlos.m4a). Estudiante y amante del fútbol.
 - [Martín (34 años)](/media/entrevista_martin.m4a). CEO de Hattrick-IT interesado en poder crear una penca para su empresa
 
-De ambas entrevistas obtuvimos información valiosa que se terminó traduciendo a requerimientos funcionales. Por ejemplo, para ambos entrevistados era de vital importancia contar con la creación de grupos privados para poder utilizar la aplicación desde un ámbito mas privado. En el caso de Martín, veía esta funcionalidad como vital ya que su intención sería aprovechar los grupos privados para poder organizar una penca para los empleados de su empresa.
+De ambas entrevistas obtuvimos información valiosa que se terminó traduciendo a requerimientos funcionales. Por ejemplo, para ambos entrevistados era de vital importancia contar con la creación de grupos privados para poder utilizar la aplicación desde un ámbito más privado. En el caso de Martín, veía esta funcionalidad como vital ya que su intención sería aprovechar los grupos privados para poder organizar una penca para los empleados de su empresa.
 
 También obtuvimos opiniones un tanto dispares. En particular, para Carlos era de vital importancia tener información general sobre el Mundial y las selecciones a la hora de predecir los partidos. Nos comentó que era interesante contar con ello directo en la app y no tener que acudir a otros sitios. Sin embargo, para Martín este detalle no fue de tanta importancia. Nos comentó que no le molesta que aparezca esa información pero dado que se puede obtener en otros sitios no le pareció algo muy importante para remarcar.
 
@@ -161,7 +161,7 @@ Con la información recabada creamos el siguiente modelo conceptual del problema
 ### Definición de requerimientos funcionales y no funcionales   
 ---
 
-Antes de fundamentar los distintos tipos de requerimientos hay q desarrollar el concepto del propio requerimiento en si y donde se aplica.
+Antes de fundamentar los distintos tipos de requerimientos hay que desarrollar el concepto del propio requerimiento en si y donde se aplica.
 
 **Requerimientos**
 
@@ -170,13 +170,13 @@ Antes de fundamentar los distintos tipos de requerimientos hay q desarrollar el 
 
 **Ingenieria de Requerimientos**
 
-- La ingenieria de requerimientos es el proceso por el cual se traduce las necesidades de los distintos clientes y usuarios en requerimientos técnicos a implementar.
+- La ingeniería de requerimientos es el proceso por el cual se traduce las necesidades de los distintos clientes y usuarios en requerimientos técnicos a implementar.
 - Su objetivo principal es definir el problema a resolver.
-- Es el primer paso en la creacion del Software.
+- Es el primer paso en la creación del Software.
 
 ## Requerimentos Funcionales
 
-Los requerimientos funcionales son aquellos que dan una especificacion sobre servicios y/o funciones que el software debe implementar. Estos dan una descripción de la reacción y comportamientos del sistema en distintas condiciones determinadas. 
+Los requerimientos funcionales son aquellos que dan una especificación sobre servicios y/o funciones que el software debe implementar. Estos dan una descripción de la reacción y comportamientos del sistema en distintas condiciones determinadas. 
 Las funciones del sistema están vinculadas directamente con el objetivo del negocio o cliente y los roles que cumplirán los usuarios dentro de la aplicación.
 
 ### RF1 Registro de usuario
@@ -317,7 +317,7 @@ La calidad se divide en dos partes fundamentales:
 - Se puede predecir los resultados exactos de un partido.
 - Se dispone de un marcador para seleccionar el puntaje de ambos equipos.
 - Se puede predecir los resultados de distintos partidos.
-- Los puntajes varian entre 1 a n, siendo n un valor lógico.
+- Los puntajes varían entre 1 a n, siendo n un valor lógico.
 
 ### User Story 2
 ---
@@ -331,7 +331,7 @@ La calidad se divide en dos partes fundamentales:
 - **Referencia a RF:** RF3
 
 **Criterio de aceptación:** 
-- La informacion otorgada es acorde a la del momento actual.
+- La información otorgada es acorde a la del momento actual.
 - La información se va actualizando con el paso del tiempo.
 - Se dispone de un botón para acceder a esta sección detallada.
 
@@ -363,7 +363,7 @@ La calidad se divide en dos partes fundamentales:
 - **Para** que la rivalidad sana entre los integrantes sea mayor
 
 **Criterio de aceptación:** 
-- Se tiene un apartado donde se puede configurar los valores pre establecidos de la penca a critero personal.
+- Se tiene un apartado donde se puede configurar los valores pre-establecidos de la penca a critero personal.
 - Solo los administradores del grupo pueden modificarlos.
 - Se puede modificar foto del grupo.
 - Se puede configurar valores pre establecidos antes del inicio de la penca.
@@ -375,7 +375,7 @@ La calidad se divide en dos partes fundamentales:
 
 - **Como** cliente
 - **Quiero** que se notifique media hora antes de cada partido a los usuarios que no hayan establecido un puntaje
-- **Para** que los usuarios no pierdan participacion en la penca y mantener el afán del juego.
+- **Para** que los usuarios no pierdan participación en la penca y mantener el afán del juego.
 
 - **Referencia a RF:** RF7
 
@@ -431,7 +431,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 - **Como** cliente
 - **Quiero** que sea de notificar cada cambio existente dentro de los valores customizables del juego
-- **Para** facilitar la comunicacion entre los administradores y usuario de cada grupo
+- **Para** facilitar la comunicación entre los administradores y usuario de cada grupo
 
 **Criterio de aceptación:** 
 - Aparece un mensaje en el chat del cambio realizado.
@@ -625,7 +625,7 @@ Por ende el usuario está conectado a una red WiFi.
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
 | 1. El usuario selecciona la sección *Mis Grupos* | | 2. El sistema muestra la sección seleccionada |
-| 3. El usuario selecciona el grupo que quiere acceder | | 4. El sistema muestra la seccion del grupo seleccionado | 
+| 3. El usuario selecciona el grupo que quiere acceder | | 4. El sistema muestra la sección del grupo seleccionado | 
 | 5. El usuario selecciona la configuración del grupo | 6. El sistema muestra la sección de configuración |
 | 7. El usuario selecciona abandonar el grupo | 8. El sistema le pide confirmación de la acción |
 | 9. El usuario confirma | 10. El sistema elimina al usuario del grupo, notifica al resto de los usuarios y lleva al usuario a la sección *Mis Grupos* |
@@ -674,7 +674,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 3.2 El usuario no selecciona la sección de mensajes | 
+| 3.2 El usuario no selecciona la sección de mensajes |
 
 ### UC8: Habilitar Notificaciones
 ---
@@ -733,8 +733,8 @@ Por ende el usuario está conectado a una red WiFi.
 
 ## Verificar la especificación
 
-Para verificar que nuestra aplicación concordara con lo pedido y asi asegurarnos de que no nos estabamos dejando algo por alto, realizamos un formato tabla con estilo "Check-List", en los cuales definimos un conjunto de preguntas que abarcan todos los conceptos que debian cumplir  nuestros requerimientos.
-Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y el cuestionamiento de su ambiguedad. Dependiendo de nuestras respuestas ibamos marcando con un SI/NO.
+Para verificar que nuestra aplicación concordara con lo pedido y así asegurarnos de que no nos estabamos dejando algo por alto, realizamos un formato tabla con estilo "Check-List", en los cuales definimos un conjunto de preguntas que abarcan todos los conceptos que debían cumplir  nuestros requerimientos.
+Estos conceptos abarcan desde la correctitud del mismo hasta su verificación y el cuestionamiento de su ambiguedad. Dependiendo de nuestras respuestas íbamos marcando con un SI/NO.
 
 *Adjuntamos tablas y respuestas:*
 
@@ -777,7 +777,7 @@ El cliente se mostró muy satisfecho y decidido comentandonos que le parecía to
 # Reflexión
 
 Antes de realizar las reflexiones individuales optamos por contruibuir primero con una reflexión grupal, ya que la mayor parte del obligatorio la realizamos de forma conjunta, ayudandonos con las dudas que fueron surgieron, dividiendonos el trabajo, realizando partes entre todos y escuchando las opiniones y aportes de cada uno.
-Somos conscientes de que este trabajo nos impulsó como programadores ya que fuimos aprendiendo poco a poco todo el proceso de relación entre  Git y GitHub, logrando arreglar los errores de mergeo, introduciendo sobretodo el concepto de los adds,commits, pulls y los pushs, como tambien la necesidad de volver para atras en versiones para poder deshacer cambios erroneos. El trabajo nos pareció muy interesante ya que nos llevó mas a entender como es en realidad el dia a dia del programador promedio y que no fuera tan teórico y esquemático como lo que nos enseñan la mayoria de las otras materias.
+Somos conscientes de que este trabajo nos impulsó como programadores ya que fuimos aprendiendo poco a poco todo el proceso de relación entre  Git y GitHub, logrando arreglar los errores de mergeo, introduciendo sobretodo el concepto de los adds, commits, pulls y los pushs, como tambien la necesidad de volver para atras en versiones para poder deshacer cambios erroneos. El trabajo nos pareció muy interesante ya que nos llevó mas a entender como es en realidad el día a día del programador promedio y que no fuera tan teórico y esquemático como lo que nos enseñan la mayoria de las otras materias.
 Nos pareció muy entretenido el tener que realizarle entrevistas a personas ajenas a nuestros vínculos, simulando como si fueran nuestros clientes, fueron de mucha utilidad dado que nos aportaron un conjunto amplio de ideas nuevas que podias implementar, las cuales fuimos poco a poco traduciendolas en requerimientos funcionales y no funcionales. Aprendimos nuevas técnicas de elicitación como el focus group y en nuestro caso a como realizar correctamente una BrainStorming (Lluvia de ideas).
 
 # Detalle del trabajo individual
