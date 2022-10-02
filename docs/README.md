@@ -4,7 +4,6 @@ Fecha de entrega: 03-oct-2022
 # Repositorio Git
 
 ## Creación y uso de repositorios locales y remotos
----
 
 Para introducir todo contenido a realizar primero debemos crearnos un repositorio local tanto como uno remoto, para ello utilizaremos el sistema de control de versionado distribuido (GIT), este mismo nos permitirá trabajar de forma autónoma, local y offline en nuestras máquinas. Al ser un trabajo en equipo no alcanza con tan solo tener un repositorio local, ya que todo cambio realizado por cada uno de los integrantes debe poder a su vez tenerlo cada uno de los integrantes del grupo, logrando asi evitar conflictos en el porvenir. Dado a esto, utilizaremos un sistema de control de versiones de tipo centralizado reconocido como GitHub. Donde tendremos un servidor de versionado único mediante el cual iremos colocando todo contenido fundamental para el desarrollo del trabajo.
 
@@ -17,7 +16,6 @@ Los repositorios son estructuras de directorios en disco, donde se almacenan y r
 Esta pregunta nos la fuimos realizando durante el inicio del proyecto, con el paso del tiempo logramos entender que github, a diferencia de un servicio de alojamiento de archivos, ejemplo : (Google Drive), nos permite volver a versiones anteriores en caso de un fallo crítico y dejar registrado todo cambio importante.
 
 ## Creación repositorio:
----
 
 1. Acceder a GitHub 
 2. Crear nuevo repositorio (Boton en verde) y nombrarlo 
@@ -64,7 +62,6 @@ Al repositorio local (creado mediante un git init) le clonamos el repositorio re
 `En otras palabras lo que hicimos fue copiar los archivos necesarios del profesor, borrar la conexion local-remota que existía. Volvemos a inicializar git, añadimos los archivos devuelta a la staging area y finalmente creamos devuelta la conexion local - remota pero con nuestro servidor especifico en la nube de GitHub.`
 
 ## Comandos Git ejecutados desde terminal y desde el IDE
----
 
 | Comando | Descripción |
 | ------------- |:-------------:|
@@ -81,12 +78,10 @@ Al repositorio local (creado mediante un git init) le clonamos el repositorio re
 | **git pull** | `Actualiza` el repositorio y sus archivos con los cambios más recientes |
 
 ## Flujo de trabajo de GIT
----
 
 ![FotoFlujoGit](/media/FotoFlujoGit.jpg)
 
 ## Versionado
----
 
 Para ayudarnos con el versionado vamos a utilizar el flujo de git llamado **git-flow**. La idea detrás de este flujo es la de simplificar lo más posible las instancias de salida a producción y cuenta con 5 tipos de ramas distintos:
 
@@ -109,9 +104,9 @@ Resumen de commits y evolución del proyecto
 # Elicitación
 
 ## Evidencia de actividades de investigación
----
 
 ### Ingeniería Inversa
+---
 
 En esta técnica se trata de obtener información sobre documentación o productos similares al nuestro que ya existen en el mercado. En este caso, nos basamos en dos aplicaciones:
 
@@ -129,12 +124,14 @@ Esta aplicación cuenta con una simple interfaz donde el usuario dispone de los 
 Esta aplicación cuenta tanto con versión web como con versión mobile, lo que se acerca más a lo que buscamos para nuestro proyecto. Si bien no cuenta con la habilidad de predecir el resultado de los partidos, cuenta con una interfaz básica con toda la información del partido que se va a jugar, del campeonato que se elige y de los jugadores que participan de los mismos. Ofrece información sobre casi todos los campeonatos del mundo y brinda notificaciones en tiempo real sobre lo sucedido en aquellos partidos que el usuario desee obtenerlas. No requiere inicio de sesión ni creación de usuario para su uso
 
 ### BrainStorming
+---
 
 Esta técnica la utilizamos para aquellos momentos de emergencia en los cuales nos quedabamos congelados sin saber que mas poner o que pensar. Esta técnica es buena para salir de nuestro esquema mental y expandir las ideas generando que sean de caracter global. Estas mismas fueron puestas en común y notamos que aunque cada una de ellas eran muy diferentes entre si a su vez eran muy similares.
 Esta técnica especialmente la realizamos para definir los Use Cases y los User Stories, realizamos una lluvia de ideas (BrainStorming) sobre los aspectos mas generales que si o si concordabamos que deberian de estar y fuimos profundizandonos en cada una de ellas hasta llegar a su limite mas estrecho.
 Notamos que gracias a esta técnica de elicitacion suponer y generar casos promedios era mucho mas sencillo que a diferencia de estar pensando una por una.
 
 ### Entrevista
+---
 
 En esta técnica se trata de entrevistar a varios perfiles que podrían estar interesados en nuestro producto con la finalidad de obtener información sobre qué aspectos del mismo resultan relevantes para cada perfil. En este caso entrevistamos a dos personas con dos perfiles distintos:
 
@@ -146,7 +143,6 @@ De ambas entrevistas obtuvimos información valiosa que se terminó traduciendo 
 También obtuvimos opiniones un tanto dispares. En particular, para Carlos era de vital importancia tener información general sobre el Mundial y las selecciones a la hora de predecir los partidos. Nos comentó que era interesante contar con ello directo en la app y no tener que acudir a otros sitios. Sin embargo, para Martín este detalle no fue de tanta importancia. Nos comentó que no le molesta que aparezca esa información pero dado que se puede obtener en otros sitios no le pareció algo muy importante para remarcar.
 
 ## Caracterización de usuarios: User Personas
----
 
 Nuestra aplicación fue desarrollada para un público objetivo de entre 20 y 40 años sin ser este un límite restrictivo ya que personas de diferentes edades pueden utilizar la aplicación sin necesidad de estar en el rango objetivo definido anteriormente.
 
@@ -161,9 +157,9 @@ Con la información recabada creamos el siguiente modelo conceptual del problema
 ![modelo-conceptual](/media/modeladoConceptual.jpg)
 
 ## Especificación
----
 
 ### Definición de requerimientos funcionales y no funcionales   
+---
 
 Antes de fundamentar los distintos tipos de requerimientos hay q desarrollar el concepto del propio requerimiento en si y donde se aplica.
 
@@ -305,9 +301,9 @@ La calidad se divide en dos partes fundamentales:
 - **Prioridad:** Alta
 
 ## User Stories 
----
 
 ### User Story 1
+---
 
 **Título:** Predicción resultados.
 
@@ -324,6 +320,7 @@ La calidad se divide en dos partes fundamentales:
 - Los puntajes varian entre 1 a n, siendo n un valor lógico.
 
 ### User Story 2
+---
 
 **Título:** Ver información del Mundial.
 
@@ -340,6 +337,7 @@ La calidad se divide en dos partes fundamentales:
 
 
 ### User Story 3
+---
 
 **Título:** Creación de grupo privado.
 
@@ -356,6 +354,7 @@ La calidad se divide en dos partes fundamentales:
 - El grupo es visible para todos los integrantes.
 
 ### User Story 5
+---
 
 **Título:** Modificación del grupo privado.
 
@@ -370,6 +369,7 @@ La calidad se divide en dos partes fundamentales:
 - Se puede configurar valores pre establecidos antes del inicio de la penca.
 
 ### User Story 6
+---
 
 **Título:** Notificaciones de partidos.
 
@@ -384,6 +384,7 @@ La calidad se divide en dos partes fundamentales:
 Por ende el usuario está conectado a una red WiFi.
 
 ### User Story 7
+---
 
 **Título:** Cantidad de usuarios por mes.
 
@@ -397,6 +398,7 @@ Por ende el usuario está conectado a una red WiFi.
 - El informe contiene email y fecha de cada registro.
 
 ### User Story 8
+---
 
 **Título:** Alternalización de premios.
 
@@ -411,6 +413,7 @@ Por ende el usuario está conectado a una red WiFi.
 - Los premios se actualizan.
 
 ### User Story 9
+---
 
 **Título:** Habilitación de mensajes en linea.
 
@@ -422,6 +425,7 @@ Por ende el usuario está conectado a una red WiFi.
 - El usuario recibe un mensaje enviado por otro.
 
 ### User Story 10
+---
 
 **Título:** Notificación de cambios recientes.
 
@@ -433,6 +437,7 @@ Por ende el usuario está conectado a una red WiFi.
 - Aparece un mensaje en el chat del cambio realizado.
 
 ### User Story 11
+---
 
 **Título:** ¿Chat visible?
 
@@ -445,6 +450,7 @@ Por ende el usuario está conectado a una red WiFi.
 - Solo se despliega la primera vez que se intenta entrar al mismo.
 
 ### User Story 12
+---
 
 **Título:** Abandono de grupo.
 
@@ -457,6 +463,7 @@ Por ende el usuario está conectado a una red WiFi.
 - Se elimina al usuario del grupo.
 
 ### User Story 13         
+---
 
 **Título:** Remover integrante del grupo.
 
@@ -469,6 +476,7 @@ Por ende el usuario está conectado a una red WiFi.
 - Se dispone de un botón por el cual se accede a la zona de borrado.
 
 ### User Story 14
+---
 
 **Título:** Censurado de comentarios ofensivos.
 
@@ -480,6 +488,7 @@ Por ende el usuario está conectado a una red WiFi.
 - Se sustituye el comentario ofensivo por un conjunto de caracteres (****).
 
 ### User Story 15
+---
 
 **Título:** Reglas del juego.
 
@@ -492,9 +501,9 @@ Por ende el usuario está conectado a una red WiFi.
 - Las reglas se pueden visualizar.
 
 ## Use Cases
----
 
 ### UC1: Registro de usuario
+---
 
 **Actor:** Usuario
 
@@ -512,6 +521,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 3.1 El usuario selecciona un nickname o email que ya está en uso | 3.2 El sistema muestra un mensaje de error y le vuelve a pedir que ingrese un nickname y email |
 
 ### UC2: Registro de predicción
+---
 
 **Actor:** Usuario
 
@@ -552,6 +562,7 @@ Por ende el usuario está conectado a una red WiFi.
 | ![partido](/docs/bocetosiu/partido.png) | ![error](/docs/bocetosiu/error-guardar.png) |
 
 ### UC3: Creación de grupo privado
+---
 
 **Actor:** Usuario
 
@@ -580,6 +591,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 5.1 El usuario no selecciona ningun amigo para invitar | 5.2 El sistema muestra un mensaje de error y le vuelve a pedir que seleccione al menos un amigo para invitar |
 
 ### UC4: Eliminación de integrante de grupo
+---
 
 **Actor:** Usuario (Administrador de grupo)
 
@@ -606,6 +618,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 9.1 El administrador del grupo NO confirma | 9.2 Queda sin efecto y no se hace nada |
 
 ### UC5: Abandono del grupo
+---
 
 **Actor:** 
 
@@ -633,6 +646,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 7.3. El usuario selecciona la opción *Cancelar* | 7.4. El sistema no hace nada y retorna a la sección del grupo |
 
 ### UC6: Acceso a reglas 
+---
 
 **Actor:** Usuario
 
@@ -645,6 +659,7 @@ Por ende el usuario está conectado a una red WiFi.
 | ![menu-reglas](/docs/bocetosiu/menu-reglas.png) | ![reglas](/docs/bocetosiu/reglas.png) |
 
 ### UC7: Envío de mensajes
+---
 
 **Actor:** Usuario
 
@@ -662,6 +677,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 3.2 El usuario no selecciona la sección de mensajes | 
 
 ### UC8: Habilitar Notificaciones
+---
 
 **Actor:**Usuario
 
@@ -677,6 +693,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 3.1 El usuario selecciona que no | 3.2 El sistema queda notificado que no se le deberá enviar notificaciones de los partidos |
 
 ### UC9: Habilitar - Deshabilitar el chat
+---
 
 **Actor:** Usuario
 
@@ -692,6 +709,7 @@ Por ende el usuario está conectado a una red WiFi.
 | 3.1 EL usuario deshabilita el chat | 3.2 Se borra todo acceso al mismo | 
 
 ### UC10: Acceso a la información detallada de partidos anteriores
+---
 
 **Actor:** Usuario
 
@@ -711,13 +729,9 @@ Por ende el usuario está conectado a una red WiFi.
 | ----------- | ----------- |
 | 1.1 El administrador del grupo activa esta opción | 1.2 El sistema ejecuta el checkeo de las palabras el cual en caso de encontrar una palabra ofensiva la cambia por (****) |
 
-
-Bocetos de IU
-
 # Validación y verificación
 
 ## Verificar la especificación
----
 
 Para verificar que nuestra aplicación concordara con lo pedido y asi asegurarnos de que no nos estabamos dejando algo por alto, realizamos un formato tabla con estilo "Check-List", en los cuales definimos un conjunto de preguntas que abarcan todos los conceptos que debian cumplir  nuestros requerimientos.
 Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y el cuestionamiento de su ambiguedad. Dependiendo de nuestras respuestas ibamos marcando con un SI/NO.
@@ -756,7 +770,6 @@ Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y e
 | ¿Realmente vale la pena definirlo? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
 
 ## *Validar la solución con personas no involucradas en el proyecto* ##
----
 
 Tuvimos una videollamada con un cliente para mostrarle todos los requerimientos y casos de uso de la aplicación, fundamentandole a que público iba dirigido principalmente y un prototipado  para que se pusiera en mayor sintonía con nosotros.
 El cliente se mostró muy satisfecho y decidido comentandonos que le parecía todo muy completo pero que le gustaría un poco mas de detalle al apartado "Penca Mundial" logrando que la navegación en la app sea mas amigable a todo público. Porque iniciar la app y encontrarse de frente con ese apartado le parece muy directo cuando el usuario abre por primera vez la app.
