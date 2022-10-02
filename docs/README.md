@@ -624,8 +624,8 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario selecciona la sección *Mis Grupos* | | 2. El sistema muestra la sección seleccionada |
-| 3. El usuario selecciona el grupo que quiere acceder | | 4. El sistema muestra la sección del grupo seleccionado | 
+| 1. El usuario selecciona la sección *Mis Grupos* | 2. El sistema muestra la sección seleccionada |
+| 3. El usuario selecciona el grupo que quiere acceder | 4. El sistema muestra la sección del grupo seleccionado | 
 | 5. El usuario selecciona la configuración del grupo | 6. El sistema muestra la sección de configuración |
 | 7. El usuario selecciona abandonar el grupo | 8. El sistema le pide confirmación de la acción |
 | 9. El usuario confirma | 10. El sistema elimina al usuario del grupo, notifica al resto de los usuarios y lleva al usuario a la sección *Mis Grupos* |
@@ -642,7 +642,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 7.1. El usuario presiona el boton de abandonar el grupo | | 7.2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
+| 7.1. El usuario presiona el boton de abandonar el grupo | 7.2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
 | 7.3. El usuario selecciona la opción *Cancelar* | 7.4. El sistema no hace nada y retorna a la sección del grupo |
 
 ### UC6: Acceso a reglas 
