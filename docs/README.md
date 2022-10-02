@@ -1,9 +1,10 @@
-+# Informe académico entrega 1
+# Informe académico entrega 1
 Fecha de entrega: 03-oct-2022
 
-## Repositorio Git
+# Repositorio Git
 
-**Creación y uso de repositorios locales y remotos**
+## Creación y uso de repositorios locales y remotos
+---
 
 Para introducir todo contenido a realizar primero debemos crearnos un repositorio local tanto como uno remoto, para ello utilizaremos el sistema de control de versionado distribuido (GIT), este mismo nos permitirá trabajar de forma autónoma, local y offline en nuestras máquinas. Al ser un trabajo en equipo no alcanza con tan solo tener un repositorio local, ya que todo cambio realizado por cada uno de los integrantes debe poder a su vez tenerlo cada uno de los integrantes del grupo, logrando asi evitar conflictos en el porvenir. Dado a esto, utilizaremos un sistema de control de versiones de tipo centralizado reconocido como GitHub. Donde tendremos un servidor de versionado único mediante el cual iremos colocando todo contenido fundamental para el desarrollo del trabajo.
 
@@ -15,14 +16,15 @@ Los repositorios son estructuras de directorios en disco, donde se almacenan y r
 *¿Porque tomarse la molestia de crear repositorios locales y uno remoto para el desarrollo del proyecto, y no usar Google Drive?*
 Esta pregunta nos la fuimos realizando durante el inicio del proyecto, con el paso del tiempo logramos entender que github, a diferencia de un servicio de alojamiento de archivos, ejemplo : (Google Drive), nos permite volver a versiones anteriores en caso de un fallo crítico y dejar registrado todo cambio importante.
 
-**Creación repositorio:**
+## Creación repositorio:
+---
 
 1. Acceder a GitHub 
 2. Crear nuevo repositorio (Boton en verde) y nombrarlo 
 
 Una vez alli el repositorio remoto habrá sido creado, pero ahora lo mas importante es poder conectar tu repositorio local con el remoto, para ello habrá que efectuar lo siguiente.
 
-**Creacion del repositorio local:**
+## Creacion del repositorio local:
 
 Para crearlo hay dos formas posibles.
 
@@ -35,22 +37,22 @@ Para crearlo hay dos formas posibles.
 Lo bueno de esta forma es que ya queda totalmente conectado al repositorio remoto por lo que te ahorras molestias y procedimientos más exhaustivos.
 
 **`Segunda forma`**
- - *Crear uno desde cero.* 
 
+ - *Crear uno desde cero.* 
     1. Inicializamos el repositorio vacio en la carpeta destinada, mediante **git init**.
     2. Añadimos el/los elementos a la carpeta que querramos efectuar con git.
     3. Usamos **git add .** para pasar todos los archivos modificados/untracked que querramos añadir a la staging area.
     4. Oficializamos el cambio, mediante un **git commit -m "Msg"** , dejando registrado una version hasta ese momento y a la par notificamos mediante el mensaje lo que realizamos.
     (Al realizar el commit mandamos los archivos al repositorio local).
 
-**Vincular repositorio local con repositorio remoto**
+## Vincular repositorio local con repositorio remoto
 
 Una vez que hayamos realizado los pasos de arriba, el repositorio local habrá sido creado con éxito. Ahora hay que conectarlo de forma remota, para ello:
 
 1. **git remote add origin <url del repositorio remoto(brindado por GitHub) >** *Añadimos de forma remota una rama nombrada origin*
 2. **git push -u origin main**  *Envia los archivos locales a la nube*
     
-**Técnica que utilizamos para la creación del proyecto**
+## Técnica que utilizamos para la creación del proyecto
 
 *Lo que nuestro grupo realizó fue:* 
 Al repositorio local (creado mediante un git init) le clonamos el repositorio remoto almacenado en GitHub del profesor, para conseguir la letra del ejercicio, las carpetas especificas de donde almacenar los distintos archivos, fotos, etc. A continuación aplicamos un cierto procedimiento para redirigir el repositorio clonado a una nueva url única nuestra, para ello:
@@ -62,6 +64,7 @@ Al repositorio local (creado mediante un git init) le clonamos el repositorio re
 `En otras palabras lo que hicimos fue copiar los archivos necesarios del profesor, borrar la conexion local-remota que existía. Volvemos a inicializar git, añadimos los archivos devuelta a la staging area y finalmente creamos devuelta la conexion local - remota pero con nuestro servidor especifico en la nube de GitHub.`
 
 ## Comandos Git ejecutados desde terminal y desde el IDE
+---
 
 | Comando | Descripción |
 | ------------- |:-------------:|
@@ -78,9 +81,12 @@ Al repositorio local (creado mediante un git init) le clonamos el repositorio re
 | **git pull** | `Actualiza` el repositorio y sus archivos con los cambios más recientes |
 
 ## Flujo de trabajo de GIT
+---
+
 ![FotoFlujoGit](/media/FotoFlujoGit.jpg)
 
 ## Versionado
+---
 
 Para ayudarnos con el versionado vamos a utilizar el flujo de git llamado **git-flow**. La idea detrás de este flujo es la de simplificar lo más posible las instancias de salida a producción y cuenta con 5 tipos de ramas distintos:
 
@@ -103,6 +109,7 @@ Resumen de commits y evolución del proyecto
 # Elicitación
 
 ## Evidencia de actividades de investigación
+---
 
 ### Ingeniería Inversa
 
@@ -127,12 +134,6 @@ Esta técnica la utilizamos para aquellos momentos de emergencia en los cuales n
 Esta técnica especialmente la realizamos para definir los Use Cases y los User Stories, realizamos una lluvia de ideas (BrainStorming) sobre los aspectos mas generales que si o si concordabamos que deberian de estar y fuimos profundizandonos en cada una de ellas hasta llegar a su limite mas estrecho.
 Notamos que gracias a esta técnica de elicitacion suponer y generar casos promedios era mucho mas sencillo que a diferencia de estar pensando una por una.
 
-### FocusGroup
-
-Esta técnica de elicitación la utilizamos una vez que ya  habiamos realizado las entrevistas. Les pedimos cordialmente a ambos entrevistados si podiamos hacerle un par de preguntas más para anotar sus deseos e inquietudes y amablemente accedieron. Esto lo realizamos ya que buscabamos personas que no se conocieran entre sí pero que tuvieran comportamientos de consumo similares.
-Nosotros cumplimos el rol de moderadores, fuimos liderando la conversación y de vez en cuando realizabamos una pregunta a modo de "disparador" para que los participantes expresen sus opiniónes 
-e inquietudes del producto o servicio. Registramos todo aporte hecho. Estos mismos fueron de extrema utilidad a la hora de realizar algunos requerimientos funcionales como también no funcionales.
-
 ### Entrevista
 
 En esta técnica se trata de entrevistar a varios perfiles que podrían estar interesados en nuestro producto con la finalidad de obtener información sobre qué aspectos del mismo resultan relevantes para cada perfil. En este caso entrevistamos a dos personas con dos perfiles distintos:
@@ -140,24 +141,27 @@ En esta técnica se trata de entrevistar a varios perfiles que podrían estar in
 - [Carlos (20 años)](/media/entrevista_carlos.m4a). Estudiante y amante del fútbol.
 - [Martín (34 años)](/media/entrevista_martin.m4a). CEO de Hattrick-IT interesado en poder crear una penca para su empresa
 
-Caracterización de usuarios: User Personas
+De ambas entrevistas obtuvimos información valiosa que se terminó traduciendo a requerimientos funcionales. Por ejemplo, para ambos entrevistados era de vital importancia contar con la creación de grupos privados para poder utilizar la aplicación desde un ámbito mas privado. En el caso de Martín, veía esta funcionalidad como vital ya que su intención sería aprovechar los grupos privados para poder organizar una penca para los empleados de su empresa.
 
-Con la información recabada creamos el siguiente modelo conceptual del problema:
+También obtuvimos opiniones un tanto dispares. En particular, para Carlos era de vital importancia tener información general sobre el Mundial y las selecciones a la hora de predecir los partidos. Nos comentó que era interesante contar con ello directo en la app y no tener que acudir a otros sitios. Sin embargo, para Martín este detalle no fue de tanta importancia. Nos comentó que no le molesta que aparezca esa información pero dado que se puede obtener en otros sitios no le pareció algo muy importante para remarcar.
 
-![modelo-conceptual](/media/modeladoConceptual.jpg)
-
-## Modelado de usuarios del sistema
+## Caracterización de usuarios: User Personas
+---
 
 Nuestra aplicación fue desarrollada para un público objetivo de entre 20 y 40 años sin ser este un límite restrictivo ya que personas de diferentes edades pueden utilizar la aplicación sin necesidad de estar en el rango objetivo definido anteriormente.
 
 A continuación se encuentran los usuarios modelados de nuestra aplicación los cuales fueron creados mediante la utilización de la técnica user personas la cual nos permite crear usuarios objetivos para nuestro sistema.
 
-
 ![User persona 1](/media/persona1.png)
 
 ![User persona 2](/media/persona2.png)
 
+Con la información recabada creamos el siguiente modelo conceptual del problema:
+
+![modelo-conceptual](/media/modeladoConceptual.jpg)
+
 ## Especificación
+---
 
 ### Definición de requerimientos funcionales y no funcionales   
 
@@ -174,14 +178,12 @@ Antes de fundamentar los distintos tipos de requerimientos hay q desarrollar el 
 - Su objetivo principal es definir el problema a resolver.
 - Es el primer paso en la creacion del Software.
 
-**Requerimentos Funcionales**
+## Requerimentos Funcionales
 
 Los requerimientos funcionales son aquellos que dan una especificacion sobre servicios y/o funciones que el software debe implementar. Estos dan una descripción de la reacción y comportamientos del sistema en distintas condiciones determinadas. 
 Las funciones del sistema están vinculadas directamente con el objetivo del negocio o cliente y los roles que cumplirán los usuarios dentro de la aplicación.
 
-**Nuestro sistema cuenta con los siguientes requermientos funcionales**
-
-### RF1 Registro de usuario: 
+### RF1 Registro de usuario
 ---
 - **Actor:** Usuario
 - **Descripción:** El usuario debe registrarse en el sistema mediante un nickname y un email.
@@ -241,14 +243,12 @@ Las funciones del sistema están vinculadas directamente con el objetivo del neg
 - **Descripción:** El usuario puede agregar una sección Premios a su grupo privado donde indica la cantidad de ganadores y sus respectivos premios
 - **Prioridad:** Baja
 
-**Requerimientos no Funcionales**
+## Requerimientos no Funcionales
 
 Los requerminentos no funcionales son las restricciones a los distintos servicios que el sistema brinda, considerando aspectos técnicos y la relación con sistemas externos. Tambien se consideran los atribuitos de calidad como parte de este tipo de requerimientos.
 La calidad se divide en dos partes fundamentales:
 - Externa: relacionada con la ejecución del sistema y los factores visibles durante la misma.
 - Interna: relacionada con el mantenimiento a largo plazo del sistema requiriendo un cierto standar dentro de la empresa para que todos los desarrolladores tanto los actuales como los que vendrán en un futuro puedan comprender el código y evitar problemas internos. Asegurando la portabilidad y escalabilidad del sistema.
-
-**Nuestro sistema cuenta con los siguientes requermientos no funcionales**
 
 ### RNF1: Aplicación responsiva
 ---
@@ -305,6 +305,7 @@ La calidad se divide en dos partes fundamentales:
 - **Prioridad:** Alta
 
 ## User Stories 
+---
 
 ### User Story 1
 
@@ -321,7 +322,6 @@ La calidad se divide en dos partes fundamentales:
 - Se dispone de un marcador para seleccionar el puntaje de ambos equipos.
 - Se puede predecir los resultados de distintos partidos.
 - Los puntajes varian entre 1 a n, siendo n un valor lógico.
-
 
 ### User Story 2
 
@@ -492,6 +492,8 @@ Por ende el usuario está conectado a una red WiFi.
 - Las reglas se pueden visualizar.
 
 ## Use Cases
+---
+
 ### UC1: Registro de usuario
 
 **Actor:** Usuario
@@ -609,14 +611,26 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario presiona el boton de abandonar el grupo | 2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
-| 3. El usuario selecciona la opción SI | 4. Se elimina automaticamente el grupo | 4. Se les notifica el abandono a los integrantes restantes del grupo mediante un mensaje|
+| 1. El usuario selecciona la sección *Mis Grupos* | | 2. El sistema muestra la sección seleccionada |
+| 3. El usuario selecciona el grupo que quiere acceder | | 4. El sistema muestra la seccion del grupo seleccionado | 
+| 5. El usuario selecciona la configuración del grupo | 6. El sistema muestra la sección de configuración |
+| 7. El usuario selecciona abandonar el grupo | 8. El sistema le pide confirmación de la acción |
+| 9. El usuario confirma | 10. El sistema elimina al usuario del grupo, notifica al resto de los usuarios y lleva al usuario a la sección *Mis Grupos* |
+
+| 1 | 2 |
+| ----------- | ----------- |
+| ![mis-grupos-menu](/docs/bocetosiu/menu-mis-grupos.png) | ![mis-grupos](/docs/bocetosiu/mis-grupos.png) |
+| 3 | 4 |
+| ![grupo-1](/docs/bocetosiu/grupo-particular.png) | ![grupo-editar](/docs/bocetosiu/grupo-configuracion.png) |
+| 5 | 6 |
+| ![confirmar-eliminacion](/docs/bocetosiu/confirmar-abandono.png) | ![eliminacion-hecha](/docs/bocetosiu/mis-grupos-abandono.png) |
 
 **Cursos alternativos:** 
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 3.1 El usuario selecciona la opción NO | 3.2 El sistema no ejecuta nada|
+| 7.1. El usuario presiona el boton de abandonar el grupo | | 7.2. Aparece una alerta preguntandole al usuario si esta seguro de realizar dicha acción |
+| 7.3. El usuario selecciona la opción *Cancelar* | 7.4. El sistema no hace nada y retorna a la sección del grupo |
 
 ### UC6: Acceso a reglas 
 
@@ -624,15 +638,11 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario ingresa a la sección de información | 2. El sistema muestra una opción llamada "REGLAS DEL JUEGO" |
-| 3. El usuario selecciona la opción | 4. El sistema despliega las reglas del juego |
+| 1. El usuario ingresa a la sección de Reglas | 2. El sistema muestra la sección seleccionada |
 
-**Cursos alternativos:** 
-
-| Acción | Respuesta del sistema |
+| 1 | 2 |
 | ----------- | ----------- |
-| 3.1. El usuario no selecciona dicha opción | 3.2. El sistema no muestra las reglas siguiendo el curso de la opcion alterna elegida |
-
+| ![menu-reglas](/docs/bocetosiu/menu-reglas.png) | ![reglas](/docs/bocetosiu/reglas.png) |
 
 ### UC7: Envío de mensajes
 
@@ -704,9 +714,10 @@ Por ende el usuario está conectado a una red WiFi.
 
 Bocetos de IU
 
-## Validación y verificación
+# Validación y verificación
 
-## *Verificar la especificación* ##
+## Verificar la especificación
+---
 
 Para verificar que nuestra aplicación concordara con lo pedido y asi asegurarnos de que no nos estabamos dejando algo por alto, realizamos un formato tabla con estilo "Check-List", en los cuales definimos un conjunto de preguntas que abarcan todos los conceptos que debian cumplir  nuestros requerimientos.
 Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y el cuestionamiento de su ambiguedad. Dependiendo de nuestras respuestas ibamos marcando con un SI/NO.
@@ -745,30 +756,28 @@ Estos conceptos abarcan desde la correctitud del mismo hasta su verificacion y e
 | ¿Realmente vale la pena definirlo? | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI | SI |
 
 ## *Validar la solución con personas no involucradas en el proyecto* ##
+---
 
 Tuvimos una videollamada con un cliente para mostrarle todos los requerimientos y casos de uso de la aplicación, fundamentandole a que público iba dirigido principalmente y un prototipado  para que se pusiera en mayor sintonía con nosotros.
 El cliente se mostró muy satisfecho y decidido comentandonos que le parecía todo muy completo pero que le gustaría un poco mas de detalle al apartado "Penca Mundial" logrando que la navegación en la app sea mas amigable a todo público. Porque iniciar la app y encontrarse de frente con ese apartado le parece muy directo cuando el usuario abre por primera vez la app.
 
-## Reflexión
+# Reflexión
 
 Antes de realizar las reflexiones individuales optamos por contruibuir primero con una reflexión grupal, ya que la mayor parte del obligatorio la realizamos de forma conjunta, ayudandonos con las dudas que fueron surgieron, dividiendonos el trabajo, realizando partes entre todos y escuchando las opiniones y aportes de cada uno.
 Somos conscientes de que este trabajo nos impulsó como programadores ya que fuimos aprendiendo poco a poco todo el proceso de relación entre  Git y GitHub, logrando arreglar los errores de mergeo, introduciendo sobretodo el concepto de los adds,commits, pulls y los pushs, como tambien la necesidad de volver para atras en versiones para poder deshacer cambios erroneos. El trabajo nos pareció muy interesante ya que nos llevó mas a entender como es en realidad el dia a dia del programador promedio y que no fuera tan teórico y esquemático como lo que nos enseñan la mayoria de las otras materias.
 Nos pareció muy entretenido el tener que realizarle entrevistas a personas ajenas a nuestros vínculos, simulando como si fueran nuestros clientes, fueron de mucha utilidad dado que nos aportaron un conjunto amplio de ideas nuevas que podias implementar, las cuales fuimos poco a poco traduciendolas en requerimientos funcionales y no funcionales. Aprendimos nuevas técnicas de elicitación como el focus group y en nuestro caso a como realizar correctamente una BrainStorming (Lluvia de ideas).
 
-Detalle del trabajo individual
+# Detalle del trabajo individual
+
+![historia-commits-1](/media/historia-commits-1.png)
+![historia-commits-2](/media/historia-commits-2.png)
+![historia-commits-3](/media/historia-commits-3.png)
+![historia-commits-4](/media/historia-commits-4.png)
 
 A continuación daremos una reflexión individual de cada integrante del grupo:
 
-
-
-
-
-
-
-
-
-
-Técnicas aplicadas y aprendizajes
-
-
-
+| Integrante | Reflexión |
+| ----------- | ----------- |
+| Fernando | Me parece que el trabajo general del equipo fue bueno. Se aplicó correctamente el git-flow y todo fue utilizado desde la consola lo cual hace que el entendimiento sobre el tema sea aún mayor. Las técnicas de elicitación que utilizamos nos brindó muy buena información para crear los requerimientos. En lo personal también fue muy interesante el uso de [proto.io](https://proto.io/) para la creación de los bocetos. Es una herramienta que desconocía y da mucha facilidad a la hora de crear interfaces de usuario |
+| Ignacio | |
+| Gonzalo | |
