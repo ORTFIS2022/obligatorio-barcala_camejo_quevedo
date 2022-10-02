@@ -679,7 +679,7 @@ Por ende el usuario está conectado a una red WiFi.
 ### UC8: Habilitar Notificaciones
 ---
 
-**Actor:**Usuario
+**Actor:** Usuario
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
