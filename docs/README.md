@@ -3,13 +3,15 @@ Fecha de entrega: 03-oct-2022
 
 ## Indice
 
-1 - [Repositorio de Git](#id1)
-2 - [Elicitación](#id2)
-3 - [User Personas](#id3)
-4 - [Especificación](#id4)
-
-
-<a name = "id1">
+- 1 [Repositorio de Git](#id1)
+- 2 [Elicitación](#id2)
+- 3 [User Personas](#id3)
+- 4 [Especificación](#id4)
+- 5 [User Stories](#US)
+- 6 [Use Cases](#UC)
+- 7 [Validación/Verificación](#ValYVer)
+- 8 [ReflexiónGrupal](#ReflexionGrupal)
+- 9 [ReflexiónIndividual](#ReflexiónInd)
 
 # Repositorio Git
 
@@ -321,7 +323,11 @@ La calidad se divide en dos partes fundamentales:
 - **Descripción:** Que los resultados se vayan actualizando en tiempo vivo y no demoren mas de 10 segundos en figurar en la aplicación
 - **Prioridad:** Alta
 
+<<<<<<< HEAD
 </a>
+=======
+<a name= "US">
+>>>>>>> e5ea60a6ef834c4f89e35175337bd0a3ef03e4e5
 
 ## User Stories 
 
@@ -522,6 +528,10 @@ Por ende el usuario está conectado a una red WiFi.
 **Criterio de aceptación:** 
 - Se dispone de un botón que te redirige a las reglas.
 - Las reglas se pueden visualizar.
+
+</a>
+
+<a name = "UC">
 
 ## Use Cases
 
@@ -752,6 +762,10 @@ Por ende el usuario está conectado a una red WiFi.
 | ----------- | ----------- |
 | 1.1 El administrador del grupo activa esta opción | 1.2 El sistema ejecuta el checkeo de las palabras el cual en caso de encontrar una palabra ofensiva la cambia por (****) |
 
+</a>
+
+<a name = "ValYVer">
+
 # Validación y verificación
 
 ## Verificar la especificación
@@ -797,11 +811,19 @@ Estos conceptos abarcan desde la correctitud del mismo hasta su verificación y 
 Tuvimos una videollamada con un cliente para mostrarle todos los requerimientos y casos de uso de la aplicación, fundamentandole a que público iba dirigido principalmente y un prototipado  para que se pusiera en mayor sintonía con nosotros.
 El cliente se mostró muy satisfecho y decidido comentandonos que le parecía todo muy completo pero que le gustaría un poco mas de detalle al apartado "Penca Mundial" logrando que la navegación en la app sea mas amigable a todo público. Porque iniciar la app y encontrarse de frente con ese apartado le parece muy directo cuando el usuario abre por primera vez la app.
 
+</a>
+
+<a name = "ReflexionGrupal">
+
 # Reflexión
 
 Antes de realizar las reflexiones individuales optamos por contruibuir primero con una reflexión grupal, ya que la mayor parte del obligatorio la realizamos de forma conjunta, ayudandonos con las dudas que fueron surgieron, dividiendonos el trabajo, realizando partes entre todos y escuchando las opiniones y aportes de cada uno.
 Somos conscientes de que este trabajo nos impulsó como programadores ya que fuimos aprendiendo poco a poco todo el proceso de relación entre  Git y GitHub, logrando arreglar los errores de mergeo, introduciendo sobretodo el concepto de los adds, commits, pulls y los pushs, como tambien la necesidad de volver para atras en versiones para poder deshacer cambios erroneos. El trabajo nos pareció muy interesante ya que nos llevó mas a entender como es en realidad el día a día del programador promedio y que no fuera tan teórico y esquemático como lo que nos enseñan la mayoria de las otras materias.
 Nos pareció muy entretenido el tener que realizarle entrevistas a personas ajenas a nuestros vínculos, simulando como si fueran nuestros clientes, fueron de mucha utilidad dado que nos aportaron un conjunto amplio de ideas nuevas que podias implementar, las cuales fuimos poco a poco traduciendolas en requerimientos funcionales y no funcionales. Aprendimos nuevas técnicas de elicitación como el focus group y en nuestro caso a como realizar correctamente una BrainStorming (Lluvia de ideas).
+
+</a>
+
+<a name = "ReflexionInd">
 
 # Detalle del trabajo individual
 
@@ -817,3 +839,5 @@ A continuación daremos una reflexión individual de cada integrante del grupo:
 | Fernando Barcala | Me parece que el trabajo general del equipo fue bueno. Se aplicó correctamente el git-flow y todo fue utilizado desde la consola lo cual hace que el entendimiento sobre el tema sea aún mayor. Las técnicas de elicitación que utilizamos nos brindó muy buena información para crear los requerimientos. En lo personal también fue muy interesante el uso de [proto.io](https://proto.io/) para la creación de los bocetos. Es una herramienta que desconocía y da mucha facilidad a la hora de crear interfaces de usuario |
 | Ignacio Quevedo | Los avances del proyecto fueron realizados en conjunto, cada uno aportó ideas creativas y útiles para el desarrollo del mismo, noté que realizar este trabajo en grupo fue, además de divertido, muy enriquescedor a nivel intelectual dado que aprendí muchas cosas útiles y que de verdad voy a poder aplicar en el porvenir de los días. Me permitió poner en práctica los conceptos que hemos ido aprendiendo durante lo que llevamos del semestre, ejemplo las técnicas de elicitación,los comandos de git, el modelo conceptual, casos de uso, user personas,user stories, requerimientos y sus respectivos tipos (Funcionales y No Funcionales), entre otras. En lo personal me resultó muy interesante el uso de proto.io para la creación de los bocetos, me permitió ver y comprender más nuestra aplicación gracias a ella, dado que nos mostraba de forma fácil y muy intuitiva todo las ideas que fuimos aplicando en el mismo. Fue una forma rápida de poder darle vida a nuestro proyecto lo cual me pareció increible.Notamos que las entrevistas fueron medias complicadas de agendar por tema de tiempo y disponibilidad, de tanto los entrevistados como nosotros, esto nos generó el buen hábito de mejorar la organización del grupo para las futuras entrevistas, por ejemplo a la hora de hacer la validación.Los conceptos de Git/GitHub fueron de extrema útilidad para el desarrollo del proyecto, me fascina la idea de poder trabajar de forma lócal y autónoma cada uno en su máquina, pero que a su vez esa forma de trabajo pueda en tan solo un segundo tener todos los cambios y actualizaciones de forma remota, es tan solo increible. Es un hecho que al principio del proyecto cuando intentabamos pushear cosas, mas de una vez ocurrió la mala suerte de que el otro habia pusheado algo antes y por ende nuestros cambios no podian ser registrados de forma remota hasta que se arreglara el error, al principio nos tendió un poco de dificultad el poder arreglarlo, pero gracias a los conocimientos dados en clase y un par de vichadas a las grabaciones, pudimos comprenderlo, logrando que este problema pase de ser algo malo a un buen recuerdo. |
 | Gonzalo Camejo | Creo que este trabajo nos ayudó a comprender mucho mejor la forma en la cual un equipo de desarrollo funciona, aprendiendo tecnologías como git y GitHub que hoy en día son esenciales para el trabajo remoto en equipo. Me pareció realmente importante el hecho de "simular" una entrevista como si fuera real ya que nos permitió tratar con personas no comunes a nuestro núcleo con las cuales logramos interactuar y llegar a un acuerdo sobre las aplicaciones a desarrollar. Creo que la utilización de herramientas como Canva para realizar user personas y proto.io fueron de gran ayuda a la hora de generar una interfaz de usuario. Las técnicas de elicitación utilizadas como Brainstorming e ingeniería inversa fueron muy efectivas a la hora de tener un primer acercamiento a la aplicación. Personalmente sentí que logramos trabajar en equipo cubriendo las distintas áreas en conjunto verificando y discutiendo los distintos aspectos del proyecto, para lograr así una mejor solución. En un inicio creo que estábamos un poco perdidos con git/github y su funcionamiento, pero a medida que utilizábamos más git/github y nos ayudábamos unos a otros logramos comprender el funcionamiento de la herramienta. |
+
+</a>
