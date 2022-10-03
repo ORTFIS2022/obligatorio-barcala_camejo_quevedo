@@ -772,7 +772,7 @@ Por ende el usuario está conectado a una red WiFi.
 | ----------- | ----------- |
 | ![menu](/docs/bocetosiu/menu.png) | ![grupos](/docs/bocetosiu/grupos.png) |
 | 3 | 4 |
-| ![grupoH](/docs/bocetosiu/grupoH.png) | ![partido](/docs/bocetosiu/partids-finalizados.png) |
+| ![grupoH](/docs/bocetosiu/grupoH.png) | ![partido](/docs/bocetosiu/partidos-finalizados.png) |
 
 ### UC11: Habilitar/Deshabilitar la censura en el chat
 
