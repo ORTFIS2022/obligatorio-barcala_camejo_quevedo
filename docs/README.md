@@ -791,12 +791,6 @@ Por ende el usuario está conectado a una red WiFi.
 | 3 | 4 |
 | ![grupo-1](/docs/bocetosiu/grupo-particular.png) | ![grupo-editar](/docs/bocetosiu/grupo-configuracion.png) |
 
-**Cursos alternativos:**
-
-| Acción | Respuesta del sistema |
-| ----------- | ----------- |
-| 1.1 El administrador del grupo activa esta opción | 1.2 El sistema ejecuta el checkeo de las palabras el cual en caso de encontrar una palabra ofensiva la cambia por (****) |
-
 </a>
 
 <a name = "ValYVer">
