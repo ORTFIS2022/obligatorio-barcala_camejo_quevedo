@@ -3,7 +3,13 @@ Fecha de entrega: 03-oct-2022
 
 ## Indice
 
-- [Versionado](#id1)
+1 - [Repositorio de Git](#id1)
+2 - [Elicitación](#id2)
+3 - [User Personas](#id3)
+4 - [Especificación](#id4)
+
+
+<a name = "id1">
 
 # Repositorio Git
 
@@ -85,7 +91,6 @@ Al repositorio local (creado mediante un git init) le clonamos el repositorio re
 
 ![FotoFlujoGit](/media/FotoFlujoGit.jpg)
 
- <a name = "id1">
 
 ## Versionado
 
@@ -107,6 +112,8 @@ De esta manera, los desarrolladores siempre se deben situar en la rama `develop`
 
 Resumen de commits y evolución del proyecto
 </a>
+
+<a name = "id1">
 
 # Elicitación
 
@@ -148,6 +155,9 @@ En esta técnica se trata de entrevistar a varios perfiles que podrían estar in
 De ambas entrevistas obtuvimos información valiosa que se terminó traduciendo a requerimientos funcionales. Por ejemplo, para ambos entrevistados era de vital importancia contar con la creación de grupos privados para poder utilizar la aplicación desde un ámbito más privado. En el caso de Martín, veía esta funcionalidad como vital ya que su intención sería aprovechar los grupos privados para poder organizar una penca para los empleados de su empresa.
 
 También obtuvimos opiniones un tanto dispares. En particular, para Carlos era de vital importancia tener información general sobre el Mundial y las selecciones a la hora de predecir los partidos. Nos comentó que era interesante contar con ello directo en la app y no tener que acudir a otros sitios. Sin embargo, para Martín este detalle no fue de tanta importancia. Nos comentó que no le molesta que aparezca esa información pero dado que se puede obtener en otros sitios no le pareció algo muy importante para remarcar.
+</a>
+
+<a name="id3">
 
 ## Caracterización de usuarios: User Personas
 
@@ -162,6 +172,10 @@ A continuación se encuentran los usuarios modelados de nuestra aplicación los 
 Con la información recabada creamos el siguiente modelo conceptual del problema:
 
 ![modelo-conceptual](/media/modeladoConceptual.jpg)
+
+</a>
+
+<a name="id4">
 
 ## Especificación
 
@@ -306,6 +320,8 @@ La calidad se divide en dos partes fundamentales:
 ### RNF10: Actualización de registros
 - **Descripción:** Que los resultados se vayan actualizando en tiempo vivo y no demoren mas de 10 segundos en figurar en la aplicación
 - **Prioridad:** Alta
+
+</a>
 
 ## User Stories 
 
