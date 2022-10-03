@@ -10,8 +10,8 @@ Fecha de entrega: 03-oct-2022
 - 5 [User Stories](#US)
 - 6 [Use Cases](#UC)
 - 7 [Validación/Verificación](#ValYVer)
-- 8 [ReflexiónGrupal](#ReflexionGrupal)
-- 9 [ReflexiónIndividual](#ReflexiónInd)
+- 8 [Reflexión Grupal](#ReflexionGrupal)
+- 9 [Reflexión Individual](#ReflexionInd)
 
 <a name= "id1">
 
