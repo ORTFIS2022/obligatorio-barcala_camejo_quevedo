@@ -3,15 +3,16 @@ Fecha de entrega: 03-oct-2022
 
 ## Indice
 
-- 1 [Repositorio de Git](#id1)
-- 2 [Elicitación](#id2)
-- 3 [User Personas](#id3)
-- 4 [Especificación](#id4)
-- 5 [User Stories](#US)
-- 6 [Use Cases](#UC)
-- 7 [Validación/Verificación](#ValYVer)
-- 8 [Reflexión Grupal](#ReflexionGrupal)
-- 9 [Reflexión Individual](#ReflexionInd)
+1. [Repositorio de Git](#id1)
+2. [Elicitación](#id2)
+3. [User Personas](#id3)
+4. [Especificación](#id4)
+5. [User Stories](#US)
+6. [Use Cases](#UC)
+7. [Validación/Verificación](#ValYVer)
+8. [Reflexión Grupal](#ReflexionGrupal)
+9. [Reflexión Individual](#ReflexionInd)
+10. [Anexo](#anexo)
 
 <a name= "id1">
 
@@ -275,7 +276,7 @@ La calidad se divide en dos partes fundamentales:
 
 ### RNF1: Aplicación responsiva
 ---
-- **Descripción:** La aplicación debe poder ser accedida desde cualquier dispositivos móvil que contenga Android o IOS.
+- **Descripción:** La aplicación debe poder ser accedida desde cualquier dispositivos móvil que contenga Android 10 o IOS 12.
 - **Prioridad:** Alta
 
 ### RNF2: Tipografía
@@ -295,7 +296,7 @@ La calidad se divide en dos partes fundamentales:
 
 ### RNF5: Versionado Web
 ---
-- **Descripción:** El producto será realizado mediante JavaScript, CSS y HTML
+- **Descripción:** El producto será realizado mediante JavaScript 5, CSS3 y HTML5
 - **Prioridad:** Alta
 
 ### RNF6: Estabilidad del producto:
@@ -303,9 +304,9 @@ La calidad se divide en dos partes fundamentales:
 - **Descripción:** El sistema debe soportar mas de 3000 usuarios definiendo un posible resultado para el mismo partido sin una degradación del tiempo de respuesta mayor a 10 segundos.
 - **Prioridad:** Alta
 
-### RNF7: Múltiples lenguajes:
+### RNF7: Múltiples idiomas:
 ---
-- **Descripción:** El sistema debe soportar múltiples lenguajes y desarrollarse inicialmente en español e inglés
+- **Descripción:** El sistema debe soportar múltiples idiomas y desarrollarse inicialmente en español, inglés y portugués
 - **Prioridad:** Media
 
 ### RNF7: Inicio del producto:
@@ -320,7 +321,7 @@ La calidad se divide en dos partes fundamentales:
 
 ### RNF9: Consumo de recursos
 ---
-- **Descripción:** Que no consuma muchos recursos del dispositivo a la hora de procesar.
+- **Descripción:** La aplicación no puede consumir más del 10% de los recursos del dispositivo
 - **Prioridad:** Media
 
 ### RNF10: Actualización de registros
@@ -537,7 +538,7 @@ Por ende el usuario está conectado a una red WiFi.
 
 ## Use Cases
 
-### UC1: Registro de usuario
+### UC1: Registro de usuario (A determinar)
 ---
 
 **Actor:** Usuario
@@ -700,10 +701,18 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario ingresa a un grupo | 2. El sistema muestra el grupo y sus secciones |
-| 3. el usuario ingresa a la sección de mensajes | 4. El sistema muestra una sección con los últimos mensajes recibidos y el historial de mensajes |
-| 5. El usuario selecciona un cuadro de texto | 6. El sistema muestra el teclado |
-| 7. El usuario envia el mensaje seleccionando la opción enviar | 8. El sistema envía el mensaje |
+| 1. El usuario selecciona la sección *Mis Grupos* | 2. El sistema muestra la sección seleccionada |
+| 3. El usuario selecciona el grupo que quiere acceder | 4. El sistema muestra la sección del grupo seleccionado | 
+| 5. El usuario selecciona la sección de chat | 6. El abre la sección de chat con todos los mensajes enviados en el grupo |
+| 7. El usuario abre el teclado y envia un mensaje | 8. El sistema envía el mensaje |
+
+| 1 | 2 |
+| ----------- | ----------- |
+| ![mis-grupos-menu](/docs/bocetosiu/menu-mis-grupos.png) | ![mis-grupos](/docs/bocetosiu/mis-grupos.png) |
+| 3 | 4 |
+| ![grupo-chat](/docs/bocetosiu/grupo-chat.png) | ![chat-abierto](/docs/bocetosiu/chat-abierto.png) |
+| 5 | 6 |
+| ![chat-teclado](/docs/bocetosiu/chat-teclado.png) | |
 
 **Cursos alternativos:** 
 
@@ -719,7 +728,11 @@ Por ende el usuario está conectado a una red WiFi.
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
 | 1. El usuario ingresa a la aplicación por primera vez | 2. El sistema muestra una ventana emergente pidiendo permisos para mandarle notificaciónes |
-| 3. el usuario ingresa que si | 4. Queda notificado el sistema de dejar al pendiente las futuras notificaciones | 
+| 3. El usuario otorga autorización | 4. El sistema queda autorizado de enviar notificaciones y las mismas quedan activadas | 
+
+| 1 | 2 |
+| ----------- | ----------- |
+| ![menu-reglas](/docs/bocetosiu/permiso-notificaciones.png) | ![reglas](/docs/bocetosiu/grupos.png) |
 
 **Cursos alternativos:** 
 
@@ -734,14 +747,16 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario accede a la configuración | 2. El sistema muestra la sección de configuración | 
-| 3. El usuario hablita la opción de chat | 4. Se carga el chat y se le habilita la funcion de mandar y recibir mensajes |
+| 1. El usuario selecciona la sección *Mis Grupos* | 2. El sistema muestra la sección seleccionada |
+| 3. El usuario selecciona el grupo que quiere acceder | 4. El sistema muestra la sección del grupo seleccionado | 
+| 5. El usuario selecciona la configuración del grupo | 6. El sistema muestra la sección de configuración |
+| 7. El usuario habilita/deshabilita el chat | 8. El sistema guarda la selección del usuario |
 
-**Cursos alternativos:**
-
-| Acción | Respuesta del sistema |
+| 1 | 2 |
 | ----------- | ----------- |
-| 3.1 EL usuario deshabilita el chat | 3.2 Se borra todo acceso al mismo | 
+| ![mis-grupos-menu](/docs/bocetosiu/menu-mis-grupos.png) | ![mis-grupos](/docs/bocetosiu/mis-grupos.png) |
+| 3 | 4 |
+| ![grupo-1](/docs/bocetosiu/grupo-particular.png) | ![grupo-editar](/docs/bocetosiu/grupo-configuracion.png) |
 
 ### UC10: Acceso a la información detallada de partidos anteriores
 ---
@@ -750,13 +765,31 @@ Por ende el usuario está conectado a una red WiFi.
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El usuario entra en la sección partidos | 2. El sistema proyecta todos los partidos y sus respectivos resultados hasta el momento |
+| 1. El usuario entra en la sección *Penca Mundial* | 2. El sistema muestra la sección seleccionada |
+| 3. El usuario selecciona el grupo que quiere acceder | 4. El sistema muestra la sección del grupo seleccionado |
 
-### UC11: Deshabilitar la censura en el chat
+| 1 | 2 |
+| ----------- | ----------- |
+| ![menu](/docs/bocetosiu/menu.png) | ![grupos](/docs/bocetosiu/grupos.png) |
+| 3 | 4 |
+| ![grupoH](/docs/bocetosiu/grupoH.png) | ![partido](/docs/bocetosiu/partids-finalizados.png) |
+
+### UC11: Habilitar/Deshabilitar la censura en el chat
+
+**Actor:** Usuario
 
 | Acción | Respuesta del sistema |
 | ----------- | ----------- |
-| 1. El administrador desactiva la opción de "censura de chat" | 2. El sistema deja de correr el checkeo de las palabras | 
+| 1. El usuario selecciona la sección *Mis Grupos* | 2. El sistema muestra la sección seleccionada |
+| 3. El usuario selecciona el grupo que quiere acceder | 4. El sistema muestra la sección del grupo seleccionado | 
+| 5. El usuario selecciona la configuración del grupo | 6. El sistema muestra la sección de configuración |
+| 7. El usuario habilita/deshabilita la censura del chat | 8. El sistema guarda la selección del usuario |
+
+| 1 | 2 |
+| ----------- | ----------- |
+| ![mis-grupos-menu](/docs/bocetosiu/menu-mis-grupos.png) | ![mis-grupos](/docs/bocetosiu/mis-grupos.png) |
+| 3 | 4 |
+| ![grupo-1](/docs/bocetosiu/grupo-particular.png) | ![grupo-editar](/docs/bocetosiu/grupo-configuracion.png) |
 
 **Cursos alternativos:**
 
@@ -829,11 +862,6 @@ Nos pareció muy entretenido el tener que realizarle entrevistas a personas ajen
 
 # Detalle del trabajo individual
 
-![historia-commits-1](/media/historia-commits-1.png)
-![historia-commits-2](/media/historia-commits-2.png)
-![historia-commits-3](/media/historia-commits-3.png)
-![historia-commits-4](/media/historia-commits-4.png)
-
 A continuación daremos una reflexión individual de cada integrante del grupo:
 
 | Integrante | Reflexión |
@@ -841,5 +869,18 @@ A continuación daremos una reflexión individual de cada integrante del grupo:
 | Fernando Barcala | Me parece que el trabajo general del equipo fue bueno. Se aplicó correctamente el git-flow y todo fue utilizado desde la consola lo cual hace que el entendimiento sobre el tema sea aún mayor. Las técnicas de elicitación que utilizamos nos brindó muy buena información para crear los requerimientos. En lo personal también fue muy interesante el uso de [proto.io](https://proto.io/) para la creación de los bocetos. Es una herramienta que desconocía y da mucha facilidad a la hora de crear interfaces de usuario |
 | Ignacio Quevedo | Los avances del proyecto fueron realizados en conjunto, cada uno aportó ideas creativas y útiles para el desarrollo del mismo, noté que realizar este trabajo en grupo fue, además de divertido, muy enriquescedor a nivel intelectual dado que aprendí muchas cosas útiles y que de verdad voy a poder aplicar en el porvenir de los días. Me permitió poner en práctica los conceptos que hemos ido aprendiendo durante lo que llevamos del semestre, ejemplo las técnicas de elicitación,los comandos de git, el modelo conceptual, casos de uso, user personas,user stories, requerimientos y sus respectivos tipos (Funcionales y No Funcionales), entre otras. En lo personal me resultó muy interesante el uso de proto.io para la creación de los bocetos, me permitió ver y comprender más nuestra aplicación gracias a ella, dado que nos mostraba de forma fácil y muy intuitiva todo las ideas que fuimos aplicando en el mismo. Fue una forma rápida de poder darle vida a nuestro proyecto lo cual me pareció increible.Notamos que las entrevistas fueron medias complicadas de agendar por tema de tiempo y disponibilidad, de tanto los entrevistados como nosotros, esto nos generó el buen hábito de mejorar la organización del grupo para las futuras entrevistas, por ejemplo a la hora de hacer la validación.Los conceptos de Git/GitHub fueron de extrema útilidad para el desarrollo del proyecto, me fascina la idea de poder trabajar de forma lócal y autónoma cada uno en su máquina, pero que a su vez esa forma de trabajo pueda en tan solo un segundo tener todos los cambios y actualizaciones de forma remota, es tan solo increible. Es un hecho que al principio del proyecto cuando intentabamos pushear cosas, mas de una vez ocurrió la mala suerte de que el otro habia pusheado algo antes y por ende nuestros cambios no podian ser registrados de forma remota hasta que se arreglara el error, al principio nos tendió un poco de dificultad el poder arreglarlo, pero gracias a los conocimientos dados en clase y un par de vichadas a las grabaciones, pudimos comprenderlo, logrando que este problema pase de ser algo malo a un buen recuerdo. |
 | Gonzalo Camejo | Creo que este trabajo nos ayudó a comprender mucho mejor la forma en la cual un equipo de desarrollo funciona, aprendiendo tecnologías como git y GitHub que hoy en día son esenciales para el trabajo remoto en equipo. Me pareció realmente importante el hecho de "simular" una entrevista como si fuera real ya que nos permitió tratar con personas no comunes a nuestro núcleo con las cuales logramos interactuar y llegar a un acuerdo sobre las aplicaciones a desarrollar. Creo que la utilización de herramientas como Canva para realizar user personas y proto.io fueron de gran ayuda a la hora de generar una interfaz de usuario. Las técnicas de elicitación utilizadas como Brainstorming e ingeniería inversa fueron muy efectivas a la hora de tener un primer acercamiento a la aplicación. Personalmente sentí que logramos trabajar en equipo cubriendo las distintas áreas en conjunto verificando y discutiendo los distintos aspectos del proyecto, para lograr así una mejor solución. En un inicio creo que estábamos un poco perdidos con git/github y su funcionamiento, pero a medida que utilizábamos más git/github y nos ayudábamos unos a otros logramos comprender el funcionamiento de la herramienta. |
+
+</a>
+
+<a name = "Anexo">
+
+# Anexo
+
+A continuación se ve una historia de los commits realizados:
+
+![historia-commits-1](/media/historia-commits-1.png)
+![historia-commits-2](/media/historia-commits-2.png)
+![historia-commits-3](/media/historia-commits-3.png)
+![historia-commits-4](/media/historia-commits-4.png)
 
 </a>
