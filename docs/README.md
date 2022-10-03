@@ -13,6 +13,8 @@ Fecha de entrega: 03-oct-2022
 - 8 [ReflexiónGrupal](#ReflexionGrupal)
 - 9 [ReflexiónIndividual](#ReflexiónInd)
 
+<a name= "id1">
+
 # Repositorio Git
 
 ## Creación y uso de repositorios locales y remotos
@@ -113,9 +115,10 @@ En la siguiente imagen se ve ilustrado el git-flow:
 De esta manera, los desarrolladores siempre se deben situar en la rama `develop` y desde allí comenzar a crear sus ramas `feature/<nombre_de_la_feature>` en la que van a trabajar. Una vez que se llega a un avance que es considerado adecuado para salir a producción se crea la rama `release/<nro_version>` que luego será mergeada con `main` una vez que se efectue el release.
 
 Resumen de commits y evolución del proyecto
+
 </a>
 
-<a name = "id1">
+<a name = "id2">
 
 # Elicitación
 
@@ -158,6 +161,7 @@ De ambas entrevistas obtuvimos información valiosa que se terminó traduciendo 
 
 También obtuvimos opiniones un tanto dispares. En particular, para Carlos era de vital importancia tener información general sobre el Mundial y las selecciones a la hora de predecir los partidos. Nos comentó que era interesante contar con ello directo en la app y no tener que acudir a otros sitios. Sin embargo, para Martín este detalle no fue de tanta importancia. Nos comentó que no le molesta que aparezca esa información pero dado que se puede obtener en otros sitios no le pareció algo muy importante para remarcar.
 </a>
+
 
 <a name="id3">
 
@@ -323,11 +327,9 @@ La calidad se divide en dos partes fundamentales:
 - **Descripción:** Que los resultados se vayan actualizando en tiempo vivo y no demoren mas de 10 segundos en figurar en la aplicación
 - **Prioridad:** Alta
 
-<<<<<<< HEAD
 </a>
-=======
+
 <a name= "US">
->>>>>>> e5ea60a6ef834c4f89e35175337bd0a3ef03e4e5
 
 ## User Stories 
 
