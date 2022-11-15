@@ -1,0 +1,248 @@
+//local
+@use "variables";
+//modules
+@use "@material/ripple";
+@use '@material/button/mdc-button';
+@use '@material/button';
+@use "@material/top-app-bar";
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/icon-button/styles" as icon-styles;
+@use "@material/drawer";
+@use "@material/list";
+@use "@material/fab";
+@use "@material/tab-bar/mdc-tab-bar";
+@use "@material/tab-bar";
+@use "@material/tab-scroller/mdc-tab-scroller";
+@use "@material/tab-indicator/mdc-tab-indicator";
+@use "@material/tab-scroller";
+@use "@material/tab-indicator";
+@use "@material/tab/mdc-tab";
+@use "@material/tab";
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/select/styles";
+@use '@material/select';
+@use "@material/checkbox";
+@use "@material/form-field";
+
+
+@include checkbox.core-styles;
+@include form-field.core-styles;
+@include fab.core-styles;
+@include drawer.core-styles;
+@include drawer.dismissible-core-styles;
+@include drawer.modal-core-styles;
+@include list.deprecated-core-styles;
+@include textfield.core-styles;
+
+body {
+    background-color: variables.$background-dark;
+    margin: 0;
+    font-family: variables.$fontFamily;
+    display: flex;
+    height: 100vh;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+}
+  
+
+.mdc-button {
+  --mdc-theme-primary: #FEDBD0;
+  --mdc-theme-on-primary: #442C2E;
+  @include button.ink-color(#84565E);
+  top:8vw;
+  margin-top: 50%;
+  padding:0.5em 3em;
+  border:0.16em solid #0f0c0c;
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.15s;
+}
+
+
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+.main-content {
+  overflow: auto;
+  height: 100%;
+}
+.app-bar {
+  position: absolute;
+}
+.mdc-top-app-bar {
+  z-index: 7;
+}
+.mdc-drawer__content{
+  @include drawer.surface-fill-color(variables.$primary);
+  
+}
+.mdc-drawer {
+  border: none;
+  .mdc-deprecated-list-item.mdc-list-item--activated {
+    @include list.deprecated-item-primary-text-ink-color(variables.$on-primary);
+    @include list.deprecated-item-graphic-ink-color(variables.$on-primary)
+  }
+  .mdc-deprecated-list-item {
+    @include list.deprecated-item-primary-text-ink-color(rgba(variables.$on-primary, .7));
+    @include list.deprecated-item-graphic-ink-color(rgba(variables.$on-primary, .7))
+  }
+}
+.mdc-tab-bar {
+  background-color: variables.$primary;
+}
+.mdc-tab {
+  @include tab.text-label-color(rgba(variables.$on-primary, .7));
+  @include tab.icon-color(rgba(variables.$on-primary, .7));
+  &--active {
+    @include tab.active-text-label-color(variables.$on-primary);
+    @include tab.active-icon-color(variables.$on-primary);
+  }
+}
+.mdc-tab-indicator--active > .mdc-tab-indicator__content--underline{
+  border-color: variables.$on-primary;
+}
+
+section.full-screen {
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+
+
+
+
+
+// Desktop
+@media only screen and (min-width: 768px) {
+  section#Inicio{
+    .section-content {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .content-top{
+        width: 40%;
+      }
+      .content-bottom {
+        width: 40%;
+      }
+      .chart .chart-top {
+        .container{
+          padding-top: 10px;
+          .title {
+            font-size: 24px;
+          }
+          .amount {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  section#Educacion {
+    .cards-container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      .container {
+        width: 30%;
+        img{
+          height: 375px;
+        }
+      }
+    }
+  }
+  section#Ingreso, section#Gasto, section#Ahorros{
+    .section-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .form-container {
+        width: 45%;
+        #save-income, #save-expense {
+          width: 50%;
+          align-self: center;
+        }
+      }
+      .image-container {
+        width: 45%;
+        color: variables.$income;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        span{
+          font-size: 400px;
+        }
+      }
+      .saving-container {
+        width: 30%;
+        color: variables.$income;
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        margin: 130px 90px;
+      }
+      .balance {
+        width: 48%;
+      }
+    }
+  }
+  section#Gasto .section-container .image-container {
+    color: variables.$expense;
+  }
+  section#Historial {
+    #income, #expense {
+      .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .content-top{
+          width: 40%;
+        }
+        .content-bottom {
+          width: 40%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          height: 100vh;
+          span{
+            font-size: 400px;
+          }
+        }
+      }
+    }
+    #income .content {
+      .content-bottom{
+        color: variables.$income;
+      }
+    }
+    #expense .content {
+      .content-bottom{
+        color: variables.$expense;
+      }
+    }
+  }
+  section#Historial .section-container 
+  .balance-container .balance {
+    bottom: auto;
+  }
+}
