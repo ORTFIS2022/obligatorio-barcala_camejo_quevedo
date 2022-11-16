@@ -30,7 +30,9 @@
 @use '@material/select';
 @use "@material/checkbox";
 @use "@material/form-field";
+@use "@material/card";
 
+@include card.core-styles;
 
 @include checkbox.core-styles;
 @include form-field.core-styles;
@@ -116,6 +118,39 @@ margin-top: 1%;
   overflow: auto;
   position: relative;
 }
+//SECCION CARD
+.mdc-card {
+  height: 11%;
+  width: 70%;
+  position: relative;
+  img{
+    width: 40%;
+    align-self: center;
+  }
+}
+
+//SECCION INPUT DE LAS CARDS
+input{
+  width: 6vh;
+  height: 6vh;
+  font-size: xx-large;
+  color: blue;
+  border: 2px solid green;
+  font-weight: bold;
+}
+
+//TEXTO PARTIDOS PREVIOS
+// .Clase-TextoPartidosPrevios{
+//   font-weight: bold;
+//   text-decoration: underline;
+  
+// }
+//TEXTO INFORMACION EXTRA
+
+.Clase-BanderaA{
+  display: none;
+}
+
 .main-content {
  
 overflow: auto;

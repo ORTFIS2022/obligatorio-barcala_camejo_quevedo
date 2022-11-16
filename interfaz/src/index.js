@@ -40,6 +40,7 @@ document.getElementById("RetornoMenu").addEventListener("click",volverMenu);
 //FUNCION OCULTAR TODO
   function ocultarTodo(letra){
   document.getElementById("Id-Grupos").style.display= 'none';
+  desplegarPartidos(letra);
   changeAppTitle(letra);
 }
 //FUNCION OCULTAR BOTONES
@@ -51,6 +52,15 @@ function ocultar(){
 
 function volverMenu(){
    document.getElementById("Id-Grupos").style.display= 'block';
+   document.getElementById("Id-Bandera").style.display = 'none';
+}
+
+//FUNCION DESPLEGAR PARTIDOS DEL GRUPO
+function desplegarPartidos(letra){
+  var char = letra.charAt(6); //Me encuentra la letra del grupo
+  document.getElementById("Id-Bandera").style.display = 'block'; 
+  document.getElementById("mdc-card" + char).style.display = 'block';//Genero la id mediante char de la card a mostrar
+
 }
 
 
