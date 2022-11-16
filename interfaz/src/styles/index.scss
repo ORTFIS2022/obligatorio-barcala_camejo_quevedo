@@ -83,8 +83,19 @@ body {
   color: #0f0c0c;
 }
 
-.mdc-button2{
+.botonInfo{
   margin-top: 1%;
+  top:0vw;
+}
+
+.bttnSave{
+  @include button.ink-color(#16e31c);
+  --mdc-theme-on-primary: #fe061a;
+  --mdc-theme-primary: #2fbb23;
+  border:0.16em solid #ff0000;
+  color: #FFFFFF;
+  margin-top: 2%;
+  top:0vw;
 }
 //SECCION LISTA CON ITEMS
 
@@ -141,7 +152,7 @@ input{
   width: 6vh;
   height: 6vh;
   font-size: xx-large;
-  color: blue;
+  color: rgb(30, 30, 55);
   border: 2px solid green;
   font-weight: bold;
 }
