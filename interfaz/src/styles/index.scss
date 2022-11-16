@@ -42,7 +42,6 @@
 @include textfield.core-styles;
 
 
-
 body {
     background-color: variables.$background-dark;
     margin: 0;
@@ -55,7 +54,7 @@ body {
     }
 }
   
-//BOTONES
+//BOTONES NOTIFICACIONES
 .mdc-button {
   --mdc-theme-primary: #FEDBD0;
   --mdc-theme-on-primary: #442C2E;
@@ -73,6 +72,9 @@ body {
   color:#FFFFFF;
   text-align:center;
   transition: all 0.15s;
+  flex: auto;
+  background-color:white;
+  color: #0f0c0c;
 }
 
 //SECCION LISTA CON ITEMS
@@ -88,24 +90,29 @@ color: yellow;
 }
 
 //SECCION NOTIFICACIONES
-.mdc-banner__content{
+.Clase-Notificaciones{
+  float: right;
   flex: auto;
-  position: absolute;
-  top: 0%;
-  left: 70%;
 }
-.mdc-button{
-  top: 0%;
-  margin-left: 10%;
+//SECCION QUE ALMACENA LOS GRUPOS
+.Clase-Grupos{
+margin-top: 1%;
+}
+//ESTILOS DE LOS BOTONES DE LOS GRUPOS
+ .ClaseNotifi{
+  
+  background-color: #0f0c0c;
+  text-align: center;
+  font-size: large;
+  font-weight: 150;
+  color: aquamarine;
   margin-top: 2%;
-  background-color:white;
-  color: #0f0c0c;
-}
+ }
+//SECCION GRUPOS
 
-.mdc-banner__actions{
-flex: auto;
-position: absolute;
-top: 50%;
+.mdc-touch-target-wrapper{
+  text-align: center;
+  flex: auto;
 }
 
 
@@ -116,6 +123,8 @@ top: 50%;
 }
 .main-content {
  
+overflow: auto;
+height: 100%;
 
 }
 .app-bar {

@@ -17,27 +17,35 @@ topAppBar.listen('MDCTopAppBar:nav', () => {
   changeMenuIcon(topAppBarElement,drawer);
 });
 
+//mdc-touch-target-wrapper
+//changeVisibleSection(mdc-touch-target-wrapper);
 
 //BOTON/OCULTAR
-document.getElementById("botonB").addEventListener("click",ocultarTodo);
-
-
-//FUNCION OCULTAR BOTONES
-function ocultar(){
-  document.getElementById('Notificaciones').style.visibility = 'hidden';
-}
-//FUNCION OCULTAR TODO
-function ocultarTodo(){
-  document.getElementById('botonA').style.visibility = 'hidden';
-  document.getElementById('botonB').style.visibility = 'hidden';
-  document.getElementById('botonC').style.visibility = 'hidden';
-  document.getElementById('botonD').style.visibility = 'hidden';
-
-}
+document.getElementById("botonA").addEventListener("click",()=> ocultarTodo("Grupo A"));
+document.getElementById("botonB").addEventListener("click",()=> ocultarTodo("Grupo B"));
+document.getElementById("botonC").addEventListener("click",()=> ocultarTodo("Grupo C"));
+document.getElementById("botonD").addEventListener("click",()=> ocultarTodo("Grupo D"));
+document.getElementById("botonE").addEventListener("click",()=> ocultarTodo("Grupo E"));
+document.getElementById("botonF").addEventListener("click",()=> ocultarTodo("Grupo F"));
+document.getElementById("botonG").addEventListener("click",()=> ocultarTodo("Grupo G"));
+document.getElementById("botonH").addEventListener("click",()=> ocultarTodo("Grupo H"));
 
 //BOTONES NOTIFICACIONES
 document.getElementById("botonNotifi").addEventListener("click",ocultar);
 document.getElementById("botonNotifi2").addEventListener("click",ocultar);
+
+
+//FUNCION OCULTAR TODO
+  function ocultarTodo(letra){
+  document.getElementById("Id-Grupos").style.display= 'none';
+  changeAppTitle(letra);
+}
+//FUNCION OCULTAR BOTONES
+function ocultar(){
+  document.getElementById('Id-Notificaciones').style.display = 'none';
+}
+
+
 
 
 

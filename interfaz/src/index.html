@@ -16,22 +16,22 @@
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"> <!-- Todo es para abrir la drawer-->
         <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
         <span class="mdc-top-app-bar__title">Penca Mundial Qatar 2022</span>
-
-        <div class="mdc-banner__content" id="Notificaciones"> 
-          <label id="textNotifi">¿DESEA ACTIVAR LAS NOTIFICACIONES? </label>
-          <br>
-          <button type="button" class="mdc-button" id="botonNotifi" >SI</button>
-          <button type="button" class="mdc-button" id="botonNotifi2" >NO</button>
-        </div>
-     
+        <!--ARRANCA SECCION DE NOTIFICACIONES-->
+        <section class= "Clase-Notificaciones" id="Id-Notificaciones">
+          <div class="Clase-Notificaciones"> 
+            <label id="textNotifi" style="font-weight: bold;">¿DESEA ACTIVAR LAS NOTIFICACIONES? </label>
+            <br>
+            <button type="button" class="ClaseNotifi" id="botonNotifi"> SI </button>
+            <button type="button" class="ClaseNotifi" id="botonNotifi2"> NO </button>
+          </div>
+          <!--ACA TERMINA-->
       </section>
     </div>
   </header>
   <aside class="mdc-drawer mdc-drawer--modal mdc-top-app-bar--fixed-adjust">
     <div class="mdc-drawer__content">
-      <!--SECCION DE LA LISTA CON LOS ITEMS-->
       <div class="mdc-deprecated-list">
-        <a class="mdc-deprecated-list-item mdc-list-item--activated" href="#">
+        <a class="mdc-deprecated-list-item mdc-list-item--activated" href="#" id="RetornoMenu">
           <span class="mdc-deprecated-list-item__ripple"></span>
           <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">home</i>
           <span class="mdc-deprecated-list-item__text">Penca Mundial</span>
@@ -52,34 +52,64 @@
           <span class="mdc-deprecated-list-item__text">Información Mundial</span>
         </a>
       </div>
-      <!--FIN DE LA SECCION DE LA LISTA CON ITEMS-->
-    
-    <!--SWTICH DE NOTIFICACIONES-->
-    
+    </div>
   </aside>
   <div class="mdc-drawer-scrim"></div> <!--Esto es para minimizar o maximizar el menu-->
   <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
-    <main class="main-content" id="main-content">   
+    <main class="main-content" id="main-content">  
+
+      <!--BOTONES DEL MENU-->
       <center>
-      <div class="mdc-touch-target-wrapper">
-        <button class="mdc-button mdc-button--raised" id="botonA"><!-- Esto es la seccion de afuera del boton-->
-          <span class="mdc-button__label" >GRUPO A</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
-        </button>
-        <BR>
-        <button class="mdc-button mdc-button--raised" id="botonB"><!-- Esto es la seccion de afuera del boton-->
-          <span class="mdc-button__label" >GRUPO B</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
-        </button>
-        <BR>
-        <button class="mdc-button mdc-button--raised" id="botonC"><!-- Esto es la seccion de afuera del boton-->
-          <span class="mdc-button__label" >GRUPO C</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
-        </button>
-        <BR>
-        <button class="mdc-button mdc-button--raised" id="botonD"><!-- Esto es la seccion de afuera del boton-->
-          <span class="mdc-button__label">GRUPO D</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
-        </button>
-      </div>  
-      
-    </center>
+        <section id="Id-Grupos">
+          <div class = "Clase-Grupos">
+            <button class="mdc-button" id="botonA"><!-- Esto es la seccion de afuera del boton-->
+              <span class="mdc-button__label" >GRUPO A</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
+            </button>
+            <BR>
+            <BR>
+            <BR>
+            <button class="mdc-button" id="botonB"><!-- Esto es la seccion de afuera del boton-->
+              <span class="mdc-button__label" >GRUPO B</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
+            </button>
+            <BR>
+            <BR>
+            <BR>  
+            <button class="mdc-button" id="botonC"><!-- Esto es la seccion de afuera del boton-->
+              <span class="mdc-button__label" >GRUPO C</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
+            </button>
+            <BR>
+            <BR>
+            <BR>
+            <button class="mdc-button" id="botonD"><!-- Esto es la seccion de afuera del boton-->
+              <span class="mdc-button__label">GRUPO D</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
+            </button>
+            <BR>
+            <BR>
+            <BR>
+            <button class="mdc-button" id="botonE"><!-- Esto es la seccion de afuera del boton-->
+              <span class="mdc-button__label" >GRUPO E</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
+            </button>
+            <BR>
+            <BR>
+            <BR>
+            <button class="mdc-button" id="botonF"><!-- Esto es la seccion de afuera del boton-->
+              <span class="mdc-button__label">GRUPO F</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
+            </button>  
+            <BR>
+            <BR>
+            <BR>
+            <button class="mdc-button" id="botonG"><!-- Esto es la seccion de afuera del boton-->
+              <span class="mdc-button__label" >GRUPO G</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
+            </button>
+            <BR>
+            <BR>
+            <BR>
+            <button class="mdc-button" id="botonH"><!-- Esto es la seccion de afuera del boton-->
+              <span class="mdc-button__label">GRUPO H</span> <!-- Esto es la seccion de adentro del boton, la class es para el css, el id para js-->
+            </button> 
+          </div>  
+        </section> 
+      </center>
     </main>
   </div>
 </body>
