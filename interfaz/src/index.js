@@ -17,8 +17,6 @@ topAppBar.listen('MDCTopAppBar:nav', () => {
   changeMenuIcon(topAppBarElement,drawer);
 });
 
-//mdc-touch-target-wrapper
-//changeVisibleSection(mdc-touch-target-wrapper);
 
 //BOTON/OCULTAR
 document.getElementById("botonA").addEventListener("click",()=> ocultarTodo("Grupo A"));
@@ -32,7 +30,9 @@ document.getElementById("botonH").addEventListener("click",()=> ocultarTodo("Gru
 
 //BOTONES NOTIFICACIONES
 document.getElementById("botonNotifi").addEventListener("click",ocultar);
+document.getElementById("botonNotifi").addEventListener("click",MensajeNotifi);
 document.getElementById("botonNotifi2").addEventListener("click",ocultar);
+document.getElementById("botonNotifi2").addEventListener("click",NoMensajeNotifi);
 
 //BOTON MENU
 document.getElementById("RetornoMenu").addEventListener("click",volverMenu);
@@ -40,8 +40,8 @@ document.getElementById("RetornoMenu").addEventListener("click",volverMenu);
 //FUNCION OCULTAR TODO
   function ocultarTodo(letra){
   document.getElementById("Id-Grupos").style.display= 'none';
-  desplegarPartidos(letra);
   changeAppTitle(letra);
+  desplegarPartidos(letra); 
 }
 //FUNCION OCULTAR BOTONES
 function ocultar(){
@@ -49,20 +49,30 @@ function ocultar(){
 }
 
 //FUNCION VOLVER AL MENU
-
 function volverMenu(){
    document.getElementById("Id-Grupos").style.display= 'block';
-   document.getElementById("Id-Bandera").style.display = 'none';
+   document.getElementById("Id-BanderaA").style.display = 'none';
 }
 
 //FUNCION DESPLEGAR PARTIDOS DEL GRUPO
 function desplegarPartidos(letra){
-  var char = letra.charAt(6); //Me encuentra la letra del grupo
-  document.getElementById("Id-Bandera").style.display = 'block'; 
-  document.getElementById("mdc-card" + char).style.display = 'block';//Genero la id mediante char de la card a mostrar
-
+  var char = letra.charAt(6); //Me encuentra la letra del grupo --A
+  document.getElementById("Id-Bandera" + char).style.display = 'block';//Genero la id mediante char de la card a mostrar
 }
 
+
+//SECCION SNACKBAR
+function MensajeNotifi() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+function NoMensajeNotifi() {
+  var xs = document.getElementById("snackbar2");
+  xs.className = "show";
+  setTimeout(function(){ xs.className = xs.className.replace("show", ""); }, 3000);
+}
+//FIN DE SECCION
 
 
 
