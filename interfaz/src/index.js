@@ -34,6 +34,8 @@ document.getElementById("botonH").addEventListener("click",()=> ocultarTodo("Gru
 document.getElementById("botonNotifi").addEventListener("click",ocultar);
 document.getElementById("botonNotifi2").addEventListener("click",ocultar);
 
+//BOTON MENU
+document.getElementById("RetornoMenu").addEventListener("click",volverMenu);
 
 //FUNCION OCULTAR TODO
   function ocultarTodo(letra){
@@ -44,6 +46,13 @@ document.getElementById("botonNotifi2").addEventListener("click",ocultar);
 function ocultar(){
   document.getElementById('Id-Notificaciones').style.display = 'none';
 }
+
+//FUNCION VOLVER AL MENU
+
+function volverMenu(){
+   document.getElementById("Id-Grupos").style.display= 'block';
+}
+
 
 
 

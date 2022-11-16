@@ -78,15 +78,10 @@ body {
 }
 
 //SECCION LISTA CON ITEMS
-.mdc-deprecated-list{
-  background-color: skyblue;
-}
+
 //COLORES DE LOS ITEMS/ITEM SELECCIONADO
 .mdc-drawer .mdc-deprecated-list-item {
-  color: red;
-}
-.mdc-drawer .mdc-deprecated-list-item.mdc-list-item--activated {
-color: yellow;
+  background-color:black
 }
 
 //SECCION NOTIFICACIONES
@@ -171,12 +166,6 @@ section.full-screen {
     display: block;
   }
 }
-
-
-
-
-
-
 
 // Desktop
 @media only screen and (min-width: 768px) {
