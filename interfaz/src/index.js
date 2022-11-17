@@ -45,6 +45,10 @@ document.getElementById("RetornoMenu").addEventListener("click",volverMenu);
 
 document.getElementById("Id-Guardar").addEventListener("click",() => document.getElementById("Id-MenuContainer").style.display='none')
 
+//FUNCION AGREGAR USUARIO
+
+//agregarUsuario()
+
 
 //FUNCION OCULTAR TODO
   function ocultarTodo(letra){
