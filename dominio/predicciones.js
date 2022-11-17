@@ -1,19 +1,10 @@
 class Predicciones{
 
     constructor(){
-        this.prediccionesEquipoA = [];
-        this.prediccionesEquipoB = [];
-        this.prediccionesEquipoC = [];
-        this.prediccionesEquipoD = [];
-        this.prediccionesEquipoE = [];
-        this.prediccionesEquipoF = [];
-        this.prediccionesEquipoG = [];
-        this.prediccionesEquipoH = [];
+        this.prediccionesEquipo = []; //
     }
-
-    toString(unaPrediccion){
-        
-    }
+    
+     
 }
 
 module.exports = Predicciones;
