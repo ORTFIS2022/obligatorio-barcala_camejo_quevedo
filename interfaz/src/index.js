@@ -58,6 +58,7 @@ function volverMenu(){
 function desplegarPartidos(letra){
   var char = letra.charAt(6); //Me encuentra la letra del grupo --A
   document.getElementById("Id-Bandera" + char).style.display = 'block';//Genero la id mediante char de la card a mostrar
+  
 }
 
 
@@ -75,6 +76,38 @@ function NoMensajeNotifi() {
 //FIN DE SECCION
 
 //FUNCION GUARDADO
+document.getElementById("Id-BotonGuardar").addEventListener("click",prueba);
+
+function prueba(){
+if(document.getElementById("input").values() == ""){
+  alert("vacio");
+}
+ 
+
+
+//FUNCION CONSEGUIR VALORES DE LOS RESULTADOS DEL PARTIDO
+    
+// function getPrediccion(letra) {
+//   const x = letra;
+// return this.prediccionesEquipoX;
+// }
+
+
+function valoresCampos(letra) {
+  
+  let valores = [];
+  for(let i=0; i<13;i++){
+      
+      valores[i]= document.getElementById("input"+i).value;
+      
+  }
+
+}
+
+
+
+
+}
 
 
 

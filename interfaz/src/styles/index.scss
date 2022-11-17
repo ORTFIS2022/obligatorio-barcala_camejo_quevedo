@@ -59,8 +59,6 @@ body {
   
 //BOTONES GRUPOS
 .mdc-button {
-  --mdc-theme-primary: #FEDBD0;
-  --mdc-theme-on-primary: #442C2E;
   @include button.ink-color(#84565E);
   top:8vw;
   margin-top: 50%;
@@ -75,11 +73,10 @@ body {
   text-align:center;
   transition: all 0.15s;
   flex: auto;
-  background-color:aquamarine ;
-  color: #0f0c0c;
+  background-color:#681840 ;
 }
 .mdc-button__label{
-  color: #0f0c0c;
+  color: white;
 }
 
 .botonInfo{
@@ -121,12 +118,11 @@ margin-top: 1%;
   font-size: large;
   font-weight: 150;
   margin-top: 2%;
-  --mdc-theme-primary: #000706;
-  --mdc-theme-on-primary: #1d9a68;
-
+  --mdc-theme-primary: white;
  }
  .mdc-button:not(:disabled) {
-  color: aquamarine;
+  color: #681840;
+  font-weight: bolder;
 }
 //SECCION GRUPOS
 
@@ -146,6 +142,7 @@ margin-top: 1%;
   height: 11%;
   width: 70%;
   position: relative;
+  background-color: rgba(255, 0, 0, 0.0);
   img{
     width: 40%;
     align-self: center;
@@ -188,19 +185,26 @@ input{
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
-
+.mdc-top-app-bar__title{
+  color: white;
+}
+.app-bar{
+  color: white;
+}
 
 .main-content {
  
 overflow: auto;
 height: 100%;
-
+background-image: url(https://images8.alphacoders.com/128/1286559.jpg);
+background-size: cover;
 }
 .app-bar {
   position: absolute;
 }
 .mdc-top-app-bar {
   z-index: 7;
+  background-color: #681840;
 }
 .mdc-drawer__content{
   @include drawer.surface-fill-color(variables.$primary);
