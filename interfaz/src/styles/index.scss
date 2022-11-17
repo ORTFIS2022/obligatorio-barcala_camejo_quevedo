@@ -32,9 +32,11 @@
 @use "@material/form-field";
 @use "@material/card";
 @use "@material/snackbar/mdc-snackbar";
+@use "@material/dialog";
+
+@include dialog.core-styles;
 
 @include card.core-styles;
-
 @include checkbox.core-styles;
 @include form-field.core-styles;
 @include fab.core-styles;
@@ -90,7 +92,7 @@ body {
   @include button.ink-color(#16e31c);
   --mdc-theme-on-primary: #fe061a;
   --mdc-theme-primary: #2fbb23;
-  border:0.16em solid #ff0000;
+  border:0.16em;
   color: #FFFFFF;
   margin-top: 2%;
   top:0vw;
@@ -180,6 +182,14 @@ input{
   left: 50%;
   bottom: 30px; 
 }
+
+//POP UP INGRESO CORREO 
+.Clase-MailCorreo{
+
+  width: 90%;
+
+}
+
 #snackbar.show,#snackbar2.show {
   visibility: visible; 
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
