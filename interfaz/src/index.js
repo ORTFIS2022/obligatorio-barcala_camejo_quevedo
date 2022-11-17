@@ -1,3 +1,4 @@
+
 let miPrediccion = new Predicciones();
 let miSistema = new Sistema();
 import Predicciones from "../../dominio/predicciones"
@@ -21,7 +22,7 @@ topAppBar.listen('MDCTopAppBar:nav', () => {
   changeMenuIcon(topAppBarElement,drawer);
 });
 
-
+//ASIGNAR TODAS LAS FUNCIONES A INICIO
 //BOTON/OCULTAR
 document.getElementById("botonA").addEventListener("click",()=> ocultarTodo("Grupo A"));
 document.getElementById("botonB").addEventListener("click",()=> ocultarTodo("Grupo B"));
@@ -49,7 +50,7 @@ document.getElementById("Id-Guardar").addEventListener("click",() => agregarUsua
 //FUNCION CONSEGUIR LETRA DEL GRUPO
 
 function guardarLetraEquipo(grupo){
-  var letra = grupo.charAt(6); //Me encuentra la letra del grupo --A
+  let letra = grupo.charAt(6); //Me encuentra la letra del grupo --A
   return letra;
 }
 
@@ -69,6 +70,8 @@ function guardarLetraEquipo(grupo){
   changeAppTitle(grupo);
   guardarLetraEquipo(grupo);
   desplegarPartidos(guardarLetraEquipo(grupo)); 
+  llamado();
+
   
 }
 //FUNCION OCULTAR BOTONES
@@ -101,27 +104,24 @@ function NoMensajeNotifi() {
 }
 //FIN DE SECCION
  
-//FUNCION CONSEGUIR VALORES DE LOS RESULTADOS DEL PARTIDO
-document.getElementById("Id-BotonGuardar"+letra).addEventListener("click", ()=> asignarArrayPorGrupo(letra));
-
-function asignarArrayPorGrupo(letra){
-  let arrayConResultadosA = [];
-  if(letra === "A"){
-    arrayConResultadosA = valoresCampos(letra, arrayConResultados);
-  }
-  else if(letra === "B"){
-    arrayConResultadosB = valoresCampos(letra, arrayConResultados);
-  }
+function llamado(){
+  alert(guardarLetraEquipo(document.getElementById("nombrePagina").textContent));
+  let letra = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
+  document.getElementById("Id-BotonGuardar" + letra).addEventListener("click", ()=> valoresCampos(letra));
 }
 
-//Retorna array con valores de los inputs de un grupo
-function valoresCampos(letra, arrayConResultados) {
-  for(let i=0; i<12;i++){   
-    arrayConResultados[i]= document.getElementById("input"+i).value;
+//Retorna string con valores de los inputs de un grupo + letra
+function valoresCampos(letra) {
+  let strResultados = letra;
+  for(let i=2; i<14;i++){   
+    strResultados = strResultados + (document.getElementById("input"+(i-1)).value);
   }
-  return arrayConResultados;
+  alert(strResultados);
+  return strResultados; //B 12123132121
 }
-
+//[A12123123B189823782]
+//a2384762834673'029'0
+//[B123671231672A782783462773C2898192738]
 
 
 
