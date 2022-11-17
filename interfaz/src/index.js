@@ -43,18 +43,33 @@ document.getElementById("RetornoMenu").addEventListener("click",volverMenu);
 
 //BOTON CORREO
 
-document.getElementById("Id-Guardar").addEventListener("click",() => document.getElementById("Id-MenuContainer").style.display='none')
+document.getElementById("Id-Guardar").addEventListener("click",() => agregarUsuario());
+
+
+//FUNCION CONSEGUIR LETRA DEL GRUPO
+
+function guardarLetraEquipo(grupo){
+  var letra = grupo.charAt(6); //Me encuentra la letra del grupo --A
+  return letra;
+}
 
 //FUNCION AGREGAR USUARIO
 
-//agregarUsuario()
+  function agregarUsuario(){
+  const email = document.getElementById("Id-MailCorreo").value;
+  alert(email);
+  miSistema.agregarUsuario(email);
+  document.getElementById("Id-MenuContainer").style.display='none';
+ }
 
 
 //FUNCION OCULTAR TODO
-  function ocultarTodo(letra){
+  function ocultarTodo(grupo){
   document.getElementById("Id-Grupos").style.display= 'none';
-  changeAppTitle(letra);
-  desplegarPartidos(letra); 
+  changeAppTitle(grupo);
+  guardarLetraEquipo(grupo);
+  desplegarPartidos(guardarLetraEquipo(grupo)); 
+  
 }
 //FUNCION OCULTAR BOTONES
 function ocultar(){
@@ -69,8 +84,7 @@ function volverMenu(){
 
 //FUNCION DESPLEGAR PARTIDOS DEL GRUPO
 function desplegarPartidos(letra){
-  var char = letra.charAt(6); //Me encuentra la letra del grupo --A
-  document.getElementById("Id-Bandera" + char).style.display = 'block';//Genero la id mediante char de la card a mostrar
+  document.getElementById("Id-Bandera" + letra).style.display = 'block';//Genero la id mediante char de la card a mostrar
   
 }
 
