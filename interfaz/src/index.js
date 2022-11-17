@@ -1,3 +1,7 @@
+let miPrediccion = new Predicciones();
+let miSistema = new Sistema();
+import Predicciones from "../../dominio/predicciones"
+import Sistema from "../../dominio/Sistema"
 import "./styles/index.scss";
 import { changeVisibleSection, openFabSpeedDial, changeMenuIcon, addEventBalanceButtons,
   updateHistory, changeAppTitle, cleanInput, getExpenseData, getIncomeData, displayBalance, updateTotalExpenses, setTestData,
@@ -74,40 +78,29 @@ function NoMensajeNotifi() {
   setTimeout(function(){ xs.className = xs.className.replace("show", ""); }, 3000);
 }
 //FIN DE SECCION
-
-//FUNCION GUARDADO
-document.getElementById("Id-BotonGuardar").addEventListener("click",prueba);
-
-function prueba(){
-if(document.getElementById("input").values() == ""){
-  alert("vacio");
-}
  
-
-
 //FUNCION CONSEGUIR VALORES DE LOS RESULTADOS DEL PARTIDO
-    
-// function getPrediccion(letra) {
-//   const x = letra;
-// return this.prediccionesEquipoX;
-// }
+document.getElementById("Id-BotonGuardar"+letra).addEventListener("click", ()=> asignarArrayPorGrupo(letra));
 
-
-function valoresCampos(letra) {
-  
-  let valores = [];
-  for(let i=0; i<13;i++){
-      
-      valores[i]= document.getElementById("input"+i).value;
-      
+function asignarArrayPorGrupo(letra){
+  let arrayConResultadosA = [];
+  if(letra === "A"){
+    arrayConResultadosA = valoresCampos(letra, arrayConResultados);
   }
+  else if(letra === "B"){
+    arrayConResultadosB = valoresCampos(letra, arrayConResultados);
+  }
+}
 
+//Retorna array con valores de los inputs de un grupo
+function valoresCampos(letra, arrayConResultados) {
+  for(let i=0; i<12;i++){   
+    arrayConResultados[i]= document.getElementById("input"+i).value;
+  }
+  return arrayConResultados;
 }
 
 
-
-
-}
 
 
 

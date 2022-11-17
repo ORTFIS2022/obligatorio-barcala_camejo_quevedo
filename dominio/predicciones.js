@@ -1,9 +1,6 @@
-class Sistema{
+class Predicciones{
 
     constructor(){
-
-
-        //SECCION != PUNTAJES
         this.prediccionesEquipoA = [];
         this.prediccionesEquipoB = [];
         this.prediccionesEquipoC = [];
@@ -12,6 +9,11 @@ class Sistema{
         this.prediccionesEquipoF = [];
         this.prediccionesEquipoG = [];
         this.prediccionesEquipoH = [];
+    }
+
+    toString(unaPrediccion){
         
     }
 }
+
+module.exports = Predicciones;
