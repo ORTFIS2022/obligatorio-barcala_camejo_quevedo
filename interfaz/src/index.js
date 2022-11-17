@@ -37,6 +37,11 @@ document.getElementById("botonNotifi2").addEventListener("click",NoMensajeNotifi
 //BOTON MENU
 document.getElementById("RetornoMenu").addEventListener("click",volverMenu);
 
+//BOTON CORREO
+
+document.getElementById("Id-Guardar").addEventListener("click",() => document.getElementById("Id-MenuContainer").style.display='none')
+
+
 //FUNCION OCULTAR TODO
   function ocultarTodo(letra){
   document.getElementById("Id-Grupos").style.display= 'none';
@@ -60,7 +65,6 @@ function desplegarPartidos(letra){
   document.getElementById("Id-Bandera" + char).style.display = 'block';//Genero la id mediante char de la card a mostrar
   
 }
-
 
 //SECCION SNACKBAR
 function MensajeNotifi() {
