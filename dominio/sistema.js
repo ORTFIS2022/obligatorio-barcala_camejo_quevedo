@@ -51,17 +51,13 @@ class Sistema{
 
     esvalido(unUsuario){
         const esta = false;
-        for(let i=0; i<this.listaPredicciones.length(); i=i+2){
+        for(let i=0; i<this.listaUsuarios.length; i++){
             if(unUsuario === this.listaPredicciones[i]){
                 esta = true;
             }
         }
         return esta;
     }
-
-    //["gonzalocamejo859@gmail.com", A + "1212-124-1321" B + "232344", IGNACIO@GMAIL.COM] llamar ambos metodos en el index.js
-
-
 }
 
 module.exports = Sistema;

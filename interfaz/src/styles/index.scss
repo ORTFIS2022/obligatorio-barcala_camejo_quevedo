@@ -218,7 +218,7 @@ background-size: cover;
 }
 .mdc-drawer__content{
   @include drawer.surface-fill-color(variables.$primary);
-  background-color: aquamarine;
+  background-color: #681840;
   
 }
 //FONDO DE LAS SECCIONES DEL MENU

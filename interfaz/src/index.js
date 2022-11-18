@@ -63,7 +63,9 @@ function guardarLetraEquipo(grupo){
   const email = document.getElementById("Id-MailCorreo").value;
   console.log(email);
   miUsuario.email = email;
-  miSistema.agregarUsuario(miUsuario.email);
+  if(!miSistema.esvalido(miUsuario)){
+    miSistema.agregarUsuario(miUsuario.email);
+  }
   document.getElementById("Id-MenuContainer").style.display='none';
  }
 
