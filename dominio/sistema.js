@@ -1,13 +1,21 @@
+/* eslint-disable */
+
+const Usuario = require("./usuario");
+
 class Sistema{
 
     constructor(){
-        this.listaPredicciones = []; // lista con nombre y predicciones
+        this.listaUsuarios = []; // lista de emails registrados
+        this.listaPredicciones = {}; // lista con nombre y predicciones
         this.ranking = []; // lista con resultados en base a predicciones y nombre
     }
 
     //Métodos
-    agregarUsuario(unUsuario){
-        this.listaPredicciones.push(unUsuario);
+    agregarUsuario(emailUsuario){
+        this.listaUsuarios.push(emailUsuario);
+        this.listaPredicciones[emailUsuario] = ["xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx"];
+        console.log(this.listaPredicciones[emailUsuario]);
+        //this.listaPredicciones.push(unUsuario);
     }
 
     agregarPrediccion(unaPrediccion){
