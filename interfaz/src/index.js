@@ -1,10 +1,8 @@
-let miSistema = new Sistema();
-let miPrediccion = new Predicciones();
-let miUsuario = new Usuario();
 
-import Sistema from "../../dominio/Sistema"
-import Usuario from "../../dominio/usuario"
+let miPrediccion = new Predicciones();
+let miSistema = new Sistema();
 import Predicciones from "../../dominio/predicciones"
+import Sistema from "../../dominio/Sistema"
 import "./styles/index.scss";
 import { changeVisibleSection, openFabSpeedDial, changeMenuIcon, addEventBalanceButtons,
   updateHistory, changeAppTitle, cleanInput, getExpenseData, getIncomeData, displayBalance, updateTotalExpenses, setTestData,
@@ -59,17 +57,11 @@ function guardarLetraEquipo(grupo){
 //FUNCION AGREGAR USUARIO
 
   function agregarUsuario(){
-  const email = (document.getElementById("Id-MailCorreo").value);
-  
-  let ElUsuario = new Usuario(email);
-   
-  if(miSistema.buscarUsuario(ElUsuario) == false){
-     miSistema.agregarUsuario(ElUsuario);
-  }
+  const email = document.getElementById("Id-MailCorreo").value;
+  alert(email);
+  miSistema.agregarUsuario(email);
   document.getElementById("Id-MenuContainer").style.display='none';
  }
-
-
 
 
 //FUNCION OCULTAR TODO
@@ -79,6 +71,8 @@ function guardarLetraEquipo(grupo){
   guardarLetraEquipo(grupo);
   desplegarPartidos(guardarLetraEquipo(grupo)); 
   llamado();
+
+  
 }
 //FUNCION OCULTAR BOTONES
 function ocultar(){
@@ -111,6 +105,7 @@ function NoMensajeNotifi() {
 //FIN DE SECCION
  
 function llamado(){
+  alert(guardarLetraEquipo(document.getElementById("nombrePagina").textContent));
   let letra = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
   document.getElementById("Id-BotonGuardar" + letra).addEventListener("click", ()=> valoresCampos(letra));
 }
@@ -121,23 +116,9 @@ function valoresCampos(letra) {
   for(let i=2; i<14;i++){   
     strResultados = strResultados + (document.getElementById("input"+(i-1)).value);
   }
-  
-  return sobreEscribir(strResultados); //B 12123132121
+  alert(strResultados);
+  return strResultados; //B 12123132121
 }
-
-function sobreEscribir(resultado){
-  //alert(ElUsuario);
-  if(!buscarUsuario(ElUsuario)){
-    laPrediccion = new miPrediccion(resultado);
-  }
-  else{
-
-  }
-}
-
-
-
-
 //[A12123123B189823782]
 //a2384762834673'029'0
 //[B123671231672A782783462773C2898192738]

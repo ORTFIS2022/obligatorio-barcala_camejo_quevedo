@@ -5,44 +5,26 @@ class Sistema{
         this.ranking = []; // lista con resultados en base a predicciones y nombre
     }
 
-    //Métodos   [Gonzalo,A123B1332C2312]
-    
+    //Métodos
     agregarUsuario(unUsuario){
-        if(this.buscarUsuario(unUsuario) == false){
-            this.listaPredicciones.push(unUsuario);
-        }
+        this.listaPredicciones.push(unUsuario);
     }
 
     agregarPrediccion(unaPrediccion){
-
         this.listaPredicciones.push(unaPrediccion);
     }
 
-    
-    //SE FIJA SI EL USUARIO NO SE ENCUENTRA EN LA LISTA DE PREDICCIONES
-    buscarUsuario(unUsuario){
-        for(let i = 0; i<this.listaPredicciones.length() ;i++){
-            if(this.listaPredicciones[i].equals(unUsuario)){
-                return true;
+    esvalido(unUsuario){
+        const esta = false;
+        for(let i=0; i<this.listaPredicciones.length(); i=i+2){
+            if(unUsuario === this.listaPredicciones[i]){
+                esta = true;
             }
         }
-        return false;
+        return esta;
     }
 
-    sobreEscribir()
-
-
- 
-
-    // esvalido(unUsuario){
-    //     const esta = false;
-    //     for(let i=0; i<this.listaPredicciones.length(); i=i+2){
-    //         if(unUsuario === this.listaPredicciones[i]){
-    //             esta = true;
-    //         }
-    //     }
-    //     return esta;
-    // }
+    //["gonzalocamejo859@gmail.com", A + "1212-124-1321" B + "232344", IGNACIO@GMAIL.COM] llamar ambos metodos en el index.js
 
 
 }

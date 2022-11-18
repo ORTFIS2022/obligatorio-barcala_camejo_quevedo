@@ -1,13 +1,9 @@
 class Usuario{
-
-    constructor(unEmail){
+    constructor(){
         this.email = unEmail;
     }
     
     toString(){
         return (this.email).toLowerCase();
     }
-
 }
-
-module.exports = Usuario;
