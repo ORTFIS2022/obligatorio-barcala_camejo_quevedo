@@ -27,26 +27,35 @@ class Sistema{
         switch (grupo) {
             case "A":
                 indice = 0;
+                break;
             case "B":
                 indice = 1;
+                break;
             case "C":
-                indice = 0;
+                indice = 2;
+                break;
             case "D":
-                indice = 1;
+                indice = 3;
+                break;
             case "E":
-                indice = 0;
+                indice = 4;
+                break;
             case "F":
-                indice = 1;
+                indice = 5;
+                break;
             case "G":
-                indice = 0;
+                indice = 6;
+                break;
             case "H":
-                indice = 1;
-
-
-
+                indice = 7;
+                break;
         }
 
-        this.listaPredicciones.push(unaPrediccion);
+        console.log(indice)
+        let prediccionActual = this.listaPredicciones[email];
+        console.log("prediccionActual " + prediccionActual);
+        prediccionActual[indice] = resultados;
+        console.log("nueva prediccion: " + prediccionActual);
     }
 
     esvalido(unUsuario){
