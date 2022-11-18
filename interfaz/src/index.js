@@ -89,6 +89,7 @@ function ocultar(){
 function volverMenu(){
    document.getElementById("Id-Grupos").style.display= 'block';
    document.getElementById("Id-BanderaA").style.display = 'none';
+   changeAppTitle("Penca Mundial Qatar 2022");
 }
 
 //FUNCION DESPLEGAR PARTIDOS DEL GRUPO
