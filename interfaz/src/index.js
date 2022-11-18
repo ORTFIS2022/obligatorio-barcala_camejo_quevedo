@@ -1,8 +1,11 @@
 
 let miPrediccion = new Predicciones();
 let miSistema = new Sistema();
+let miUsuario = new Usuario("");
+
 import Predicciones from "../../dominio/predicciones"
 import Sistema from "../../dominio/Sistema"
+import Usuario from "../../dominio/usuario"
 import "./styles/index.scss";
 import { changeVisibleSection, openFabSpeedDial, changeMenuIcon, addEventBalanceButtons,
   updateHistory, changeAppTitle, cleanInput, getExpenseData, getIncomeData, displayBalance, updateTotalExpenses, setTestData,
@@ -58,8 +61,9 @@ function guardarLetraEquipo(grupo){
 
   function agregarUsuario(){
   const email = document.getElementById("Id-MailCorreo").value;
-  alert(email);
-  miSistema.agregarUsuario(email);
+  console.log(email);
+  miUsuario.email = email;
+  miSistema.agregarUsuario(miUsuario.email);
   document.getElementById("Id-MenuContainer").style.display='none';
  }
 
@@ -106,18 +110,25 @@ function NoMensajeNotifi() {
  
 function llamado(){
   alert(guardarLetraEquipo(document.getElementById("nombrePagina").textContent));
-  let letra = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
-  document.getElementById("Id-BotonGuardar" + letra).addEventListener("click", ()=> valoresCampos(letra));
+  let letraGrupo = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
+  document.getElementById("Id-BotonGuardar" + letraGrupo).addEventListener("click", ()=> guardarPronosticos(letraGrupo));
 }
 
 //Retorna string con valores de los inputs de un grupo + letra
-function valoresCampos(letra) {
-  let strResultados = letra;
+function guardarPronosticos(letraGrupo) {
+  let resultados = "";
   for(let i=2; i<14;i++){   
-    strResultados = strResultados + (document.getElementById("input"+(i-1)).value);
+    console.log(document.getElementById(("input"+(i-1))).value);
+    if (document.getElementById(("input"+(i-1))).value == "") {
+      resultados = resultados + "x";
+    } else {
+      resultados = resultados + (document.getElementById(("input"+(i-1))).value);
+    }
+    console.log(resultados);
   }
-  alert(strResultados);
-  return strResultados; //B 12123132121
+  alert(resultados);
+  console.log(miUsuario.email)
+  miSistema.agregarPrediccion(resultados, letraGrupo, miUsuario.email); //12123132121
 }
 //[A12123123B189823782]
 //a2384762834673'029'0
