@@ -18,7 +18,34 @@ class Sistema{
         //this.listaPredicciones.push(unUsuario);
     }
 
-    agregarPrediccion(unaPrediccion){
+    agregarPrediccion(resultados, grupo, email) {
+        console.log("resultados " + resultados);
+        console.log("grupo " + grupo);
+        console.log("email " + email);
+        
+        let indice;
+        switch (grupo) {
+            case "A":
+                indice = 0;
+            case "B":
+                indice = 1;
+            case "C":
+                indice = 0;
+            case "D":
+                indice = 1;
+            case "E":
+                indice = 0;
+            case "F":
+                indice = 1;
+            case "G":
+                indice = 0;
+            case "H":
+                indice = 1;
+
+
+
+        }
+
         this.listaPredicciones.push(unaPrediccion);
     }
 
