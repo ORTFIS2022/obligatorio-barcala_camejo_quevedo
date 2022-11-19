@@ -69,6 +69,51 @@ class Sistema{
         return esta;
     }
 
+    procesarPronostico(grupo, email) {
+        let indice;
+        switch (grupo) {
+            case "A":
+                indice = 0;
+                break;
+            case "B":
+                indice = 1;
+                break;
+            case "C":
+                indice = 2;
+                break;
+            case "D":
+                indice = 3;
+                break;
+            case "E":
+                indice = 4;
+                break;
+            case "F":
+                indice = 5;
+                break;
+            case "G":
+                indice = 6;
+                break;
+            case "H":
+                indice = 7;
+                break;
+        }
+
+        let prediccionActual = this.listaPredicciones[email];
+        let prediccionDelGrupo = prediccionActual[indice];
+        console.log("largo " + prediccionDelGrupo.length);
+        let pronosticos = []
+        for(let i = 0; i < prediccionDelGrupo.length; i++) {   
+            console.log("i = " + i);
+            console.log("caracter = " + prediccionDelGrupo[i]);
+            pronosticos.push(prediccionDelGrupo[i]);
+          }
+
+        console.log("resultados " + pronosticos);
+        return pronosticos;
+
+
+    }
+
 }
 
 module.exports = Sistema;

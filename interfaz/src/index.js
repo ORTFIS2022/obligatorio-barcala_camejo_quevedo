@@ -117,8 +117,8 @@ function volverMenu(){
 
 //FUNCION DESPLEGAR PARTIDOS DEL GRUPO
 function desplegarPartidos(letra){
+  let prediccion = miSistema.procesarPronostico(letra, miUsuario.email);
   document.getElementById("Id-Bandera" + letra).style.display = 'block';//Genero la id mediante char de la card a mostrar
-  
 }
 
 //SECCION SNACKBAR
