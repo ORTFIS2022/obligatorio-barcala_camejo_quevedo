@@ -48,8 +48,6 @@ document.getElementById("RetornoMenu").addEventListener("click",volverMenu);
 //BOTON CORREO
 
 document.getElementById("Id-Guardar").addEventListener("click",() => validarCorreo());
-
-
 //FUNCION CONSEGUIR LETRA DEL GRUPO
 
 function guardarLetraEquipo(grupo){
@@ -61,6 +59,7 @@ function guardarLetraEquipo(grupo){
 
 function validarCorreo(){
   const email = document.getElementById("Id-MailCorreo").value;
+  const nickName = document.getElementById("Id-MailCorreo2").value;
   var arroba = false;
   for(var i = 0; i< email.length && !arroba;i++){
       if(email.charAt(i) == "@" && email.charAt(i+1) != ""){
@@ -69,27 +68,30 @@ function validarCorreo(){
   }
 
   if(arroba){
-    agregarUsuario(email);
+    if(nickName == ""){
+      return alert("Seleccione un NickName válido!");
+    }
+    else{
+      agregarUsuario(email,nickName);
+    }
   }
   else{
     document.getElementById("Id-MailCorreo").value = '';
-    confirm("Selecione un email valido!");
-    
+    alert("Selecione un email valido!");
   }
 
 }
 
 //FUNCION AGREGAR USUARIO
 
-  function agregarUsuario(email){
+  function agregarUsuario(email,nickName){
   console.log(email);
   miUsuario.email = email;
   if(!miSistema.esvalido(miUsuario)){
-    miSistema.agregarUsuario(miUsuario.email);
+    miSistema.agregarUsuario(miUsuario.email,nickName);
   }
   document.getElementById("Id-MenuContainer").style.display='none';
  }
-
 
 //FUNCION OCULTAR TODO
   function ocultarTodo(grupo){

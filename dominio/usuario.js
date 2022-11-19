@@ -2,8 +2,9 @@
 
 
 class Usuario{
-    constructor(email){
+    constructor(email,nickName){
         this.email = email;
+        this.nickName = nickName;
     }
     
     toString(){

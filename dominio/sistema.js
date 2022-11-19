@@ -5,14 +5,15 @@ const Usuario = require("./usuario");
 class Sistema{
 
     constructor(){
-        this.listaUsuarios = []; // lista de emails registrados
+        this.listaUsuarios = {}; // lista de nicknames registrados
         this.listaPredicciones = {}; // lista con nombre y predicciones
         this.ranking = []; // lista con resultados en base a predicciones y nombre
     }
 
     //Métodos
-    agregarUsuario(emailUsuario){
-        this.listaUsuarios.push(emailUsuario);
+    agregarUsuario(emailUsuario, nickName){
+        this.listaUsuarios[emailUsuario] = [];
+        this.listaUsuarios[emailUsuario].push(nickName);
         this.listaPredicciones[emailUsuario] = ["xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx"];
         console.log(this.listaPredicciones[emailUsuario]);
         //this.listaPredicciones.push(unUsuario);
