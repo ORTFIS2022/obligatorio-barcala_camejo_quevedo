@@ -47,7 +47,7 @@ document.getElementById("RetornoMenu").addEventListener("click",volverMenu);
 
 //BOTON CORREO
 
-document.getElementById("Id-Guardar").addEventListener("click",() => agregarUsuario());
+document.getElementById("Id-Guardar").addEventListener("click",() => validarCorreo());
 
 
 //FUNCION CONSEGUIR LETRA DEL GRUPO
@@ -57,10 +57,31 @@ function guardarLetraEquipo(grupo){
   return letra;
 }
 
+//FUNCION VALIDAR CORREO
+
+function validarCorreo(){
+  const email = document.getElementById("Id-MailCorreo").value;
+  var arroba = false;
+  for(var i = 0; i< email.length && !arroba;i++){
+      if(email.charAt(i) == "@" && email.charAt(i+1) != ""){
+        arroba = true;
+      }
+  }
+
+  if(arroba){
+    agregarUsuario(email);
+  }
+  else{
+    document.getElementById("Id-MailCorreo").value = '';
+    confirm("Selecione un email valido!");
+    
+  }
+
+}
+
 //FUNCION AGREGAR USUARIO
 
-  function agregarUsuario(){
-  const email = document.getElementById("Id-MailCorreo").value;
+  function agregarUsuario(email){
   console.log(email);
   miUsuario.email = email;
   if(!miSistema.esvalido(miUsuario)){
