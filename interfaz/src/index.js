@@ -156,6 +156,27 @@ function guardarPronosticos(letraGrupo) {
   console.log(miUsuario.email)
   miSistema.agregarPrediccion(resultados, letraGrupo, miUsuario.email); //12123132121
 }
+
+
+//FUNCION PARA ACOTAR EL LARGO DE LOS VALORES A PREDECIR DE LOS PARTIDOS.
+document.querySelectorAll('input[type="number"]').forEach(input =>{
+  input.oninput = () =>{
+    if(input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
+  }
+});
+
+//FUNCION PARA ELIMINAR EL "e,+,-" EN LOS INPUTS A COLOCAR EN LOS PARTIDOS.
+document.querySelector('input[type="number"]').addEventListener("keypress", function (evt) {
+  if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57)
+  {
+      evt.preventDefault();
+  }
+});
+
+
+
+
+
 //[A12123123B189823782]
 //a2384762834673'029'0
 //[B123671231672A782783462773C2898192738]
