@@ -110,15 +110,17 @@ function ocultar(){
 
 //FUNCION VOLVER AL MENU
 function volverMenu(){
+   const seccionOcultar = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
    document.getElementById("Id-Grupos").style.display= 'block';
-   document.getElementById("Id-BanderaA").style.display = 'none';
+   if(seccionOcultar != "M"){
+      document.getElementById("Id-Bandera" + seccionOcultar).style.display = 'none';
+   }
    changeAppTitle("Penca Mundial Qatar 2022");
 }
 
 //FUNCION DESPLEGAR PARTIDOS DEL GRUPO
 function desplegarPartidos(letra){
   document.getElementById("Id-Bandera" + letra).style.display = 'block';//Genero la id mediante char de la card a mostrar
-  
 }
 
 //SECCION SNACKBAR

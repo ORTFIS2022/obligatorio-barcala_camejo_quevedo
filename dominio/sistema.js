@@ -16,7 +16,6 @@ class Sistema{
         this.listaUsuarios[emailUsuario].push(nickName);
         this.listaPredicciones[emailUsuario] = ["xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx"];
         console.log(this.listaPredicciones[emailUsuario]);
-        //this.listaPredicciones.push(unUsuario);
     }
 
     agregarPrediccion(resultados, grupo, email) {
