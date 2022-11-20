@@ -7,7 +7,8 @@ class Sistema{
     constructor(){
         this.listaUsuarios = {}; // lista de nicknames registrados
         this.listaPredicciones = {}; // lista con nombre y predicciones
-        this.ranking = []; // lista con resultados en base a predicciones y nombre
+        this.rankingUsuarios = []; // USUARIO CON SU RESPECTIVO PUNTAJE
+        this.resultadosRanking = ["123456789123","123456789","123456789","123456789","123456789","123456789","123456789","123456789"]; //RESULTADO DE LOS PARTIDOS
     }
 
     //Métodos
@@ -16,6 +17,27 @@ class Sistema{
         this.listaUsuarios[emailUsuario].push(nickName);
         this.listaPredicciones[emailUsuario] = ["xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx"];
         console.log(this.listaPredicciones[emailUsuario]);
+    }
+
+    darRanking(emailUsuario){
+        var puntaje = 0;
+        this.rankingUsuarios[emailUsuario] = [];
+        let prediccionActual = this.listaPredicciones[emailUsuario];
+        for(var indice = 0; indice <8; indice++){
+            let aComparar = prediccionActual[indice]; 
+            let rankingSeccion = this.resultadosRanking[indice];
+            for(var i = 0; i< rankingSeccion.length; i++){
+                if(aComparar.charAt(i) == rankingSeccion.charAt(i)){
+                    puntaje = puntaje + 10;
+                }
+                else{
+                    puntaje = puntaje
+                }
+                
+            }
+        }
+        this.rankingUsuarios[emailUsuario].push(puntaje);
+        return puntaje;
     }
 
     agregarPrediccion(resultados, grupo, email) {

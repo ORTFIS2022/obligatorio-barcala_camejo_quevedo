@@ -50,9 +50,35 @@ document.getElementById("RetornoMenu").addEventListener("click",volverMenu);
 document.getElementById("Id-Guardar").addEventListener("click",() => validarCorreo());
 //FUNCION CONSEGUIR LETRA DEL GRUPO
 
+//BOTON RANKING
+
+document.getElementById("id-Ranking").addEventListener("click",() => seccionRanking());
+
 function guardarLetraEquipo(grupo){
   let letra = grupo.charAt(6); //Me encuentra la letra del grupo --A
   return letra;
+}
+
+//FUNCION ACTIVAR SECCION RANKING
+
+function seccionRanking(){
+  
+  document.getElementById("Id-Grupos").style.display= 'none';
+  document.getElementById("Id-rankingMenu").style.display= 'block';
+  document.getElementById("valorPuntaje").style.display= 'block';
+  document.getElementById("id").style.display = 'none';
+  const seccionOcultar = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
+  ocultarBanderas();
+  changeAppTitle("Ranking");
+  document.getElementById("valorPuntaje").innerHTML = miSistema.darRanking(miUsuario.email);
+
+}
+
+function ocultarBanderas(){
+  const seccionOcultar = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
+  if(seccionOcultar != "M" && seccionOcultar != "g"){
+    document.getElementById("Id-Bandera" + seccionOcultar).style.display = 'none';
+  }
 }
 
 //FUNCION VALIDAR CORREO
@@ -73,6 +99,7 @@ function validarCorreo(){
     }
     else{
       agregarUsuario(email,nickName);
+      // document.getElementById("Id-Ranking")?.addEventListener("click",miSistema.darRanking(email));
     }
   }
   else{
@@ -101,7 +128,6 @@ function validarCorreo(){
   desplegarPartidos(guardarLetraEquipo(grupo)); 
   llamado();
 
-  
 }
 //FUNCION OCULTAR BOTONES
 function ocultar(){
@@ -110,12 +136,12 @@ function ocultar(){
 
 //FUNCION VOLVER AL MENU
 function volverMenu(){
-   const seccionOcultar = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
-   document.getElementById("Id-Grupos").style.display= 'block';
-   if(seccionOcultar != "M"){
-      document.getElementById("Id-Bandera" + seccionOcultar).style.display = 'none';
-   }
-   changeAppTitle("Penca Mundial Qatar 2022");
+  document.getElementById("Id-rankingMenu").style.display = 'none';
+  document.getElementById("valorPuntaje").style.display = 'none';
+  document.getElementById("Id-Grupos").style.display= 'block';
+  document.getElementById("id").style.display = 'block';
+  ocultarBanderas();
+  
 }
 
 //FUNCION DESPLEGAR PARTIDOS DEL GRUPO
@@ -138,7 +164,6 @@ function NoMensajeNotifi() {
 //FIN DE SECCION
  
 function llamado(){
-  alert(guardarLetraEquipo(document.getElementById("nombrePagina").textContent));
   let letraGrupo = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
   document.getElementById("Id-BotonGuardar" + letraGrupo).addEventListener("click", ()=> guardarPronosticos(letraGrupo));
 }
@@ -222,7 +247,6 @@ function guardarPronosticos(letraGrupo) {
     // }
 
   }
-  alert(resultados);
   console.log(miUsuario.email)
   miSistema.agregarPrediccion(resultados, letraGrupo, miUsuario.email); //12123132121
 }

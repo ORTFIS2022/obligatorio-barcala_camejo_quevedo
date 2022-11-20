@@ -36,7 +36,7 @@
           <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">home</i>
           <span class="mdc-deprecated-list-item__text">Grupos Del Mundial</span>
         </a>
-        <a class="mdc-deprecated-list-item" href="#" aria-current="page">
+        <a class="mdc-deprecated-list-item" href="#" aria-current="page" id="id-Ranking">
           <span class="mdc-deprecated-list-item__ripple"></span>
           <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">attach_money</i>
           <span class="mdc-deprecated-list-item__text">Ranking</span>
@@ -91,7 +91,13 @@
         <div class="mdc-dialog__scrim"></div>
       </div>
       <!--BOTONES DEL MENU-->
-      <center>
+        <!--SECCION RANKING-->
+        <div class = "Clase-Ranking" id="Id-rankingMenu" style="display: none;">
+          <span">Tu puntaje fue de:</span>
+          <span id="valorPuntaje"></span>
+        </div>
+      <center id="id">
+        <!--SECCION GRUPOS-->
         <section id="Id-Grupos">
           <div class = "Clase-Grupos">
             <button class="mdc-button" id="botonA"><!-- Esto es la seccion de afuera del boton-->
@@ -961,7 +967,6 @@
 
       </center>
   
-<label class="Clase-InfoDetallada"> Info Detallada</label>
 <div id="snackbar">Las notificaciones han sido activadas..</div>
 <div id="snackbar2">Las notificaciones han sido denegadas..</div>
 </body>
