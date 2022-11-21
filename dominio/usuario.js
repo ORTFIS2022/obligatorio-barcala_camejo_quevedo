@@ -1,6 +1,3 @@
-/* eslint-disable */
-
-
 class Usuario{
     constructor(email,nickName){
         this.email = email;
