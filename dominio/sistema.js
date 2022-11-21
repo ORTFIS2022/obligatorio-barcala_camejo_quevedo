@@ -1,4 +1,10 @@
+/**
+ *
+ */
 class Sistema {
+  /**
+     *
+     */
   constructor() {
     this.listaUsuarios = {}; // lista de nicknames registrados
     this.listaPredicciones = {}; // lista con nombre y predicciones
@@ -14,6 +20,11 @@ class Sistema {
   }
 
   // Métodos
+  /**
+   *
+   * @param {string} emailUsuario
+   * @param {string} nickName
+   */
   agregarUsuario(emailUsuario, nickName) {
     this.listaUsuarios[emailUsuario] = nickName;
     this.listaPredicciones[emailUsuario] = ['xxxxxxxxxxxx',
@@ -27,6 +38,11 @@ class Sistema {
     console.log(this.listaPredicciones[emailUsuario]);
   }
 
+  /**
+   *
+   * @param {string} emailUsuario
+   * @return {int}
+   */
   darRanking(emailUsuario) {
     let puntaje = 0;
     this.rankingUsuarios[emailUsuario] = [];
@@ -45,6 +61,12 @@ class Sistema {
     return puntaje;
   }
 
+  /**
+   *
+   * @param {[string]} resultados
+   * @param {string} grupo
+   * @param {string} email
+   */
   agregarPrediccion(resultados, grupo, email) {
     console.log('resultados ' + resultados);
     console.log('grupo ' + grupo);
@@ -85,6 +107,11 @@ class Sistema {
     console.log('nueva prediccion: ' + prediccionActual);
   }
 
+  /**
+   *
+   * @param {String} unUsuario
+   * @return {Bool}
+   */
   esvalido(unUsuario) {
     const esta = false;
     for (let i=0; i<this.listaUsuarios.length; i++) {
@@ -95,6 +122,12 @@ class Sistema {
     return esta;
   }
 
+  /**
+   *
+   * @param {string} grupo
+   * @param {string} email
+   * @return {[string]}
+   */
   procesarPronostico(grupo, email) {
     let indice;
     switch (grupo) {
