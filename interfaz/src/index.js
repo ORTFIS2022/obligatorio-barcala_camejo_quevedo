@@ -54,6 +54,10 @@ document.getElementById("Id-Guardar").addEventListener("click",() => validarCorr
 
 document.getElementById("id-Ranking").addEventListener("click",() => seccionRanking());
 
+//BOTON REGLAS
+document.getElementById("id-Reglas").addEventListener("click",() => seccionReglas());
+
+
 function guardarLetraEquipo(grupo){
   let letra = grupo.charAt(6); //Me encuentra la letra del grupo --A
   return letra;
@@ -72,6 +76,15 @@ function seccionRanking(){
   changeAppTitle("Ranking");
   document.getElementById("valorPuntaje").innerHTML = miSistema.darRanking(miUsuario.email);
 
+}
+
+function seccionReglas(){
+  document.getElementById("Id-Grupos").style.display= 'none';
+  document.getElementById("Id-reglasMenu").style.display= 'block';
+  document.getElementById("id").style.display = 'none';
+  const seccionOcultar = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
+  ocultarBanderas();
+  changeAppTitle("Reglas");
 }
 
 function ocultarBanderas(){

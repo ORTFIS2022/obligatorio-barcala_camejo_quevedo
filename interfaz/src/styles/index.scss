@@ -93,15 +93,26 @@ body {
 //SECCION BOTON GUARDADO DE EQUIPOS
 
 .bttnSave{
-  @include button.ink-color(#16e31c);
-  --mdc-theme-on-primary: #fe061a;
+  @include button.ink-color(#000000);
+  --mdc-theme-on-primary: #000000;
   --mdc-theme-primary: #2fbb23;
   border:0.16em;
   color: #FFFFFF;
   margin-top: 2%;
   top:0vw;
+  font-weight: bold;
 }
 //SECCION LISTA CON ITEMS
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 
 //COLORES DE LOS ITEMS/ITEM SELECCIONADO
 .mdc-drawer .mdc-deprecated-list-item {
