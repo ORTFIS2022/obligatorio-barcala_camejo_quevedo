@@ -71,8 +71,8 @@ function seccionRanking(){
   document.getElementById("Id-rankingMenu").style.display= 'block';
   document.getElementById("valorPuntaje").style.display= 'block';
   document.getElementById("id").style.display = 'none';
-  const seccionOcultar = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
   ocultarBanderas();
+  document.getElementById("Id-reglasMenu").style.display = 'none';
   changeAppTitle("Ranking");
   document.getElementById("valorPuntaje").innerHTML = miSistema.darRanking(miUsuario.email);
 
@@ -81,15 +81,14 @@ function seccionRanking(){
 function seccionReglas(){
   document.getElementById("Id-Grupos").style.display= 'none';
   document.getElementById("Id-reglasMenu").style.display= 'block';
-  document.getElementById("id").style.display = 'none';
-  const seccionOcultar = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
+  document.getElementById("Id-rankingMenu").style.display = 'none';
   ocultarBanderas();
-  changeAppTitle("Reglas");
+  changeAppTitle("Reglamento");
 }
 
 function ocultarBanderas(){
   const seccionOcultar = guardarLetraEquipo(document.getElementById("nombrePagina").textContent);
-  if(seccionOcultar != "M" && seccionOcultar != "g"){
+  if(seccionOcultar != "M" && seccionOcultar != "g" && seccionOcultar != "e"){
     document.getElementById("Id-Bandera" + seccionOcultar).style.display = 'none';
   }
 }
@@ -153,8 +152,9 @@ function volverMenu(){
   document.getElementById("valorPuntaje").style.display = 'none';
   document.getElementById("Id-Grupos").style.display= 'block';
   document.getElementById("id").style.display = 'block';
+  document.getElementById("Id-reglasMenu").style.display = 'none';
   ocultarBanderas();
-  
+  changeAppTitle("Penca Mundial Qatar 2022");
 }
 
 //FUNCION DESPLEGAR PARTIDOS DEL GRUPO
