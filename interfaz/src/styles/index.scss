@@ -82,10 +82,14 @@ body {
 }
 
 .botonInfo{
+  --mdc-theme-primary: rgb(225, 225, 225);
   margin-top: 1%;
   top:0vw;
 }
 
+.infoMatch{
+  color: #0f0c0c;
+}
 //SECCION BOTON GUARDADO DE EQUIPOS
 
 .bttnSave{
@@ -142,9 +146,9 @@ margin-top: 1%;
 //SECCION CARD
 .mdc-card {
   height: 11%;
-  width: 70%;
+  width: 50%;
   position: relative;
-  background-color: rgba(255, 0, 0, 0.0);
+  background-color: rgba(72, 20, 44, 0.3);
   img{
     width: 40%;
     align-self: center;
@@ -190,8 +194,20 @@ input{
 
 }
 
+.bttnPuntaje{
+  color: #0f0c0c;
+}
+
 .Clase-Ranking{
-  float: left;
+  font-weight: bold;
+  font-size: 1.5vw;
+  margin-top: 2%;
+  color: #0f0c0c;
+  background-color: #c9a3a3;
+  width: 50%;
+  img{
+    width: 30%;
+  }
 }
 
 #snackbar.show,#snackbar2.show {

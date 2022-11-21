@@ -7,6 +7,7 @@
     <title>Penca Mundial Qatar 2022</title>
     <link rel="stylesheet" href="bundle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/jpg" href="https://dbdzm869oupei.cloudfront.net/img/vinylrugs/preview/29834.png"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 </head>
           
@@ -40,11 +41,6 @@
           <span class="mdc-deprecated-list-item__ripple"></span>
           <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">attach_money</i>
           <span class="mdc-deprecated-list-item__text">Ranking</span>
-        </a>
-        <a class="mdc-deprecated-list-item" href="#">
-          <span class="mdc-deprecated-list-item__ripple"></span>
-          <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">savings</i>
-          <span class="mdc-deprecated-list-item__text">Mis Grupos de Chat</span>
         </a>
         <a class="mdc-deprecated-list-item" href="#">
           <span class="mdc-deprecated-list-item__ripple"></span>
@@ -92,10 +88,13 @@
       </div>
       <!--BOTONES DEL MENU-->
         <!--SECCION RANKING-->
-        <div class = "Clase-Ranking" id="Id-rankingMenu" style="display: none;">
-          <span">Tu puntaje fue de:</span>
-          <span id="valorPuntaje"></span>
+        <center>
+        <div class = "mdc-card Clase-Ranking" id="Id-rankingMenu" style="display: none;">
+          <h1 class="mdc-button__label bttnPuntaje">Puntaje Total:</h1>
+          <h1 id="valorPuntaje"></h1>
+          <img src="https://sportline.com.pa/media/catalog/product/cache/31cbefb9be50bdc69d7917a952daa217/H/5/H57792_1_HARDWARE_Photography_Front_Center_View_transparent_1_1.png" alt="">
         </div>
+      </center>
       <center id="id">
         <!--SECCION GRUPOS-->
         <section id="Id-Grupos">
@@ -154,7 +153,7 @@
               <tr> 
                 <center>
                   <button class="mdc-button mdc-button--raised botonInfo">
-                    <span class="mdc-button__label">20/11 - 13:00 hs</span>
+                    <span class="mdc-button__label infoMatch">20/11 - 13:00 hs</span>
                   </button>
                   <br>
                   <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -199,7 +198,7 @@
               <tr>
                 <center>
                   <button class="mdc-button mdc-button--raised botonInfo">
-                    <span class="mdc-button__label">21/11 - 07:00 hs</span>
+                    <span class="mdc-button__label infoMatch">21/11 - 07:00 hs</span>
                   </button>
                   <br>
                   <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -243,7 +242,7 @@
               <tr>
                 <center>
                   <button class="mdc-button mdc-button--raised botonInfo">
-                    <span class="mdc-button__label">25/11 - 10:00 hs</span>
+                    <span class="mdc-button__label infoMatch">25/11 - 10:00 hs</span>
                   </button>
                   <br>
                   <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -286,7 +285,7 @@
               <tr>
                 <center>
                   <button class="mdc-button mdc-button--raised botonInfo">
-                    <span class="mdc-button__label">25/11 - 13:00 hs</span>
+                    <span class="mdc-button__label infoMatch">25/11 - 13:00 hs</span>
                   </button>
                   <br>
                   <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -329,7 +328,7 @@
               <tr>
                 <center>
                   <button class="mdc-button mdc-button--raised botonInfo">
-                    <span class="mdc-button__label">29/11 - 12:00 hs</span>
+                    <span class="mdc-button__label infoMatch">29/11 - 12:00 hs</span>
                   </button>
                   <br>
                   <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -372,7 +371,7 @@
               <tr>
                 <center>
                   <button class="mdc-button mdc-button--raised botonInfo">
-                    <span class="mdc-button__label">29/11 - 12:00 hs</span>
+                    <span class="mdc-button__label infoMatch">29/11 - 12:00 hs</span>
                   </button>
                   <br>
                   <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -427,7 +426,7 @@
                 <tr> 
                   <center>
                     <button class="mdc-button mdc-button--raised botonInfo">
-                      <span class="mdc-button__label bttnInfo">21/11 - 10:00 hs</span>
+                      <span class="mdc-button__label infoMatch">21/11 - 10:00 hs</span>
                     </button>
                     <br>
                     <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -441,7 +440,7 @@
                       <br>
                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/200px-Flag_of_England.svg.png" alt="" class="img1">
                       <br>
-                      <input type="number" min="0" max="15" maxLength = "1" id="input13">
+                      <input type="number" min="0" max="9" maxLength = "1" id="input13">
                     </center>
                 </td>
                 <center>
@@ -458,7 +457,7 @@
                       <br>
                   <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Ir%C3%A1n-Bandera-Asia.png" alt="Uruguay" class="img2">
                   <br>
-                  <input type="number" min="0" max="15" maxLength = "1" id="input14">
+                  <input type="number" min="0" max="9" maxLength = "1" id="input14">
       
                 </center>
                 </td>
@@ -472,7 +471,7 @@
                 <tr>
                   <center>
                     <button class="mdc-button mdc-button--raised botonInfo">
-                      <span class="mdc-button__label bttnInfo">21/11 - 16:00 hs</span>
+                      <span class="mdc-button__label infoMatch">21/11 - 16:00 hs</span>
                     </button>
                     <br>
                     <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -485,7 +484,7 @@
                       <br>
                       <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/EEUU-Bandera-America.png" alt="" class="img1">
                       <br>
-                      <input type="number" min="0" max="15" maxLength = "1" id="input15">
+                      <input type="number" min="0" max="9" maxLength = "1" id="input15">
                     </center>
                 </td>
                 <center>
@@ -502,7 +501,7 @@
                       <br>
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/200px-Flag_of_Wales.svg.png" alt="Uruguay" class="img2">
                   <br>
-                  <input type="number" min="0" max="15" maxLength = "1" id="input16">
+                  <input type="number" min="0" max="9" maxLength = "1" id="input16">
       
                 </center>
                 </td>
@@ -516,7 +515,7 @@
                 <tr>
                   <center>
                     <button class="mdc-button mdc-button--raised botonInfo">
-                      <span class="mdc-button__label bttnInfo">25/11 - 07:00 hs</span>
+                      <span class="mdc-button__label infoMatch">25/11 - 07:00 hs</span>
                     </button>
                     <br>
                     <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -529,7 +528,7 @@
                       <br>
                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/200px-Flag_of_Wales.svg.png" alt="" class="img1">
                       <br>
-                      <input type="number" min="0" max="15" maxLength = "1" id="input17">
+                      <input type="number" min="0" max="9" maxLength = "1" id="input17">
                     </center>
                 </td>
                 <center>
@@ -546,7 +545,7 @@
                       <br>
                   <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Ir%C3%A1n-Bandera-Asia.png" alt="Uruguay" class="img2">
                   <br>
-                  <input type="number" min="0" max="15" maxLength = "1" id="input18">
+                  <input type="number" min="0" max="9" maxLength = "1" id="input18">
       
                 </center>
                 </td>
@@ -559,7 +558,7 @@
                 <tr>
                   <center>
                     <button class="mdc-button mdc-button--raised botonInfo">
-                      <span class="mdc-button__label bttnInfo">25/11 - 16:00 hs</span>
+                      <span class="mdc-button__label infoMatch">25/11 - 16:00 hs</span>
                     </button>
                     <br>
                     <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -572,7 +571,7 @@
                       <br>
                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/200px-Flag_of_England.svg.png" alt="" class="img1">
                       <br>
-                      <input type="number" min="0" max="15" maxLength = "1" id="input19">
+                      <input type="number" min="0" max="9" maxLength = "1" id="input19">
                     </center>
                 </td>
                 <center>
@@ -589,7 +588,7 @@
                       <br>
                   <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/EEUU-Bandera-America.png" alt="" class="img2">
                   <br>
-                  <input type="number" min="0" max="15" maxLength = "1" id="input20">
+                  <input type="number" min="0" max="9" maxLength = "1" id="input20">
       
                 </center>
                 </td>
@@ -602,7 +601,7 @@
                 <tr>
                   <center>
                     <button class="mdc-button mdc-button--raised botonInfo">
-                      <span class="mdc-button__label bttnInfo">29/11 - 16:00 hs</span>
+                      <span class="mdc-button__label infoMatch">29/11 - 16:00 hs</span>
                     </button>
                     <br>
                     <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -645,7 +644,7 @@
                 <tr>
                   <center>
                     <button class="mdc-button mdc-button--raised botonInfo">
-                      <span class="mdc-button__label bttnInfo">29/11 - 16:00 hs</span>
+                      <span class="mdc-button__label infoMatch">29/11 - 16:00 hs</span>
                     </button>
                     <br>
                     <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -700,7 +699,7 @@
                   <tr> 
                     <center>
                       <button class="mdc-button mdc-button--raised botonInfo">
-                        <span class="mdc-button__label bttnInfo">22/11 - 07:00 hs</span>
+                        <span class="mdc-button__label infoMatch">22/11 - 07:00 hs</span>
                       </button>
                       <br>
                       <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -714,7 +713,7 @@
                         <br>
                         <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Argentina-Bandera-America.png" alt="" class="img1">
                         <br>
-                        <input type="number" min="0" max="15" maxLength = "1" id="input25">
+                        <input type="number" min="0" max="9" maxLength = "1" id="input25">
                       </center>
                   </td>
                   <center>
@@ -731,7 +730,7 @@
                         <br>
                     <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Arabia-Saudita-Bandera-Asia.png" alt="Uruguay" class="img2">
                     <br>
-                    <input type="number" min="0" max="15" maxLength = "1" id="input26">
+                    <input type="number" min="0" max="9" maxLength = "1" id="input26">
         
                   </center>
                   </td>
@@ -745,7 +744,7 @@
                   <tr>
                     <center>
                       <button class="mdc-button mdc-button--raised botonInfo">
-                        <span class="mdc-button__label bttnInfo">22/11 - 13:00 hs</span>
+                        <span class="mdc-button__label infoMatch">22/11 - 13:00 hs</span>
                       </button>
                       <br>
                       <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -758,7 +757,7 @@
                         <br>
                         <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/M%C3%A9xico-Bandera-America.png" alt="" class="img1">
                         <br>
-                        <input type="number" min="0" max="15" maxLength = "1" id="input27">
+                        <input type="number" min="0" max="9" maxLength = "1" id="input27">
                       </center>
                   </td>
                   <center>
@@ -775,7 +774,7 @@
                         <br>
                     <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Polonia-Bandera-Europa.png" alt="Uruguay" class="img2">
                     <br>
-                    <input type="number" min="0" max="15" maxLength = "1" id="input28">
+                    <input type="number" min="0" max="9" maxLength = "1" id="input28">
         
                   </center>
                   </td>
@@ -789,7 +788,7 @@
                   <tr>
                     <center>
                       <button class="mdc-button mdc-button--raised botonInfo">
-                        <span class="mdc-button__label bttnInfo">26/11 - 10:00 hs</span>
+                        <span class="mdc-button__label infoMatch">26/11 - 10:00 hs</span>
                       </button>
                       <br>
                       <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -802,7 +801,7 @@
                         <br>
                         <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Polonia-Bandera-Europa.png" alt="" class="img1">
                         <br>
-                        <input type="number" min="0" max="15" maxLength = "1" id="input29">
+                        <input type="number" min="0" max="9" maxLength = "1" id="input29">
                       </center>
                   </td>
                   <center>
@@ -819,7 +818,7 @@
                         <br>
                     <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Arabia-Saudita-Bandera-Asia.png" alt="Uruguay" class="img2">
                     <br>
-                    <input type="number" min="0" max="15" maxLength = "1" id="input30">
+                    <input type="number" min="0" max="9" maxLength = "1" id="input30">
         
                   </center>
                   </td>
@@ -832,7 +831,7 @@
                   <tr>
                     <center>
                       <button class="mdc-button mdc-button--raised botonInfo">
-                        <span class="mdc-button__label bttnInfo">26/11 - 16:00 hs</span>
+                        <span class="mdc-button__label infoMatch">26/11 - 16:00 hs</span>
                       </button>
                       <br>
                       <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -845,7 +844,7 @@
                         <br>
                         <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Argentina-Bandera-America.png" alt="" class="img1">
                         <br>
-                        <input type="number" min="0" max="15" maxLength = "1" id="input31">
+                        <input type="number" min="0" max="9" maxLength = "1" id="input31">
                       </center>
                   </td>
                   <center>
@@ -862,7 +861,7 @@
                         <br>
                     <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/M%C3%A9xico-Bandera-America.png" alt="" class="img2">
                     <br>
-                    <input type="number" min="0" max="15" maxLength = "1" id="input32">
+                    <input type="number" min="0" max="9" maxLength = "1" id="input32">
         
                   </center>
                   </td>
@@ -875,7 +874,7 @@
                   <tr>
                     <center>
                       <button class="mdc-button mdc-button--raised botonInfo">
-                        <span class="mdc-button__label bttnInfo">30/11 - 16:00 hs</span>
+                        <span class="mdc-button__label infoMatch">30/11 - 16:00 hs</span>
                       </button>
                       <br>
                       <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -918,7 +917,7 @@
                   <tr>
                     <center>
                       <button class="mdc-button mdc-button--raised botonInfo">
-                        <span class="mdc-button__label bttnInfo">30/11 - 16:00 hs</span>
+                        <span class="mdc-button__label infoMatch">30/11 - 16:00 hs</span>
                       </button>
                       <br>
                       <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
@@ -963,11 +962,1380 @@
                 >
                 <span class="mdc-button__label" id="Id-BotonGuardarC">GUARDAR PRONÓSTICO</span>
               </button>
+
+            </section>
+
+              <section class="Clase-Bandera" id="Id-BanderaD" style="display: none;">
+          
+                <div class="mdc-card" id="mdc-cardA" style="margin-top: 1%;">
+                  <table>
+                    <tr> 
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">22/11 - 10:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                       
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Dinamarca</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Dinamarca-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input37">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Túnez</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/T%C3%BAnez-Bandera-Africa.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input38">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                  
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">22/11 - 16:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Francia</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Francia-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input39">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Australia</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Australia-Bandera-Ocean%C3%ADa.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input39">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+      
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">26/11 - 07:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Túnez</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/T%C3%BAnez-Bandera-Africa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input40">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Australia</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Australia-Bandera-Ocean%C3%ADa.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input41">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">26/11 - 13:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Francia</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Francia-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input42">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Dinamarca</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Dinamarca-Bandera-Europa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input43">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">30/11 - 12:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Australia</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Australia-Bandera-Ocean%C3%ADa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input44">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Dinamarca</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Dinamarca-Bandera-Europa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input45">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">30/11 - 12:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Túnez</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/T%C3%BAnez-Bandera-Africa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input46">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Francia</span> 
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Francia-Bandera-Europa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input47">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <button class="mdc-button mdc-button--raised mdc-button--leading bttnSave">
+                  <span class="mdc-button__ripple"></span>
+                  <i class="material-icons mdc-button__icon" aria-hidden="true"
+                    >bookmark</i
+                  >
+                  <span class="mdc-button__label" id="Id-BotonGuardarD">GUARDAR PRONÓSTICO</span>
+                </button>
+              </section>
+
+              <section class="Clase-Bandera" id="Id-BanderaE" style="display: none;">
+          
+                <div class="mdc-card" id="mdc-cardA" style="margin-top: 1%;">
+                  <table>
+                    <tr> 
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">23/11 - 10:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                       
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Alemania</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Alemania-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input48">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Japón</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Jap%C3%B3n-Bandera-Asia.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input49">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                  
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">23/11 - 13:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">España</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Espa%C3%B1a-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input50">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Costa Rica</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Costa-Rica-Bandera-America.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input51">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+      
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">27/11 - 07:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Japón</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Jap%C3%B3n-Bandera-Asia.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input52">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Costa Rica</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Costa-Rica-Bandera-America.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input53">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">27/11 - 16:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">España</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Espa%C3%B1a-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input54">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Alemania</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Alemania-Bandera-Europa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input55">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">01/12 - 16:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Japón</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Jap%C3%B3n-Bandera-Asia.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input56">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">España</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Espa%C3%B1a-Bandera-Europa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input57">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">01/12 - 16:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Costa Rica</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Costa-Rica-Bandera-America.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input58">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Alemania</span> 
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Alemania-Bandera-Europa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input59">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <button class="mdc-button mdc-button--raised mdc-button--leading bttnSave">
+                  <span class="mdc-button__ripple"></span>
+                  <i class="material-icons mdc-button__icon" aria-hidden="true"
+                    >bookmark</i
+                  >
+                  <span class="mdc-button__label" id="Id-BotonGuardarE">GUARDAR PRONÓSTICO</span>
+                </button>
+              </section>
+
+              <section class="Clase-Bandera" id="Id-BanderaF" style="display: none;">
+          
+                <div class="mdc-card" id="mdc-cardA" style="margin-top: 1%;">
+                  <table>
+                    <tr> 
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">23/11 - 07:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                       
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Marruecos</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Marruecos-Bandera-Africa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input60">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Croacia</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Croacia-Bandera-Europa.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input61">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                  
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">23/11 - 16:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Bélgica</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/B%C3%A9lgica-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input62">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Canadá</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Canad%C3%A1-Bandera-America.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input63">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+      
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">27/11 - 10:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Bélgica</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/B%C3%A9lgica-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input64">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Marruecos</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Marruecos-Bandera-Africa.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input65">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">27/11 - 13:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Croacia</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Croacia-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input66">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Canadá</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Canad%C3%A1-Bandera-America.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input67">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">01/12 - 12:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Croacia</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Croacia-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input68">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Bélgica</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/B%C3%A9lgica-Bandera-Europa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input69">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">01/12 - 12:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Canadá</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Canad%C3%A1-Bandera-America.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input70">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Marruecos</span> 
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Marruecos-Bandera-Africa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input71">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <button class="mdc-button mdc-button--raised mdc-button--leading bttnSave">
+                  <span class="mdc-button__ripple"></span>
+                  <i class="material-icons mdc-button__icon" aria-hidden="true"
+                    >bookmark</i
+                  >
+                  <span class="mdc-button__label" id="Id-BotonGuardarF">GUARDAR PRONÓSTICO</span>
+                </button>
+              </section>
+
+              <section class="Clase-Bandera" id="Id-BanderaG" style="display: none;">
+          
+                <div class="mdc-card" id="mdc-cardA" style="margin-top: 1%;">
+                  <table>
+                    <tr> 
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">24/11 - 07:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                       
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Suiza</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Suiza-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input72">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Camerún</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Camer%C3%BAn-Bandera-Africa.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input73">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                  
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">24/11 - 16:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Brasil</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Brasil-Bandera-America.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input74">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Serbia</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Serbia-Bandera-Europa.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input75">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+      
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">28/11 - 07:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Camerún</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Camer%C3%BAn-Bandera-Africa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input76">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Serbia</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Serbia-Bandera-Europa.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input77">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">28/11 - 13:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Brasil</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Brasil-Bandera-America.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input78">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Suiza</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Suiza-Bandera-Europa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input79">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">02/12 - 16:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Serbia</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Serbia-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input80">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Suiza</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Suiza-Bandera-Europa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input81">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">02/12 - 16:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Camerún</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Camer%C3%BAn-Bandera-Africa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input82">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Brasil</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Brasil-Bandera-America.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input83">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <button class="mdc-button mdc-button--raised mdc-button--leading bttnSave">
+                  <span class="mdc-button__ripple"></span>
+                  <i class="material-icons mdc-button__icon" aria-hidden="true"
+                    >bookmark</i
+                  >
+                  <span class="mdc-button__label" id="Id-BotonGuardarG">GUARDAR PRONÓSTICO</span>
+                </button>
+              </section>
+
+              <section class="Clase-Bandera" id="Id-BanderaH" style="display: none;">
+          
+                <div class="mdc-card" id="mdc-cardA" style="margin-top: 1%;">
+                  <table>
+                    <tr> 
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">24/11 - 10:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                       
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Uruguay</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Uruguay-Bandera-America.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input84">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Corea del Sur</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Corea-del-Sur-Bandera-Asia.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input85">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                  
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">24/11 - 13:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Portugal</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Portugal-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input86">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Ghana</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Ghana-Bandera-Africa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input87">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+      
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">28/11 - 10:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Corea del Sur</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Corea-del-Sur-Bandera-Asia.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input88">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Ghana</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Ghana-Bandera-Africa.png" alt="Uruguay" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input89">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">28/11 - 16:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Portugal</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Portugal-Bandera-Europa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input90">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Uruguay</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Uruguay-Bandera-America.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input91">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">02/12 - 12:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Ghana</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Ghana-Bandera-Africa.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input92">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Uruguay</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Uruguay-Bandera-America.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input93">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <div class="mdc-card">
+                  <table>
+                    <tr>
+                      <center>
+                        <button class="mdc-button mdc-button--raised botonInfo">
+                          <span class="mdc-button__label infoMatch">02/12 - 12:00 hs</span>
+                        </button>
+                        <br>
+                        <label class="Clase-TextoPartidosPrevios" id="Id-TextoPartidosPrevios">Información partidos previos</label>
+                      </center>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center>
+                          <span class="nombreEquipos">Corea del Sur</span>
+                          <br>
+                          <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Corea-del-Sur-Bandera-Asia.png" alt="" class="img1">
+                          <br>
+                          <input type="number" min="0" max="9" maxLength = "1" id="input94">
+                        </center>
+                    </td>
+                    <center>
+          
+                      <td style="width: 30%;">
+                        <center>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="" style="width: 20%;">
+                        </center>
+                      </td>
+                  </center>
+                    <td>
+                      <center>
+                        <span class="nombreEquipos">Portugal</span>
+                          <br>
+                      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Portugal-Bandera-Europa.png" alt="" class="img2">
+                      <br>
+                      <input type="number" min="0" max="9" maxLength = "1" id="input95">
+          
+                    </center>
+                    </td>
+                    </tr>
+                  </table>
+                </div>
+                <br>
+                <button class="mdc-button mdc-button--raised mdc-button--leading bttnSave">
+                  <span class="mdc-button__ripple"></span>
+                  <i class="material-icons mdc-button__icon" aria-hidden="true"
+                    >bookmark</i
+                  >
+                  <span class="mdc-button__label" id="Id-BotonGuardarH">GUARDAR PRONÓSTICO</span>
+                </button>
+              </section>
+
+
+              
+
+
+
+
               
 
       </center>
   
-<div id="snackbar">Las notificaciones han sido activadas..</div>
-<div id="snackbar2">Las notificaciones han sido denegadas..</div>
+<div id="snackbar">Las notificaciones han sido activadas</div>
+<div id="snackbar2">Las notificaciones han sido denegadas</div>
 </body>
 </html>

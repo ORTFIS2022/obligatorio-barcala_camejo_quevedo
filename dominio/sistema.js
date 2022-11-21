@@ -26,14 +26,10 @@ class Sistema{
         for(var indice = 0; indice <8; indice++){
             let aComparar = prediccionActual[indice]; 
             let rankingSeccion = this.resultadosRanking[indice];
-            for(var i = 0; i< rankingSeccion.length; i++){
-                if(aComparar.charAt(i) == rankingSeccion.charAt(i)){
-                    puntaje = puntaje + 10;
+            for(var i = 0; i< rankingSeccion.length; i=i+2){
+                if(aComparar.charAt(i) == rankingSeccion.charAt(i) && aComparar.charAt(i+1) == rankingSeccion.charAt(i+1) ){
+                    puntaje = puntaje + 10; //Por acertar resultado exacto
                 }
-                else{
-                    puntaje = puntaje
-                }
-                
             }
         }
         this.rankingUsuarios[emailUsuario].push(puntaje);
