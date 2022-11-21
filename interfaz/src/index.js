@@ -184,80 +184,80 @@ function llamado(){
 //Retorna string con valores de los inputs de un grupo + letra
 function guardarPronosticos(letraGrupo) {
   let resultados = "";
-  for(let i=2; i<14;i++){   
-    console.log(document.getElementById(("input"+(i-1))).value);
+  for(let i=1; i<13;i++){   
+    //console.log(document.getElementById(("input"+(i-1))).value);
 
     if(letraGrupo == "A"){
-      if (document.getElementById(("input"+(i-1))).value == "") {
+      if (document.getElementById(("input"+(i))).value == "") {
         resultados = resultados + "x";
       } 
       else {
-        resultados = resultados + (document.getElementById(("input"+(i-1))).value);
+        resultados = resultados + (document.getElementById(("input"+(i))).value);
       }
     }
     
     if(letraGrupo == "B"){
-      if (document.getElementById(("input"+(i-1 +12))).value == "") {
+      if (document.getElementById(("input"+(i + 12))).value == "") {
         resultados = resultados + "x";
       } 
       else {
-        resultados = resultados + (document.getElementById(("input"+(i-1 +12))).value);
+        resultados = resultados + (document.getElementById(("input"+(i + 12))).value);
       }
     }
 
     if(letraGrupo == "C"){
-      if (document.getElementById(("input"+(i-1 +24))).value == "") {
+      if (document.getElementById(("input"+(i + 24))).value == "") {
         resultados = resultados + "x";
       } 
       else {
-        resultados = resultados + (document.getElementById(("input"+(i-1 +24))).value);
+        resultados = resultados + (document.getElementById(("input"+(i + 24))).value);
       }
     }
 
-    // if(letraGrupo == "D"){
-    //   if (document.getElementById(("input"+(i-1 +36))).value == "") {
-    //     resultados = resultados + "x";
-    //   } 
-    //   else {
-    //     resultados = resultados + (document.getElementById(("input"+(i-1 +36))).value);
-    //   }
-    // }
+    if(letraGrupo == "D"){
+      if (document.getElementById(("input"+(i + 36))).value == "") {
+        resultados = resultados + "x";
+      } 
+      else {
+        resultados = resultados + (document.getElementById(("input"+(i + 36))).value);
+      }
+    }
 
-    // if(letraGrupo == "E"){
-    //   if (document.getElementById(("input"+(i-1 +48))).value == "") {
-    //     resultados = resultados + "x";
-    //   } 
-    //   else {
-    //     resultados = resultados + (document.getElementById(("input"+(i-1 +48))).value);
-    //   }
-    // }
+    if(letraGrupo == "E"){
+      if (document.getElementById(("input"+(i +47))).value == "") {
+        resultados = resultados + "x";  
+      } 
+      else {
+        resultados = resultados + (document.getElementById(("input"+(i + 47))).value);
+      }
+    }
 
-    // if(letraGrupo == "F"){
-    //   if (document.getElementById(("input"+(i-1 +60))).value == "") {
-    //     resultados = resultados + "x";
-    //   } 
-    //   else {
-    //     resultados = resultados + (document.getElementById(("input"+(i-1 +60))).value);
-    //   }
-    // }
+    if(letraGrupo == "F"){
+      if (document.getElementById(("input"+(i + 59))).value == "") {
+        resultados = resultados + "x";
+      } 
+      else {
+        resultados = resultados + (document.getElementById(("input"+(i + 59))).value);
+      }
+    }
 
-    // if(letraGrupo == "G"){
-    //   if (document.getElementById(("input"+(i-1 +72))).value == "") {
-    //     resultados = resultados + "x";
-    //   } 
-    //   else {
-    //     resultados = resultados + (document.getElementById(("input"+(i-1 +72))).value);
-    //   }
-    // }
+    if(letraGrupo == "G"){
+      if (document.getElementById(("input"+(i + 71))).value == "") {
+        resultados = resultados + "x";
+      } 
+      else {
+        resultados = resultados + (document.getElementById(("input"+(i + 71))).value);
+      }
+    }
 
-    // if(letraGrupo == "H"){
-    //   if (document.getElementById(("input"+(i-1 +84))).value == "") {
-    //     resultados = resultados + "x";
-    //   } 
-    //   else {
-    //     resultados = resultados + (document.getElementById(("input"+(i-1 +84))).value);
-    //   }
-    // }
+    if(letraGrupo == "H"){
+      if (document.getElementById(("input"+(i + 83))).value == "") {
+        resultados = resultados + "x";
+      } 
+      else {
+        resultados = resultados + (document.getElementById(("input"+(i + 83))).value);
+      }
+    }
 
   }
   console.log(miUsuario.email)
