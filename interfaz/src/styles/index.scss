@@ -85,10 +85,12 @@ body {
   --mdc-theme-primary: rgb(225, 225, 225);
   margin-top: 1%;
   top:0vw;
+  cursor: default;
 }
 
 .infoMatch{
   color: #0f0c0c;
+  cursor: default;
 }
 //SECCION BOTON GUARDADO DE EQUIPOS
 
@@ -220,6 +222,11 @@ input{
     width: 30%;
   }
 }
+.Clase-TextoPartidosPrevios{
+  color: #000000;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 #snackbar.show,#snackbar2.show {
   visibility: visible; 
@@ -282,6 +289,7 @@ background-size: cover;
 .mdc-tab-indicator--active > .mdc-tab-indicator__content--underline{
   border-color: variables.$on-primary;
 }
+
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
   from {bottom: 0; opacity: 0;}

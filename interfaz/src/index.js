@@ -106,7 +106,6 @@ function validarCorreo(){
     }
     else{
       agregarUsuario(email,nickName);
-      // document.getElementById("Id-Ranking")?.addEventListener("click",miSistema.darRanking(email));
     }
   }
   else{
@@ -119,7 +118,6 @@ function validarCorreo(){
 //FUNCION AGREGAR USUARIO
 
   function agregarUsuario(email,nickName){
-  console.log(email);
   miUsuario.email = email;
   if(!miSistema.esvalido(miUsuario)){
     miSistema.agregarUsuario(miUsuario.email,nickName);
@@ -180,8 +178,6 @@ function llamado(){
 function guardarPronosticos(letraGrupo) {
   let resultados = "";
   for(let i=1; i<13;i++){   
-    //console.log(document.getElementById(("input"+(i-1))).value);
-
     if(letraGrupo == "A"){
       if (document.getElementById(("input"+(i))).value == "") {
         resultados = resultados + "x";
@@ -255,7 +251,6 @@ function guardarPronosticos(letraGrupo) {
     }
 
   }
-  console.log(miUsuario.email)
   miSistema.agregarPrediccion(resultados, letraGrupo, miUsuario.email); //12123132121
 }
 
@@ -274,20 +269,3 @@ document.querySelector('input[type="number"]').addEventListener("keypress", func
       evt.preventDefault();
   }
 });
-
-
-
-
-
-//[A12123123B189823782]
-//a2384762834673'029'0
-//[B123671231672A782783462773C2898192738]
-
-
-
-
-
-
-
-
-
