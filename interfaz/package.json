@@ -1,7 +1,7 @@
 {
   "name": "interface",
   "version": "1.0.0",
-  "description": "Misgastos interface",
+  "description": "Penca Mundial 2022 interface",
   "private": true,
   "scripts": {
     "start": "webpack serve",

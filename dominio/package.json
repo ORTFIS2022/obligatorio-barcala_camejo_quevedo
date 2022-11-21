@@ -1,7 +1,7 @@
 {
   "name": "dominio",
   "version": "1.0.0",
-  "description": "MisGastos dominio",
+  "description": "Penca Mundial Qatar 2022 dominio",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",

@@ -1,15 +1,10 @@
-
-let miPrediccion = new Predicciones();
 let miSistema = new Sistema();
 let miUsuario = new Usuario("");
 
-import Predicciones from "../../dominio/predicciones"
 import Sistema from "../../dominio/Sistema"
 import Usuario from "../../dominio/usuario"
 import "./styles/index.scss";
-import { changeVisibleSection, openFabSpeedDial, changeMenuIcon, addEventBalanceButtons,
-  updateHistory, changeAppTitle, cleanInput, getExpenseData, getIncomeData, displayBalance, updateTotalExpenses, setTestData,
-getSavingData, updateTotalSavings} from './utils';
+import {changeMenuIcon, changeAppTitle} from './utils';
 import {MDCTopAppBar} from '@material/top-app-bar';
 import {MDCDrawer} from "@material/drawer";
 import {MDCList} from "@material/list";

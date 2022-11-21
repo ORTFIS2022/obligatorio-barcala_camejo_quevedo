@@ -1,20 +1,15 @@
-/* eslint-disable */
-
-const Usuario = require("./usuario");
-
 class Sistema{
 
     constructor(){
         this.listaUsuarios = {}; // lista de nicknames registrados
         this.listaPredicciones = {}; // lista con nombre y predicciones
         this.rankingUsuarios = []; // USUARIO CON SU RESPECTIVO PUNTAJE
-        this.resultadosRanking = ["123456789123","123456789","123456789","123456789","123456789","123456789","123456789","123456789"]; //RESULTADO DE LOS PARTIDOS
+        this.resultadosRanking = ["123456789111","123456789","123456789","123456789","123456789","123456789","123456789","123456789"]; //RESULTADO DE LOS PARTIDOS
     }
 
     //Métodos
     agregarUsuario(emailUsuario, nickName){
-        this.listaUsuarios[emailUsuario] = [];
-        this.listaUsuarios[emailUsuario].push(nickName);
+        this.listaUsuarios[emailUsuario] = nickName;
         this.listaPredicciones[emailUsuario] = ["xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx", "xxxxxxxxxxxx"];
         console.log(this.listaPredicciones[emailUsuario]);
     }
