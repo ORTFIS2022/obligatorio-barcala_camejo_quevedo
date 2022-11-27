@@ -1,8 +1,7 @@
 class Usuario{
-    constructor(email,nickName, nroEst){
+    constructor(email,nickName){
         this.email = email;
         this.nickName = nickName;
-        this.nroEst = nroEst;
     }
     
     toString(){
