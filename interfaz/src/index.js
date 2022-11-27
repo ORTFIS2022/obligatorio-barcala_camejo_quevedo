@@ -99,13 +99,15 @@ function validarCorreo(){
         arroba = true;
       }
   }
-
+  let nroEst = 0;
+  nroEst = document.getElementById("input0").value;
+  alert(nroEst);
   if(arroba){
     if(nickName == ""){
       return alert("Seleccione un NickName válido!");
     }
     else{
-      agregarUsuario(email,nickName);
+      agregarUsuario(email,nickName, nroEst);
     }
   }
   else{
@@ -117,10 +119,10 @@ function validarCorreo(){
 
 //FUNCION AGREGAR USUARIO
 
-  function agregarUsuario(email,nickName){
+  function agregarUsuario(email,nickName, nroEst){
   miUsuario.email = email;
   if(!miSistema.esvalido(miUsuario)){
-    miSistema.agregarUsuario(miUsuario.email,nickName);
+    miSistema.agregarUsuario(miUsuario.email,nickName, nroEst);
   }
   document.getElementById("Id-MenuContainer").style.display='none';
  }
