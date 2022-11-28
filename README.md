@@ -15,4 +15,5 @@ Gonzalo Camejo (256665)
 [Letra del proyecto](/media/Proyecto2022S2Mundial.docx)
 
 Los informes académicos para cada entrega se realizan en los archivos README.md que están en las carpetas docs (entrega 1) y src (entrega 2).
-* [Informe entrega 1](/docs/README.md)
+* [Informe entrega 1](/docs/README.md)\
+* [Informe entrega 2](/docs/README2.md)\
