@@ -42,8 +42,6 @@ La interacción con las notificaciones es un claro ejemplo donde el sistema resp
 
 Como se puede ver en la sección `Grupos del Mundial`, si accedemos al Grupo A la página nos lleva correctamente a la predicción para los partidos del Grupo A y además, los partidos se muestran en orden cronológico. Si bien esto es algo obvio y evidente, cumple con tener un vínculo entre el sistema y el mundo real, ya que nosotros podríamos haber modificado el orden de presentación de los partidos y haber llevado al usuario a una confusión.
 
-- Libertad y control del usuario
-
 - Consistencia y estándares 
 
 Al utilizar elementos estandarizados de Material Design estamos cumpliendo con esta heurística, ya que no estamos reinventando la rueda para, por ejemplo, indicarle al usuario que tiene un menú desplegable en el extremo superior izquierdo de la pantalla. Ello ya se infiere debido al uso del símbolo de Menú.
@@ -51,10 +49,6 @@ Al utilizar elementos estandarizados de Material Design estamos cumpliendo con e
 - Prevención de errores 
 
 A la hora de predecir resultados, si bien permitimos que los usuarios ingresen resultados desde el teclado (lo cual habilita a que se ingrese cualquier caracter) se puede ver como si se ingresa cualquier otra cosa que no sea un número el recuadro no indica nada. Esto forma parte de la prevención de errores que nosotros realizamos a los efectos de ayudar al usuario a no ingresar letras o valors negativos como resultado de los partidos.
-
-- Reconocimiento en vez de memorización 
-
-- Flexibilidad y eficiencia de uso 
 
 - Diseño minimalista 
 
@@ -66,7 +60,7 @@ La interfaz web cuenta con una sección `Reglas` donde se explica como participa
 
 # Codificación
 
-Utilizamos el Visual Studio Code como IDE para la creación de nuestro proyecto. Nos terminamos basando en el repo creado anteriormente por *<Nombre persona del repo que usamos>* debido a las dificultades encontradas en clase para la buena inicialización del proyecto y del entorno Node. Es por esto que terminamos usando la versión 16.14.0 de Node.js.
+Utilizamos el Visual Studio Code como IDE para la creación de nuestro proyecto. Nos terminamos basando en el repo creado anteriormente por Vega-Ramirez-Rodriguez debido a las dificultades encontradas en clase para la buena inicialización del proyecto y del entorno Node. Es por esto que terminamos usando la versión 16.14.0 de Node.js.
 
 También introducimos ESLint como herramienta de código estático y lo configuramos para forzar el estilo de codificación de Google. Esto nos permitió tener un código más uniforme y legible entre los 3 participantes. Utilizamos ESLint de dos maneras distintas: 
 
@@ -81,6 +75,7 @@ ESLint cuenta con una extensión en Visual Studio Code que nos va marcando en ro
 También corrimos ESLint mediante la terminal con los siguientes comandos:
 
 `npx eslint <ubicacion_archivo/nombre_archivo>`
+
 `npx eslint --fix <ubicacion_archivo/nombre_archivo>`
 
 El primer comando nos indica dónde podemos encontrar errores en el archivo analizado y qué tipo de error estamos cometiendo. En escencia, algo muy similar a lo que hace la extensión en VSCode. Este comando lo dejamos de utilizar cuando descubrimos la extensión mencionada anteriormente.
