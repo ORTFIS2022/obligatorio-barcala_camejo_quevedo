@@ -84,8 +84,28 @@ Se puede apreciar al navegar la interfaz que el diseño utilizado es minimalista
 
 La interfaz web cuenta con una sección `Reglas` donde se explica como participar del juego, realizar pronósticos y el funcionamiento del puntaje. En esta sección también se le explica al usuario el tiempo límite con el que cuenta para realizar las predicciones, con el fin de ayudarlo a prevenir errores a futuro.
 
-
 # Codificación
+
+Utilizamos el Visual Studio Code como IDE para la creación de nuestro proyecto. Nos terminamos basando en el repo creado anteriormente por *<Nombre persona del repo que usamos>* debido a las dificultades encontradas en clase para la buena inicialización del proyecto y del entorno Node. Es por esto que terminamos usando la versión 16.14.0 de Node.js.
+
+También introducimos ESLint como herramienta de código estático y lo configuramos para forzar el estilo de codificación de Google. Esto nos permitió tener un código más uniforme y legible entre los 3 participantes. Utilizamos ESLint de dos maneras distintas: 
+
+1. Mediante su extensión en VSCode
+
+ESLint cuenta con una extensión en Visual Studio Code que nos va marcando en rojo cuando tenemos errores. Si posamos el mouse sobre estos errores, el propio IDE nos describe qué tipo de error estamos cometiendo.
+
+[!extension_lint](/media/extension_lint.png)
+
+2. Mediante la terminal
+
+También corrimos ESLint mediante la terminal con los siguientes comandos:
+
+`npx eslint <ubicacion_archivo/nombre_archivo>`
+`npx eslint --fix <ubicacion_archivo/nombre_archivo>`
+
+El primer comando nos indica dónde podemos encontrar errores en el archivo analizado y qué tipo de error estamos cometiendo. En escencia, algo muy similar a lo que hace la extensión en VSCode. Este comando lo dejamos de utilizar cuando descubrimos la extensión mencionada anteriormente.
+
+A su vez, el segundo comando fue uno que nos brindó muchas soluciones ya que, dado el archivo que indicamos, automaticamente resuelve todos los errores que se puedan automatizar. Por ejemplo, si usamos un comillado doble en lugar de un comillado simple o si utilizamos un tab en lugar de un doble espacio para identar nuestro código. Esto hizo que se ahorrara mucho tiempo en codificación ya que no teníamos que ir manualmente haciendo estos cambios.
 
 # Test Unitario
 
