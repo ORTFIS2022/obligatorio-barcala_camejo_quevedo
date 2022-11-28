@@ -113,6 +113,20 @@ Utilizamos el framework Jest para crear y correr nuestros tests unitarios en la 
 
 # Test de Sistema
 
+Debido a cómo está realizado el proyecto que se nos asignó para esta sección, no se pudo realizar un test de sistema aplicando la técnica de partición de equivalencias. Los únicos datos a completar son los resultados de los partidos y esto no da lugar a la creación de las distintas clases de equivalencia.
+
+Sin embargo, realizamos un test general ingresando valores para todos los partidos. Siguiendo las reglas básicas de asignación de puntos del fútbol, el resultado esperado al finalizar cada grupo debe corresponder con las posiciones en la tabla de clasificación de cada grupo. De esta manera podemos confirmar si se realizó un trabajo correcto en cuanto a la predicción y el avance de equipos en las distintas fases.
+
+Con los datos ingresados, los clasificados esperados son: Holanda y Ecuador por el Grupo A, Inglaterra y Estados Unidos por el Grupo B, Argentina y Polonia por el Grupo C, Francia y Dinamarca por el Grupo D, España y Alemania por el Grupo E, Bélgica y Croacia por el Grupo F, Brasil y Suiza por el Grupo G y Uruguay y Portugal por el Grupo H. 
+
+| Grupo A - B | Grupo C - D  |
+| ----------- | ----------- |
+| ![gruposA-B.png](/media/gruposA-B.png) | ![gruposC-D.png](/media/gruposC-D.png) |
+| Grupo E - F | Grupo G - H  |
+| ----------- | ----------- |
+| ![gruposE-F.png](/media/gruposE-F.png) | ![gruposG-H.png](/media/gruposG-H.png) |
+
+
 # Reporte de Issues
 
 # Informe de Calidad del Sistema
