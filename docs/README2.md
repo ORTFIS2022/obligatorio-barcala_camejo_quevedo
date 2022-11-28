@@ -19,7 +19,15 @@ Nuestros estándares de codificación fueron los siguientes:
 
 # Construcción
 
+En la construcción de nuestro proyecto creamos dos clases en la capa de dominio: la clase Usuario y la clase Sistema. La clase usuario es la encargada de crear el usuario que navegará por la página y cargará resultados mientras que el Sistema se encarga de todos los métodos y funciones de "manejo de datos". Si bien no existe persitencia de datos en nuestro proyecto, la clase Sistema es la que permite:
 
+- Agregar predicciones
+- Validar usuarios
+- Procesar pronosticos ya ingresados para no perder los datos al navegar por la web
+
+En cuanto a librerías externas, este es nuestro `package.json`:
+
+![package](/media/package.png)
 
 # Interfaz de Usuario
 
