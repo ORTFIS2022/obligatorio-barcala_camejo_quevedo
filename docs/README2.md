@@ -31,6 +31,13 @@ En cuanto a librerías externas, este es nuestro `package.json`:
 
 # Interfaz de Usuario
 
+Diseñamos una interfaz web responsiva a los cambios de tamaño del navegador que la contiene:
+
+| Ventana Completa | Ventana pequeña  |
+| ----------- | ----------- |
+| ![landing_full](/media/landing_full.png) | ![landing_small](/media/landing_small.png) |
+| ![grupo_full](/media/grupo_full.png) | ![grupo_small](/media/grupo_small.png) | 
+
 # Codificación
 
 # Test Unitario
