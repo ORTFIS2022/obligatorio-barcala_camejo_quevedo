@@ -38,6 +38,53 @@ Diseñamos una interfaz web responsiva a los cambios de tamaño del navegador qu
 | ![landing_full](/media/landing_full.png) | ![landing_small](/media/landing_small.png) |
 | ![grupo_full](/media/grupo_full.png) | ![grupo_small](/media/grupo_small.png) | 
 
+Contamos con una top bar desde donde se despliega un menú lateral para que podamos navegar por las tres secciones de la página: Grupos del Mundial, Ranking y Reglas.
+
+![barra_lateral](/media/barra_lateral.png)
+
+A su vez, barra superior cuenta con una acción donde podemos elegir si queremos activar o no las notificaciones. Esta acción despliega un pop-up en la parte inferior de la página notificando al usuario de su elección:
+
+| Notificaciones Aceptadas | Notificaciones Denegadas  |
+| ----------- | ----------- |
+| ![notificaciones_aceptadas](/media/notificaciones_aceptadas.png) | ![notificaciones_denegadas](/media/notificaciones_denegadas.png) |
+
+Construimos nuestra interfaz de usuario siguiendo algunas de las Heuristicas de Nielsen:
+
+- Visibilidad del status del sistema
+
+La interacción con las notificaciones es un claro ejemplo donde el sistema responde y le informa al usuario que su acción se ejecutó correctamente y el sistema recibió la información correcta. 
+
+- Vínculo entre el sistema y el mundo real 
+
+Como se puede ver en la sección `Grupos del Mundial`, si accedemos al Grupo A la página nos lleva correctamente a la predicción para los partidos del Grupo A y además, los partidos se muestran en orden cronológico. Si bien esto es algo obvio y evidente, cumple con tener un vínculo entre el sistema y el mundo real, ya que nosotros podríamos haber modificado el orden de presentación de los partidos y haber llevado al usuario a una confusión.
+
+- Libertad y control del usuario
+
+
+- Consistencia y estándares 
+
+Al utilizar elementos estandarizados de Material Design estamos cumpliendo con esta heurística, ya que no estamos reinventando la rueda para, por ejemplo, indicarle al usuario que tiene un menú desplegable en el extremo superior izquierdo de la pantalla. Ello ya se infiere debido al uso del símbolo de Menú.
+
+- Prevención de errores 
+
+A la hora de predecir resultados, si bien permitimos que los usuarios ingresen resultados desde el teclado (lo cual habilita a que se ingrese cualquier caracter) se puede ver como si se ingresa cualquier otra cosa que no sea un número el recuadro no indica nada. Esto forma parte de la prevención de errores que nosotros realizamos a los efectos de ayudar al usuario a no ingresar letras o valors negativos como resultado de los partidos.
+
+- Reconocimiento en vez de memorización 
+
+
+- Flexibilidad y eficiencia de uso 
+
+
+
+- Diseño minimalista 
+
+Se puede apreciar al navegar la interfaz que el diseño utilizado es minimalista. Nos focalizamos en crear elementos visuales concretos y simples, sin sobrecargar de información al usuario, para que la experiencia de navegación sea lo mas simple y amigable posible. No queremos crear una interfaz donde el usuario se confunda o se sienta abrumado.
+
+- Ayuda y documentación 
+
+La interfaz web cuenta con una sección `Reglas` donde se explica como participar del juego, realizar pronósticos y el funcionamiento del puntaje. En esta sección también se le explica al usuario el tiempo límite con el que cuenta para realizar las predicciones, con el fin de ayudarlo a prevenir errores a futuro.
+
+
 # Codificación
 
 # Test Unitario
