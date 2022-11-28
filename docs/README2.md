@@ -94,7 +94,7 @@ También introducimos ESLint como herramienta de código estático y lo configur
 
 ESLint cuenta con una extensión en Visual Studio Code que nos va marcando en rojo cuando tenemos errores. Si posamos el mouse sobre estos errores, el propio IDE nos describe qué tipo de error estamos cometiendo.
 
-[!extension_lint](/media/extension_lint.png)
+![extension_lint](/media/extension_lint.png)
 
 2. Mediante la terminal
 
