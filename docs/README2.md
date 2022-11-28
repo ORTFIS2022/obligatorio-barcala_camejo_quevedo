@@ -109,6 +109,8 @@ A su vez, el segundo comando fue uno que nos brindó muchas soluciones ya que, d
 
 # Test Unitario
 
+Utilizamos el framework Jest para crear y correr nuestros tests unitarios en la capa de dominio. Primero creamos los archivos siguiendo la nomenclatura usual `<nombre_clase>.test.js`. Luego configuramos los valores de entrada deseados mediante la creación de variables locales. Por último, creamos un método `test` para cada función que queríamos testear utilizando el método `expect().toBe()` para comparar las salidas con las salidas esperadas.
+
 # Test de Sistema
 
 # Reporte de Issues
