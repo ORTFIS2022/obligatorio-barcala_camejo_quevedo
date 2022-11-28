@@ -1,22 +1,6 @@
 # Informe académico entrega 2
 Fecha de entrega: 28-nov-2022
 
-# Documentación de parte 2 
-
-**Estándares de codificación**
-
-En nuestro equipo definimos estándares de codificación para evitar confusiones y generar un código apto para que todos los integrantes lo entiendan y puedan de esta manera trabajar en las funciones y distintos aspectos del proyecto. Gnerando así un ambiente de producción limpio.
-Mantener estándares de codificación es muy importante ya que en la ingenría de software gran parte del trabajo es dedicado a mantener el código y no a la creación del mismo.
-
-Nuestros estándares de codificación fueron los siguientes:
-
-- Creación de clases en js para tener la información dividida correctamente.
-- Uso de identeación correcta en todos los lenguajes.
-- Declaración de variables en js utilizando let y no var con el fin de no generar variables globales que no son necesarias y que representan una mala práctica.
-- Comentarios en las funciones para tener una administracion completa de lo que realiza cada parte del código y eliminar confusiones a la hora de re-leer el código o querer realziar cambios.
-- Nombres de funciones y variables nemotécnicos haciendo referencia a que hace cada función y/o variable.
-- Evitamos repetición de código de forma de optimizar lo más posible nuestras funciones.
-
 # Construcción
 
 En la construcción de nuestro proyecto creamos dos clases en la capa de dominio: la clase Usuario y la clase Sistema. La clase usuario es la encargada de crear el usuario que navegará por la página y cargará resultados mientras que el Sistema se encarga de todos los métodos y funciones de "manejo de datos". Si bien no existe persitencia de datos en nuestro proyecto, la clase Sistema es la que permite:
@@ -60,7 +44,6 @@ Como se puede ver en la sección `Grupos del Mundial`, si accedemos al Grupo A l
 
 - Libertad y control del usuario
 
-
 - Consistencia y estándares 
 
 Al utilizar elementos estandarizados de Material Design estamos cumpliendo con esta heurística, ya que no estamos reinventando la rueda para, por ejemplo, indicarle al usuario que tiene un menú desplegable en el extremo superior izquierdo de la pantalla. Ello ya se infiere debido al uso del símbolo de Menú.
@@ -71,10 +54,7 @@ A la hora de predecir resultados, si bien permitimos que los usuarios ingresen r
 
 - Reconocimiento en vez de memorización 
 
-
 - Flexibilidad y eficiencia de uso 
-
-
 
 - Diseño minimalista 
 
@@ -120,28 +100,40 @@ Sin embargo, realizamos un test general ingresando valores para todos los partid
 Con los datos ingresados, los clasificados esperados son: Holanda y Ecuador por el Grupo A, Inglaterra y Estados Unidos por el Grupo B, Argentina y Polonia por el Grupo C, Francia y Dinamarca por el Grupo D, España y Alemania por el Grupo E, Bélgica y Croacia por el Grupo F, Brasil y Suiza por el Grupo G y Uruguay y Portugal por el Grupo H. 
 
 | Grupo A - B | Grupo C - D  |
-| ----------- | ----------- |
 | ![gruposA-B.png](/media/gruposA-B.png) | ![gruposC-D.png](/media/gruposC-D.png) |
 | Grupo E - F | Grupo G - H  |
-| ----------- | ----------- |
 | ![gruposE-F.png](/media/gruposE-F.png) | ![gruposG-H.png](/media/gruposG-H.png) |
 
+Y, como podemos observar en la imagen, se confirma que los equipos esperados a participar en octavos de final son los que muestra la página:
+
+![octavos.png](/media/octavos.png)
+
+Si continuamos llenando las predicciones como se muestra, se confirma que cada vez que se selecciona un equipo ganador, este es el que avanza de fase hasta llegar a la final, donde si ingresamos un resultado obtenemos una alerta indicando el ganador que seleccionamos.
+
+| Cuartos de final | Semifinal  |
+| ![cuartos.png](/media/cuartos.png) | ![semi.png](/media/semi.png) |
+| Final | Final con alerta |
+| ![final.png](/media/final.png) | ![finalAlerta.png](/media/finalAlerta.png) |
+
+De esta manera, podemos corroborar que dado un set de datos inicial el sistema se comporta de manera correcta y resuelve 
 
 # Reporte de Issues
 
+Al analizar el proyecto asignado reportamos los siguientes issues:
+
+![issues.png](/media/issues.png)
+
+Utilizamos dos etiquetas para agrupar los issues encontrados. La etiqueta `bug` refiere a un error del sistema donde el mismo no se comporta como es esperado. La etiqueta `invalid` refiere a algo que no aparenta funcionar de la manera que se espera. También definimos tres valores de prioridad y severidad: Alta, Media y Baja.
+
+Terminamos reportando 8 issues en total. De estos 8 issues, 5 los etiquetamos como `bug` y 3 los etiquetamos como `invalid`. A su vez, 5 de ellos les asignamos una alta prioridad mientras que a 2 le asignamos prioridad media y a 1 de ellos prioridad baja. También 6 de ellos consideramos son de severidad alta, mientras que existen también issues de severidad media y baja (uno y uno respectivamente).
+
 # Informe de Calidad del Sistema
+
+En ámbitos generales, consideramos que el proyecto que se nos asignó cumple con todos los requerimientos mínimos para ser una página de predicción de resultados. Está muy bueno que lo primero que se vea cuando se accede es una landing donde se explica cómo utilizar el software. Se hizo una predicción completa del Mundial y el resultado obtenido por la página es el que se esperaba al analizar los resultados ingresados. Sin embargo, nos hubiera gustado ver un poco más de control sobre los datos que se pueden ingresar por teclado, ya que reportamos que se podían ingresar valores negativos, la letra 'e' y hasta comas y puntos.
 
 # Reflexión
 
-**Informe de calidad**
-
-Siguiendo nuestro caso de uso, el mismo fue completado con éxito con algunas issues que podemos traducir a detalles mínimos a implementar que no representan grandes problemas para nuestra aplicacion pero que si ayudarían a generar un mejor entorno para el usuario.
-Creemos que a nivel de calidad nuestro trabajo fue completo abarcando la mayoria de los problemas que fuimos teniendo a lo largo del proyecto y trabajando conjuntamente fueron resueltos.
-Nuestro equipo siempre mantuvo un estándar de codificación de manera de mantener la calidad del software.
-
-**Reflexiones y aprendizajes**
-
-Gonzalo Camejo:
-Desde mi punto de vista me pareció un proyecto realmente interesante sobre todo por el desafio de crear un aplicacion desde cero sin muchos conocimientos de las tecnologías a utilizar, que más adelante fue necesario pulir para poder trabajar con ellas y modificarlas.
+| Gonzalo Camejo | Desde mi punto de vista me pareció un proyecto realmente interesante sobre todo por el desafio de crear un aplicacion desde cero sin muchos conocimientos de las tecnologías a utilizar, que más adelante fue necesario pulir para poder trabajar con ellas y modificarlas.
 Un ejemplo claro de esto fue material design que se presentó como algo totalmente desconocido creo que para todos los integrantes de nuestro equipo. 
-Pudimos ver como lo aprendido en programación anteriormente pudo ser utilizado para el desarrollo de una aplicación y la importancia que las mismas materias tuvieron para llegar a este punto. Me pareció muy importante el trabajo en equipo ya que será muy importante en el futuro.
+Pudimos ver como lo aprendido en programación anteriormente pudo ser utilizado para el desarrollo de una aplicación y la importancia que las mismas materias tuvieron para llegar a este punto. Me pareció muy importante el trabajo en equipo ya que será muy importante en el futuro. |
+| Fernando Barcala | En lo personal, me parece que el proyecto era uno con muchos desafíos que supimos ir llevando y superando constantemente. A lo largo del curso se nos brindaron conceptos y herramientas que luego fueron utilizadas en el proyecto como los distintos conceptos de testing y las especificaciones de codificación que terminaron siendo muy productivos. Me parece que lo más importante fue enfrentarnos a algo que al principio no salía pero que a base de esfuerzo y investigación se pudo llevar a cabo. Más allá de las tecnologias aplicadas en este proyecto particular, creo que los conceptos generales aprendidos en el curso serán de gran utilidad para nuestros futuros |
