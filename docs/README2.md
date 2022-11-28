@@ -99,6 +99,8 @@ Sin embargo, realizamos un test general ingresando valores para todos los partid
 
 Con los datos ingresados, los clasificados esperados son: Holanda y Ecuador por el Grupo A, Inglaterra y Estados Unidos por el Grupo B, Argentina y Polonia por el Grupo C, Francia y Dinamarca por el Grupo D, España y Alemania por el Grupo E, Bélgica y Croacia por el Grupo F, Brasil y Suiza por el Grupo G y Uruguay y Portugal por el Grupo H. 
 
+|  |  |
+| ----------- | ----------- |
 | Grupo A - B | Grupo C - D  |
 | ![gruposA-B.png](/media/gruposA-B.png) | ![gruposC-D.png](/media/gruposC-D.png) |
 | Grupo E - F | Grupo G - H  |
@@ -110,6 +112,8 @@ Y, como podemos observar en la imagen, se confirma que los equipos esperados a p
 
 Si continuamos llenando las predicciones como se muestra, se confirma que cada vez que se selecciona un equipo ganador, este es el que avanza de fase hasta llegar a la final, donde si ingresamos un resultado obtenemos una alerta indicando el ganador que seleccionamos.
 
+|  |  |
+| ----------- | ----------- |
 | Cuartos de final | Semifinal  |
 | ![cuartos.png](/media/cuartos.png) | ![semi.png](/media/semi.png) |
 | Final | Final con alerta |
@@ -133,6 +137,8 @@ En ámbitos generales, consideramos que el proyecto que se nos asignó cumple co
 
 # Reflexión
 
+| Estudiante | Reflexión |
+| ----------- | ----------- |
 | Gonzalo Camejo | Desde mi punto de vista me pareció un proyecto realmente interesante sobre todo por el desafio de crear un aplicacion desde cero sin muchos conocimientos de las tecnologías a utilizar, que más adelante fue necesario pulir para poder trabajar con ellas y modificarlas.
 Un ejemplo claro de esto fue material design que se presentó como algo totalmente desconocido creo que para todos los integrantes de nuestro equipo. 
 Pudimos ver como lo aprendido en programación anteriormente pudo ser utilizado para el desarrollo de una aplicación y la importancia que las mismas materias tuvieron para llegar a este punto. Me pareció muy importante el trabajo en equipo ya que será muy importante en el futuro. |
